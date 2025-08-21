@@ -1,0 +1,22 @@
+version: 1
+languages: [python, javascript, typescript]
+severity_threshold: medium
+autofix:
+  enabled: true
+  categories: [formatting, trivial-lints]
+llm:
+  provider: openrouter        # openrouter|openai|none
+  model: qwen/Qwen2.5-7B-Instruct  # override via env LLM_MODEL_ID
+  temperature: 0.2
+  max_tokens: 1200
+security:
+  enable_secret_scan: true
+  dependency_audit: true
+quality:
+  ruff_profile: "strict"
+  eslint_config: ".eslintrc.cjs"
+context:
+  jira:
+    enabled: false
+    base_url: ""
+    token_env: "JIRA_TOKEN"
