@@ -7,6 +7,8 @@ from dataclasses import dataclass
 from ..core.vcs import run_cmd
 from ..core.llm import enrich_findings_with_llm
 from ..core.settings import settings
+from .enhanced_ml_analyzer import EnhancedMLAnalyzer
+from .safe_neural_analyzer import SafeNeuralAnalyzer
 
 @dataclass
 class CodeReviewFinding:
@@ -39,6 +41,16 @@ class CodeReviewAgent:
         self.findings: List[CodeReviewFinding] = []
         self.code_metrics = {}
         
+        # Initialize ML and Neural Network analyzers
+        try:
+            self.ml_analyzer = EnhancedMLAnalyzer()
+            self.neural_analyzer = SafeNeuralAnalyzer()
+            print("🧠 ML and Neural Network analyzers initialized successfully")
+        except Exception as e:
+            print(f"⚠️ Warning: ML analyzers initialization failed: {e}")
+            self.ml_analyzer = None
+            self.neural_analyzer = None
+        
     async def run_code_review(self, input_data: Optional[Dict] = None) -> Dict[str, Any]:
         """
         Main entry point for code review analysis
@@ -70,6 +82,10 @@ class CodeReviewAgent:
             
             # Generate comprehensive report
             report = await self._generate_review_report()
+            
+            # Enrich findings with ML and Neural Network analysis
+            if self.ml_analyzer or self.neural_analyzer:
+                await self._enrich_with_ml_analysis()
             
             # Enrich findings with LLM if available
             if not self.standalone:
@@ -584,6 +600,95 @@ class CodeReviewAgent:
                             
         except Exception as e:
             print(f"Warning: Could not analyze function similarity: {e}")
+    
+    async def _enrich_with_ml_analysis(self):
+        """Enrich findings with ML and Neural Network analysis"""
+        print("🧠 Enriching findings with ML and Neural Network analysis...")
+        
+        try:
+            for i, finding in enumerate(self.findings):
+                # Convert finding to dict format for ML analysis
+                finding_dict = {
+                    "file": finding.file,
+                    "line": finding.line,
+                    "category": finding.category,
+                    "message": finding.message,
+                    "suggestion": finding.suggestion,
+                    "code_snippet": finding.code_snippet,
+                    "severity": finding.severity,
+                    "confidence": finding.confidence,
+                    "impact": finding.impact,
+                    "effort": finding.effort,
+                    "tool": "code_review_agent"
+                }
+                
+                # Enhanced ML analysis
+                if self.ml_analyzer:
+                    try:
+                        ml_results = self.ml_analyzer.analyze_finding_with_ml(finding_dict)
+                        
+                        # Update finding with ML insights
+                        if 'predicted_severity' in ml_results:
+                            finding.severity = ml_results['predicted_severity']
+                        
+                        if 'ensemble_confidence' in ml_results:
+                            finding.confidence = ml_results['ensemble_confidence']
+                        
+                        # Add ML analysis to suggestion
+                        if 'enhanced_analysis' in ml_results:
+                            ml_analysis = ml_results['enhanced_analysis']
+                            finding.suggestion = f"{finding.suggestion}\n\n🤖 ML Analysis: {ml_analysis}"
+                        
+                        # Add ML recommendations
+                        if 'ml_recommendations' in ml_results:
+                            ml_recs = ml_results['ml_recommendations']
+                            if ml_recs:
+                                recs_text = "\n".join([f"• {rec}" for rec in ml_recs])
+                                finding.suggestion = f"{finding.suggestion}\n\n📊 ML Recommendations:\n{recs_text}"
+                        
+                    except Exception as e:
+                        print(f"⚠️ ML analysis failed for finding {i}: {e}")
+                
+                # Neural Network analysis
+                if self.neural_analyzer and finding.code_snippet:
+                    try:
+                        # Security analysis
+                        security_result = self.neural_analyzer.analyze_code_security(
+                            finding.code_snippet, 
+                            {'file': finding.file, 'line': finding.line}
+                        )
+                        
+                        # Quality prediction
+                        quality_metrics = {
+                            'lines': len(finding.code_snippet.split('\n')),
+                            'complexity': 5,  # Default value
+                            'nesting': 3,     # Default value
+                            'imports': 5,     # Default value
+                            'functions': 3,   # Default value
+                            'classes': 2,     # Default value
+                        }
+                        
+                        quality_result = self.neural_analyzer.predict_code_quality(quality_metrics)
+                        
+                        # Enhance finding with neural insights
+                        neural_insights = []
+                        
+                        if security_result.get('severity') == 'high':
+                            neural_insights.append(f"🚨 High security risk detected: {security_result.get('analysis', '')}")
+                        
+                        if quality_result.get('quality_score', 0.5) < 0.6:
+                            neural_insights.append(f"⚠️ Quality concerns: {', '.join(quality_result.get('recommendations', []))}")
+                        
+                        if neural_insights:
+                            finding.suggestion = f"{finding.suggestion}\n\n🧠 Neural Network Insights:\n" + "\n".join(neural_insights)
+                        
+                    except Exception as e:
+                        print(f"⚠️ Neural analysis failed for finding {i}: {e}")
+            
+            print(f"✅ ML and Neural Network analysis completed for {len(self.findings)} findings")
+            
+        except Exception as e:
+            print(f"❌ Error in ML analysis enrichment: {e}")
     
     async def _enrich_with_llm(self):
         """Enrich findings with LLM analysis"""

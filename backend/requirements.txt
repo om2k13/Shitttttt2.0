@@ -8,7 +8,8 @@ litellm>=1.45.0
 aiohttp>=3.9.1
 PyYAML>=6.0.1
 cryptography>=41.0.7
-# ML and visualization libraries - Python 3.13 compatible versions
+
+# ML and Deep Learning libraries - Production ready versions
 scikit-learn>=1.4.0
 numpy>=1.26.0
 pandas>=2.1.0
@@ -16,6 +17,21 @@ joblib>=1.3.0
 matplotlib>=3.8.0
 seaborn>=0.13.0
 plotly>=5.17.0
+
+# PyTorch for neural networks
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Advanced ML libraries
+xgboost>=2.0.0
+lightgbm>=4.1.0
+
+# Additional ML utilities
+scipy>=1.11.0
+imbalanced-learn>=0.11.0
+optuna>=3.4.0
+
 python-multipart>=0.0.6
 python-jose[cryptography]>=3.3.0
 passlib[bcrypt]>=1.7.4
