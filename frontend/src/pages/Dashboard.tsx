@@ -1,303 +1,561 @@
-import { useEffect, useState } from 'react'
-import { api } from '../lib/api'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import { 
+  Plus, 
+  GitBranch, 
+  Shield, 
+  TestTube, 
+  Zap, 
+  Github, 
+  BarChart3,
+  FileText,
+  Workflow,
+  Clock,
+  CheckCircle,
+  AlertCircle,
+  XCircle,
+  Code,
+  Settings
+} from 'lucide-react'
+import { toast } from 'sonner'
+import { jobsApi, analyticsApi, actionsApi } from '@/lib/api'
+import { cn, formatDate } from '@/lib/utils'
 
-export default function Dashboard(){
-  const [jobs,setJobs] = useState<any>({items:[]})
-  const [repoUrl,setRepoUrl] = useState('')
-  const [branch,setBranch] = useState('')
 
-  const load = async()=>{
-    const r = await api.get('/api/jobs')
-    setJobs(r.data)
-  }
-  useEffect(()=>{ load() }, [])
 
-  const create = async()=>{
+export function Dashboard() {
+  const [repoUrl, setRepoUrl] = useState('')
+  const [prNumber, setPrNumber] = useState('')
+  const [analysisType, setAnalysisType] = useState<'full' | 'pr' | 'security' | 'test' | 'performance' | 'comprehensive'>('full')
+
+  // Fetch only the most recent job
+  const { data: jobsData, error: jobsError, refetch: refetchJobs } = useQuery({
+    queryKey: ['jobs'],
+    queryFn: async () => {
+      const response = await jobsApi.list(1, 1) // Only get 1 job
+      return response.data
+    },
+    retry: 3,
+    retryDelay: 1000,
+    refetchOnWindowFocus: false,
+  })
+
+  const { data: analyticsData, error: analyticsError, refetch: refetchAnalytics } = useQuery({
+    queryKey: ['analytics-trends'],
+    queryFn: async () => {
+      const response = await analyticsApi.trends()
+      return response.data
+    },
+    refetchInterval: 30000, // Refresh every 30 seconds
+    retry: 3,
+    retryDelay: 1000,
+    refetchOnWindowFocus: false,
+  })
+
+  const { data: mlInsights, error: mlError, refetch: refetchML } = useQuery({
+    queryKey: ['ml-insights'],
+    queryFn: async () => {
+      const response = await analyticsApi.mlInsights()
+      return response.data
+    },
+    refetchInterval: 30000, // Refresh every 30 seconds
+    retry: 3,
+    retryDelay: 1000,
+    refetchOnWindowFocus: false,
+  })
+
+  const handleAnalysis = async () => {
     if (!repoUrl.trim()) {
-      alert('Please enter a repository URL')
+      toast.error('Please enter a repository URL')
       return
     }
-    await api.post('/api/jobs',{repo_url:repoUrl, branch})
-    setRepoUrl(''); setBranch('')
-    setTimeout(load, 800)
+
+    try {
+      let response
+      switch (analysisType) {
+        case 'full':
+          response = await actionsApi.createJob({ repo_url: repoUrl })
+          break
+        case 'pr':
+          if (!prNumber.trim()) {
+            toast.error('Please enter a PR number for PR analysis')
+            return
+          }
+          response = await actionsApi.analyzePR({ 
+            repo_url: repoUrl, 
+            pr_number: parseInt(prNumber) 
+          })
+          break
+        case 'security':
+          response = await actionsApi.securityAnalysis({ repo_url: repoUrl })
+          break
+        case 'test':
+          response = await actionsApi.generateTestPlan({ repo_url: repoUrl })
+          break
+        case 'performance':
+          response = await actionsApi.performanceAnalysis({ repo_url: repoUrl })
+          break
+        case 'comprehensive':
+          response = await actionsApi.comprehensiveAnalysis({ 
+            repo_url: repoUrl,
+            include_performance: true,
+            include_api_analysis: true,
+            include_test_generation: true
+          })
+          break
+      }
+
+      if (response?.data?.job_id) {
+        toast.success(`${analysisType === 'full' ? 'Repository' : analysisType} analysis started! Job ID: ${response.data.job_id}`)
+        setRepoUrl('')
+        setPrNumber('')
+        // Invalidate queries to refresh data
+        window.location.reload() // Force refresh to show new job
+      }
+    } catch (error) {
+      toast.error('Failed to start analysis. Please try again.')
+      console.error('Analysis error:', error)
+    }
   }
 
   const getStatusIcon = (status: string) => {
-    switch(status) {
-      case 'completed': return '✅'
-      case 'running': return '🔄'
-      case 'queued': return '⏳'
-      case 'failed': return '❌'
-      default: return '❓'
+    switch (status) {
+      case 'completed':
+        return <CheckCircle className="h-5 w-5 text-green-500" />
+      case 'running':
+        return <Clock className="h-5 w-5 text-blue-500" />
+      case 'failed':
+        return <XCircle className="h-5 w-5 text-red-500" />
+      default:
+        return <AlertCircle className="h-5 w-5 text-yellow-500" />
     }
   }
 
   const getStatusColor = (status: string) => {
-    switch(status) {
-      case 'completed': return '#28a745'
-      case 'running': return '#007bff'
-      case 'queued': return '#ffc107'
-      case 'failed': return '#dc3545'
-      default: return '#6c757d'
+    switch (status) {
+      case 'completed':
+        return 'bg-green-100 text-green-800'
+      case 'running':
+        return 'bg-blue-100 text-blue-800'
+      case 'failed':
+        return 'bg-red-100 text-red-800'
+      default:
+        return 'bg-yellow-100 text-yellow-800'
+    }
+  }
+
+  // Format timestamp to local time
+  const formatLocalTime = (timestamp: string | Date) => {
+    try {
+      const date = new Date(timestamp)
+      return date.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        timeZoneName: 'short'
+      })
+    } catch (error) {
+      return 'Invalid date'
     }
   }
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
+    <div className="space-y-6">
       {/* Header */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-        color: 'white', 
-        padding: '40px', 
-        borderRadius: '20px',
-        marginBottom: '40px',
-        textAlign: 'center'
-      }}>
-        <h1 style={{ margin: '0 0 15px 0', fontSize: '3em' }}>🔍 Code Review Agent</h1>
-        <p style={{ fontSize: '1.3em', margin: '0', opacity: 0.9 }}>
-          Automatically analyze your GitHub repositories for code quality, security, and best practices
+      <div>
+        <h1 className="text-3xl font-bold text-gray-900">Code Review Dashboard</h1>
+        <p className="mt-2 text-gray-600">
+          Enhanced Multi-User Code Review Agent - Comprehensive code analysis and security scanning
         </p>
       </div>
 
-      {/* New Job Form */}
-      <div style={{ 
-        background: 'white', 
-        padding: '30px', 
-        borderRadius: '15px', 
-        boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-        marginBottom: '40px'
-      }}>
-        <h2 style={{ color: '#333', margin: '0 0 25px 0', textAlign: 'center' }}>🚀 Start New Code Review</h2>
-        
-        <div style={{ display: 'flex', gap: '15px', marginBottom: '20px', flexWrap: 'wrap' }}>
-          <div style={{ flex: '1', minWidth: '300px' }}>
-            <label style={{ display: 'block', marginBottom: '8px', color: '#555', fontWeight: 'bold' }}>
-              Repository URL *
-            </label>
-            <input 
-              placeholder="https://github.com/username/repository.git" 
-              value={repoUrl} 
-              onChange={e=>setRepoUrl(e.target.value)} 
-              style={{
-                width: '100%',
-                padding: '15px',
-                border: '2px solid #e9ecef',
-                borderRadius: '10px',
-                fontSize: '1em',
-                transition: 'border-color 0.3s ease'
-              }}
-              onFocus={(e) => e.target.style.borderColor = '#667eea'}
-              onBlur={(e) => e.target.style.borderColor = '#e9ecef'}
-            />
-          </div>
-          
-          <div style={{ minWidth: '200px' }}>
-            <label style={{ display: 'block', marginBottom: '8px', color: '#555', fontWeight: 'bold' }}>
-              Branch (optional)
-            </label>
-            <input 
-              placeholder="main" 
-              value={branch} 
-              onChange={e=>setBranch(e.target.value)} 
-              style={{
-                width: '100%',
-                padding: '15px',
-                border: '2px solid #e9ecef',
-                borderRadius: '10px',
-                fontSize: '1em',
-                transition: 'border-color 0.3s ease'
-              }}
-              onFocus={(e) => e.target.style.borderColor = '#667eea'}
-              onBlur={(e) => e.target.style.borderColor = '#e9ecef'}
-            />
-          </div>
-        </div>
-        
-        <div style={{ textAlign: 'center' }}>
-          <button 
-            onClick={create}
-            style={{
-              background: '#28a745',
-              color: 'white',
-              border: 'none',
-              padding: '18px 40px',
-              borderRadius: '25px',
-              fontSize: '1.2em',
-              cursor: 'pointer',
-              boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)',
-              transition: 'all 0.3s ease',
-              fontWeight: 'bold'
-            }}
-            onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-            onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-          >
-            🔍 Start Code Review
-          </button>
-        </div>
-      </div>
 
-      {/* Stats Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '40px' }}>
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <div style={{ fontSize: '2.5em', marginBottom: '10px' }}>📊</div>
-          <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#667eea' }}>{jobs.total || 0}</div>
-          <div style={{ color: '#666' }}>Total Reviews</div>
-        </div>
-        
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <div style={{ fontSize: '2.5em', marginBottom: '10px' }}>✅</div>
-          <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#28a745' }}>
-            {jobs.items?.filter((j: any) => j.status === 'completed').length || 0}
-          </div>
-          <div style={{ color: '#666' }}>Completed</div>
-        </div>
-        
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <div style={{ fontSize: '2.5em', marginBottom: '10px' }}>🔄</div>
-          <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#007bff' }}>
-            {jobs.items?.filter((j: any) => j.status === 'running').length || 0}
-          </div>
-          <div style={{ color: '#666' }}>Running</div>
-        </div>
-        
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <div style={{ fontSize: '2.5em', marginBottom: '10px' }}>⏳</div>
-          <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#ffc107' }}>
-            {jobs.items?.filter((j: any) => j.status === 'queued').length || 0}
-          </div>
-          <div style={{ color: '#666' }}>Queued</div>
-        </div>
-      </div>
 
-      {/* Recent Jobs */}
-      <div style={{ background: 'white', padding: '30px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
-        <h2 style={{ color: '#333', margin: '0 0 25px 0', textAlign: 'center' }}>📋 Recent Code Reviews</h2>
-        
-        {jobs.items?.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-            <div style={{ fontSize: '3em', marginBottom: '20px' }}>🚀</div>
-            <h3>No reviews yet!</h3>
-            <p>Start your first code review by entering a GitHub repository URL above.</p>
+      {/* Quick Actions */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Repository Analysis */}
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title">Start New Analysis</h2>
+            <p className="card-description">
+              Analyze a GitHub repository for security, quality, and performance issues
+            </p>
           </div>
-        ) : (
-          <div style={{ display: 'grid', gap: '15px' }}>
-            {jobs.items.map((j: any) => (
-              <div key={j.id} style={{ 
-                background: '#f8f9fa', 
-                padding: '20px', 
-                borderRadius: '10px',
-                border: '2px solid #e9ecef',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-              >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                    <Link 
-                      to={`/jobs/${j.id}`}
-                      style={{
-                        background: '#667eea',
-                        color: 'white',
-                        padding: '8px 15px',
-                        borderRadius: '20px',
-                        textDecoration: 'none',
-                        fontWeight: 'bold',
-                        fontSize: '0.9em'
-                      }}
-                    >
-                      {j.id.slice(0,8)}...{j.id.slice(-8)}
-                    </Link>
-                    
-                    <div style={{ 
-                      background: getStatusColor(j.status), 
-                      color: 'white', 
-                      padding: '5px 12px', 
-                      borderRadius: '15px',
-                      fontSize: '0.8em',
-                      fontWeight: 'bold'
-                    }}>
-                      {getStatusIcon(j.status)} {j.status}
-                    </div>
-                  </div>
-                  
-                  <div style={{ color: '#666', fontSize: '0.9em' }}>
-                    {new Date(j.created_at).toLocaleDateString()}
-                  </div>
-                </div>
-                
-                <div style={{ marginBottom: '10px' }}>
-                  <strong style={{ color: '#333' }}>Repository:</strong>
-                  <span style={{ 
-                    background: '#e9ecef', 
-                    padding: '5px 10px', 
-                    borderRadius: '5px', 
-                    marginLeft: '10px',
-                    fontFamily: 'monospace',
-                    fontSize: '0.9em',
-                    wordBreak: 'break-all'
-                  }}>
-                    {j.repo_url}
-                  </span>
-                </div>
-                
-                {j.branch && (
-                  <div style={{ marginBottom: '10px' }}>
-                    <strong style={{ color: '#333' }}>Branch:</strong>
-                    <span style={{ 
-                      background: '#007bff', 
-                      color: 'white', 
-                      padding: '3px 8px', 
-                      borderRadius: '5px', 
-                      marginLeft: '10px',
-                      fontSize: '0.8em'
-                    }}>
-                      {j.branch}
-                    </span>
-                  </div>
-                )}
-                
-                {j.status === 'completed' && (
-                  <div style={{ 
-                    background: '#d4edda', 
-                    color: '#155724', 
-                    padding: '10px', 
-                    borderRadius: '8px',
-                    fontSize: '0.9em'
-                  }}>
-                    ✅ Review completed successfully! Click the job ID to view detailed results.
-                  </div>
-                )}
-                
-                {j.status === 'running' && (
-                  <div style={{ 
-                    background: '#d1ecf1', 
-                    color: '#0c5460', 
-                    padding: '10px', 
-                    borderRadius: '8px',
-                    fontSize: '0.9em'
-                  }}>
-                    🔄 Code review in progress... This may take a few minutes.
-                  </div>
-                )}
-                
-                {j.status === 'queued' && (
-                  <div style={{ 
-                    background: '#fff3cd', 
-                    color: '#856404', 
-                    padding: '10px', 
-                    borderRadius: '8px',
-                    fontSize: '0.9em'
-                  }}>
-                    ⏳ Waiting in queue... Your review will start soon.
-                  </div>
-                )}
+          <div className="card-content space-y-4">
+            <div>
+              <label htmlFor="repo-url" className="block text-sm font-medium text-gray-700 mb-2">
+                Repository URL
+              </label>
+              <input
+                id="repo-url"
+                type="url"
+                placeholder="https://github.com/owner/repo"
+                value={repoUrl}
+                onChange={(e) => setRepoUrl(e.target.value)}
+                className="input w-full"
+              />
+            </div>
+
+            {analysisType === 'pr' && (
+              <div>
+                <label htmlFor="pr-number" className="block text-sm font-medium text-gray-700 mb-2">
+                  PR Number
+                </label>
+                <input
+                  id="pr-number"
+                  type="number"
+                  placeholder="123"
+                  value={prNumber}
+                  onChange={(e) => setPrNumber(e.target.value)}
+                  className="input w-full"
+                />
               </div>
-            ))}
+            )}
+
+            <div>
+              <label htmlFor="analysis-type" className="block text-sm font-medium text-gray-700 mb-2">
+                Analysis Type
+              </label>
+              <select
+                id="analysis-type"
+                value={analysisType}
+                onChange={(e) => setAnalysisType(e.target.value as 'full' | 'pr' | 'security' | 'test' | 'performance' | 'comprehensive')}
+                className="input w-full"
+              >
+                <option value="full">Full Repository Analysis</option>
+                <option value="pr">PR/Diff Analysis</option>
+                <option value="security">Security Analysis (OWASP Top 10)</option>
+                <option value="test">Test Plan Generation</option>
+                <option value="performance">Performance Analysis</option>
+                <option value="comprehensive">Comprehensive Analysis</option>
+              </select>
+            </div>
+
+            <button
+              onClick={handleAnalysis}
+              className="btn-primary w-full"
+            >
+              <Plus className="h-4 w-4 mr-2" />
+              Start Analysis
+            </button>
+          </div>
+        </div>
+
+        {/* Error Handling */}
+        {((jobsError && jobsError instanceof Error) || (analyticsError && analyticsError instanceof Error) || (mlError && mlError instanceof Error)) && (
+          <div className="card border-red-200 bg-red-50">
+            <div className="card-content">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <AlertCircle className="h-5 w-5 text-red-600" />
+                  <span className="text-red-800 font-medium">Connection Issues Detected</span>
+                </div>
+                <div className="flex space-x-2">
+                  {jobsError && jobsError instanceof Error && (
+                    <button
+                      onClick={() => refetchJobs()}
+                      className="btn-outline btn-sm text-red-700 border-red-300 hover:bg-red-100"
+                    >
+                      Retry Jobs
+                    </button>
+                  )}
+                  {analyticsError && analyticsError instanceof Error && (
+                    <button
+                      onClick={() => refetchAnalytics()}
+                      className="btn-outline btn-sm text-red-700 border-red-300 hover:bg-red-100"
+                    >
+                      Retry Analytics
+                    </button>
+                  )}
+                  {mlError && mlError instanceof Error && (
+                    <button
+                      onClick={() => refetchML()}
+                      className="btn-outline btn-sm text-red-700 border-red-300 hover:bg-red-100"
+                    >
+                      Retry ML Insights
+                    </button>
+                  )}
+                </div>
+              </div>
+              <p className="text-red-700 text-sm mt-2">
+                Some data couldn't be loaded. Click the retry buttons above to reload.
+              </p>
+            </div>
           </div>
         )}
+
+        {/* Code Review Agent Quick Actions */}
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title">Code Review Agent</h2>
+            <p className="card-description">
+              AI-powered code quality analysis and refactoring suggestions
+            </p>
+          </div>
+          <div className="card-content">
+            <div className="grid grid-cols-1 gap-3">
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-green-50">
+                <Code className="h-5 w-5 text-green-600" />
+                <div>
+                  <h3 className="font-medium text-green-900">Code Quality Analysis</h3>
+                  <p className="text-sm text-green-700">Identify code smells, complexity issues, and refactoring opportunities</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50">
+                <GitBranch className="h-5 w-5 text-purple-600" />
+                <div>
+                  <h3 className="font-medium text-purple-900">Reusable Methods</h3>
+                  <p className="text-sm text-purple-700">Suggest extraction of reusable functions and methods</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-orange-50">
+                <Zap className="h-5 w-5 text-orange-600" />
+                <div>
+                  <h3 className="font-medium text-orange-900">Performance Optimization</h3>
+                  <p className="text-sm text-orange-700">Identify inefficient code patterns and suggest improvements</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-indigo-50">
+                <Settings className="h-5 w-5 text-indigo-600" />
+                <div>
+                  <h3 className="font-medium text-indigo-900">Hard-coded Values</h3>
+                  <p className="text-sm text-indigo-700">Detect and suggest configuration for hard-coded values</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <a
+                href="/code-review"
+                className="btn-outline w-full text-center"
+              >
+                <Code className="h-4 w-4 mr-2" />
+                Go to Code Review Agent
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature Overview */}
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title">Agent Capabilities</h2>
+            <p className="card-description">
+              What our enhanced code review agent can do for you
+            </p>
+          </div>
+          <div className="card-content">
+            <div className="grid grid-cols-1 gap-3">
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-blue-50">
+                <Shield className="h-5 w-5 text-blue-600" />
+                <div>
+                  <h3 className="font-medium text-blue-900">Security Analysis</h3>
+                  <p className="text-sm text-blue-700">OWASP Top 10, SQL injection, XSS, secrets detection</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-green-50">
+                <GitBranch className="h-5 w-5 text-green-600" />
+                <div>
+                  <h3 className="font-medium text-green-900">PR Analysis</h3>
+                  <p className="text-sm text-green-700">Focused analysis on pull request changes</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-purple-50">
+                <TestTube className="h-5 w-5 text-purple-600" />
+                <div>
+                  <h3 className="font-medium text-purple-900">Test Generation</h3>
+                  <p className="text-sm text-purple-700">Automatic test plans and test cases</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-orange-50">
+                <Zap className="h-5 w-5 text-orange-600" />
+                <div>
+                  <h3 className="font-medium text-orange-900">Performance Analysis</h3>
+                  <p className="text-sm text-orange-700">Code optimization and performance insights</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-gray-50">
+                <Github className="h-5 w-5 text-gray-600" />
+                <div>
+                  <h3 className="font-medium text-gray-900">GitHub Integration</h3>
+                  <p className="text-sm text-gray-700">Direct PR comments and comprehensive reviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Statistics and Recent Activity */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Total Findings */}
+        <div className="card">
+          <div className="card-content">
+            <div className="flex items-center">
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <BarChart3 className="h-6 w-6 text-blue-600" />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-600">Total Findings</p>
+                <p className="text-2xl font-bold text-gray-900">
+                  {analyticsData?.total_findings || 0}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Risk Prediction */}
+        <div className="card">
+          <div className="card-content">
+            <div className="flex items-center">
+              <div className="p-2 bg-yellow-100 rounded-lg">
+                <AlertCircle className="h-6 w-6 text-yellow-600" />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-600">Risk Level</p>
+                <p className="text-2xl font-bold text-gray-900 capitalize">
+                  {mlInsights?.risk_prediction || 'Medium'}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Recent Jobs */}
+        <div className="card">
+          <div className="card-content">
+            <div className="flex items-center">
+              <div className="p-2 bg-green-100 rounded-lg">
+                <Workflow className="h-6 w-6 text-green-600" />
+              </div>
+              <div className="ml-4">
+                <p className="text-sm font-medium text-gray-600">Recent Jobs</p>
+                <p className="text-2xl font-bold text-gray-900">
+                  {jobsData?.total || 0}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Current/Recent Job */}
+      <div className="card">
+        <div className="card-header">
+          <h2 className="card-title">Current Analysis Job</h2>
+          <p className="card-description">
+            {jobsData?.items && jobsData.items.length > 0 
+              ? 'Latest code review and analysis activity' 
+              : 'No analysis jobs yet. Start your first analysis above!'}
+          </p>
+        </div>
+        <div className="card-content">
+          {jobsData?.items && jobsData.items.length > 0 ? (
+            <div className="space-y-4">
+              {jobsData.items.map((job) => (
+                <div key={job.id} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                  <div className="flex items-center space-x-4">
+                    {getStatusIcon(job.status)}
+                    <div>
+                      <h3 className="font-medium text-gray-900">
+                        {job.repo_url.split('/').slice(-2).join('/')}
+                      </h3>
+                      <p className="text-sm text-gray-500">
+                        {job.is_pr_analysis ? `PR #${job.pr_number}` : 'Full Repository'} • {formatLocalTime(job.created_at)}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className={cn("px-2 py-1 text-xs font-medium rounded-full", getStatusColor(job.status))}>
+                      {job.status}
+                    </span>
+                    {job.findings_count > 0 && (
+                      <span className="text-sm text-gray-500">
+                        {job.findings_count} findings
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-8">
+              <FileText className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+              <p className="text-gray-500">No analysis jobs yet. Start your first analysis above!</p>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* ML Insights */}
+      {mlInsights && (
+        <div className="card">
+          <div className="card-header">
+            <h2 className="card-title">AI-Powered Insights</h2>
+            <p className="card-description">
+              Machine learning recommendations and risk assessment based on real data
+            </p>
+          </div>
+          <div className="card-content">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="font-medium text-gray-900 mb-3">Recommendations</h3>
+                <ul className="space-y-2">
+                  {mlInsights.recommendations.map((rec, index) => (
+                    <li key={index} className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-sm text-gray-600">{rec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-medium text-gray-900 mb-3">Quality Scores</h3>
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Security</span>
+                      <span className="font-medium">{mlInsights.trends.security_score}/10</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div 
+                        className="bg-red-500 h-2 rounded-full" 
+                        style={{ width: `${(mlInsights.trends.security_score / 10) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Quality</span>
+                      <span className="font-medium">{mlInsights.trends.quality_score}/10</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div 
+                        className="bg-yellow-500 h-2 rounded-full" 
+                        style={{ width: `${(mlInsights.trends.quality_score / 10) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>Performance</span>
+                      <span className="font-medium">{mlInsights.trends.performance_score}/10</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div 
+                        className="bg-green-500 h-2 rounded-full" 
+                        style={{ width: `${(mlInsights.trends.performance_score / 10) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

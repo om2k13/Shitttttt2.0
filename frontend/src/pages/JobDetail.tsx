@@ -1,346 +1,761 @@
-import { useEffect, useState } from 'react'
-import { api } from '../lib/api'
-import { useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { useQuery } from '@tanstack/react-query'
+import { 
+  ArrowLeft, 
+  Clock, 
+  CheckCircle, 
+  XCircle, 
+  AlertTriangle, 
+  Info,
+  Download,
+  FileText,
+  Code,
+  Zap,
+  GitBranch,
+  Calendar,
+  ExternalLink,
+  Search,
+  Eye,
+  EyeOff
+} from 'lucide-react'
+import { jobsApi, reportsApi } from '@/lib/api'
+import { cn, formatDate, formatDuration, getSeverityColor, getToolIcon, getSeverityIcon } from '@/lib/utils'
+import { toast } from 'sonner'
 
-export default function JobDetail(){
-  const { id } = useParams()
-  const [job,setJob] = useState<any>()
-  const [report,setReport] = useState<any>({summary:{by_tool:{},by_severity:{}}, findings:[]})
 
-  const load = async()=>{
-    const j = await api.get(`/api/jobs/${id}`); setJob(j.data)
-    const r = await api.get(`/api/reports/${id}`); setReport(r.data)
+export function JobDetail() {
+  const { id: jobId } = useParams<{ id: string }>()
+  const navigate = useNavigate()
+  const [activeTab, setActiveTab] = useState<'overview' | 'findings' | 'metrics' | 'files'>('overview')
+  const [severityFilter, setSeverityFilter] = useState<string>('all')
+  const [toolFilter, setToolFilter] = useState<string>('all')
+  const [searchQuery, setSearchQuery] = useState('')
+  const [showRawFindings, setShowRawFindings] = useState(false)
+
+  // Fetch job details
+  const { data: job, isLoading: jobLoading } = useQuery({
+    queryKey: ['job', jobId],
+    queryFn: async () => {
+      const response = await jobsApi.get(jobId!)
+      return response.data
+    },
+    enabled: !!jobId,
+  })
+
+  // Fetch job findings
+  const { data: findings } = useQuery({
+    queryKey: ['job-findings', jobId],
+    queryFn: async () => {
+      const response = await reportsApi.getJobFindings(jobId!)
+      return response.data
+    },
+    enabled: !!jobId,
+  })
+
+  // Fetch detailed report
+  const { data: detailedReport } = useQuery({
+    queryKey: ['job-report', jobId],
+    queryFn: async () => {
+      const response = await reportsApi.getDetailedReport(jobId!)
+      return response.data
+    },
+    enabled: !!jobId,
+  })
+
+  if (jobLoading) {
+    return (
+      <div className="text-center py-8">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+        <p className="mt-2 text-gray-500">Loading job details...</p>
+      </div>
+    )
   }
-  useEffect(()=>{ const t=setInterval(load, 1500); return ()=>clearInterval(t) }, [id])
 
-  const applyFix = async()=>{
-    await api.post('/api/actions/apply-fix',{job_id:id})
-    alert('Safe autofixes applied! Check the fixed version in .workspaces/[job-id]-fix/')
+  if (!job) {
+    return (
+      <div className="text-center py-8">
+        <XCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
+        <h2 className="text-xl font-semibold text-gray-900 mb-2">Job Not Found</h2>
+        <p className="text-gray-600 mb-4">The requested job could not be found.</p>
+        <button
+          onClick={() => navigate('/jobs')}
+          className="btn-primary"
+        >
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          Back to Jobs
+        </button>
+      </div>
+    )
   }
 
-  // Helper function to get severity color and icon
-  const getSeverityInfo = (severity: string) => {
-    switch(severity.toLowerCase()) {
-      case 'critical': return { color: '#dc3545', icon: '🚨', label: 'Critical' }
-      case 'high': return { color: '#fd7e14', icon: '⚠️', label: 'High' }
-      case 'medium': return { color: '#ffc107', icon: '⚡', label: 'Medium' }
-      case 'low': return { color: '#28a745', icon: '💡', label: 'Low' }
-      default: return { color: '#6c757d', icon: 'ℹ️', label: severity }
-    }
-  }
+  const filteredFindings = findings?.findings?.filter((finding: any) => {
+    const matchesSeverity = severityFilter === 'all' || finding.severity === severityFilter
+    const matchesTool = toolFilter === 'all' || finding.tool === toolFilter
+    const matchesSearch = !searchQuery || 
+      finding.message.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      finding.file_path.toLowerCase().includes(searchQuery.toLowerCase())
+    
+    return matchesSeverity && matchesTool && matchesSearch
+  }) || []
 
-  // Helper function to get tool description
-  const getToolDescription = (tool: string) => {
-    switch(tool.toLowerCase()) {
-      case 'ruff': return 'Python code linter - finds style and quality issues'
-      case 'mypy': return 'Python type checker - finds type-related problems'
-      case 'semgrep': return 'Security scanner - finds security vulnerabilities'
-      case 'bandit': return 'Security linter - finds common security issues'
-      case 'radon': return 'Code complexity analyzer - finds complex functions'
-      default: return 'Code analysis tool'
-    }
-  }
-
-  // Group findings by tool for better organization
-  const groupedFindings = report.findings?.reduce((acc: any, finding: any) => {
-    if (!acc[finding.tool]) acc[finding.tool] = []
-    acc[finding.tool].push(finding)
+  const severityCounts = findings?.findings?.reduce((acc: any, finding: any) => {
+    acc[finding.severity] = (acc[finding.severity] || 0) + 1
     return acc
   }, {}) || {}
 
+  const toolCounts = findings?.findings?.reduce((acc: any, finding: any) => {
+    acc[finding.tool] = (acc[finding.tool] || 0) + 1
+    return acc
+  }, {}) || {}
+
+  const handleDownloadReport = async (format: 'json' | 'csv' | 'pdf') => {
+    try {
+      const response = await reportsApi.download(jobId!, format)
+      // Handle download based on response type
+      if (format === 'json' || format === 'csv') {
+        const blob = new Blob([response.data], { 
+          type: format === 'json' ? 'application/json' : 'text/csv' 
+        })
+        const url = window.URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = `job-${jobId}-report.${format}`
+        a.click()
+        window.URL.revokeObjectURL(url)
+      }
+      toast.success(`${format.toUpperCase()} report downloaded successfully`)
+    } catch (error) {
+      toast.error(`Failed to download ${format.toUpperCase()} report`)
+      console.error('Download error:', error)
+    }
+  }
+
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
-      {/* Header Section */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-        color: 'white', 
-        padding: '30px', 
-        borderRadius: '15px',
-        marginBottom: '30px',
-        textAlign: 'center'
-      }}>
-        <h1 style={{ margin: '0 0 10px 0', fontSize: '2.5em' }}>🔍 Code Review Report</h1>
-        <p style={{ fontSize: '1.2em', margin: '0 0 20px 0', opacity: 0.9 }}>
-          Job ID: {id?.slice(0,8)}...{id?.slice(-8)}
-        </p>
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <button
+            onClick={() => navigate('/jobs')}
+            className="btn-outline btn-sm"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Jobs
+          </button>
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">Job Details</h1>
+            <p className="text-gray-600">Analysis results for {job.repo_url}</p>
+          </div>
+        </div>
         
-        {job && (
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-            <div style={{ background: 'rgba(255,255,255,0.2)', padding: '15px', borderRadius: '10px' }}>
-              <strong>Status:</strong> {job.status === 'completed' ? '✅ Completed' : job.status}
-            </div>
-            <div style={{ background: 'rgba(255,255,255,0.2)', padding: '15px', borderRadius: '10px' }}>
-              <strong>Stage:</strong> {job.current_stage}
-            </div>
-            <div style={{ background: 'rgba(255,255,255,0.2)', padding: '15px', borderRadius: '10px' }}>
-              <strong>Progress:</strong> {job.progress}%
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Action Button */}
-      <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <button 
-          onClick={applyFix}
-          style={{
-            background: '#28a745',
-            color: 'white',
-            border: 'none',
-            padding: '15px 30px',
-            borderRadius: '25px',
-            fontSize: '1.1em',
-            cursor: 'pointer',
-            boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-          onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-        >
-          🚀 Apply Safe Auto-Fixes
-        </button>
-        <p style={{ color: '#666', marginTop: '10px', fontSize: '0.9em' }}>
-          Automatically fixes code style and formatting issues
-        </p>
-      </div>
-
-      {/* Summary Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '30px' }}>
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <h3 style={{ color: '#333', margin: '0 0 15px 0' }}>📊 Total Issues</h3>
-          <div style={{ fontSize: '3em', fontWeight: 'bold', color: '#667eea' }}>
-            {report.summary?.total || 0}
-          </div>
-          <p style={{ color: '#666', margin: '0' }}>Issues found in your code</p>
-        </div>
-
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <h3 style={{ color: '#333', margin: '0 0 15px 0' }}>🛠️ Tools Used</h3>
-          <div style={{ fontSize: '2em', fontWeight: 'bold', color: '#28a745' }}>
-            {Object.keys(report.summary?.by_tool || {}).length}
-          </div>
-          <p style={{ color: '#666', margin: '0' }}>Analysis tools</p>
-        </div>
-
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center' }}>
-          <h3 style={{ color: '#333', margin: '0 0 15px 0' }}>📁 Repository</h3>
-          <div style={{ fontSize: '1.2em', fontWeight: 'bold', color: '#fd7e14', wordBreak: 'break-word' }}>
-            {job?.repo_url || 'N/A'}
-          </div>
-          <p style={{ color: '#666', margin: '0' }}>Analyzed repository</p>
+        <div className="flex items-center space-x-3">
+          <button
+            onClick={() => handleDownloadReport('json')}
+            className="btn-outline btn-sm"
+          >
+            <Download className="h-4 w-4 mr-2" />
+            JSON
+          </button>
+          <button
+            onClick={() => handleDownloadReport('csv')}
+            className="btn-outline btn-sm"
+          >
+            <Download className="h-4 w-4 mr-2" />
+            CSV
+          </button>
         </div>
       </div>
 
-      {/* Severity Breakdown */}
-      {report.summary?.by_severity && Object.keys(report.summary.by_severity).length > 0 && (
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', marginBottom: '30px' }}>
-          <h3 style={{ color: '#333', margin: '0 0 20px 0' }}>🚨 Issues by Severity</h3>
-          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-            {Object.entries(report.summary.by_severity).map(([severity, count]: [string, any]) => {
-              const severityInfo = getSeverityInfo(severity)
-              return (
-                <div key={severity} style={{ 
-                  background: severityInfo.color, 
-                  color: 'white', 
-                  padding: '15px 20px', 
-                  borderRadius: '10px',
-                  textAlign: 'center',
-                  minWidth: '120px'
-                }}>
-                  <div style={{ fontSize: '2em', marginBottom: '5px' }}>{severityInfo.icon}</div>
-                  <div style={{ fontSize: '1.5em', fontWeight: 'bold' }}>{count}</div>
-                  <div style={{ fontSize: '0.9em', opacity: 0.9 }}>{severityInfo.label}</div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* Tool Breakdown */}
-      {report.summary?.by_tool && Object.keys(report.summary.by_tool).length > 0 && (
-        <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', marginBottom: '30px' }}>
-          <h3 style={{ color: '#333', margin: '0 0 20px 0' }}>🔧 Issues by Tool</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px' }}>
-            {Object.entries(report.summary.by_tool).map(([tool, count]: [string, any]) => (
-              <div key={tool} style={{ 
-                background: '#f8f9fa', 
-                padding: '20px', 
-                borderRadius: '10px',
-                border: '2px solid #e9ecef',
-                textAlign: 'center'
-              }}>
-                <div style={{ fontSize: '2em', marginBottom: '10px' }}>
-                  {tool === 'ruff' ? '🐍' : tool === 'mypy' ? '🔍' : tool === 'semgrep' ? '🛡️' : '⚙️'}
-                </div>
-                <div style={{ fontSize: '1.5em', fontWeight: 'bold', color: '#333' }}>{count}</div>
-                <div style={{ fontSize: '1em', color: '#666', marginBottom: '10px' }}>{tool.toUpperCase()}</div>
-                <div style={{ fontSize: '0.8em', color: '#888' }}>{getToolDescription(tool)}</div>
+      {/* Job Status Card */}
+      <div className="card">
+        <div className="card-content">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-blue-600">{job.id}</div>
+              <div className="text-sm text-gray-600">Job ID</div>
+            </div>
+            
+            <div className="text-center">
+              <div className={cn(
+                "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium",
+                job.status === 'completed' ? 'bg-green-100 text-green-800' :
+                job.status === 'running' ? 'bg-blue-100 text-blue-800' :
+                job.status === 'failed' ? 'bg-red-100 text-red-800' :
+                'bg-gray-100 text-gray-800'
+              )}>
+                {job.status === 'completed' && <CheckCircle className="h-4 w-4 mr-1" />}
+                {job.status === 'running' && <Clock className="h-4 w-4 mr-1" />}
+                {job.status === 'failed' && <XCircle className="h-4 w-4 mr-1" />}
+                {job.status === 'pending' && <Clock className="h-4 w-4 mr-1" />}
+                {job.status.charAt(0).toUpperCase() + job.status.slice(1)}
               </div>
-            ))}
+              <div className="text-sm text-gray-600 mt-1">Status</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-2xl font-bold text-purple-600">
+                {findings?.findings?.length || 0}
+              </div>
+              <div className="text-sm text-gray-600">Total Findings</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-2xl font-bold text-orange-600">
+                {'Full Repository'}
+              </div>
+              <div className="text-sm text-gray-600">Analysis Type</div>
+            </div>
           </div>
         </div>
-      )}
+      </div>
 
-      {/* Detailed Findings */}
-      <div style={{ background: 'white', padding: '25px', borderRadius: '15px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}>
-        <h3 style={{ color: '#333', margin: '0 0 20px 0' }}>📋 Detailed Findings</h3>
-        
-        {Object.keys(groupedFindings).length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-            <div style={{ fontSize: '3em', marginBottom: '20px' }}>🎉</div>
-            <h4>No issues found!</h4>
-            <p>Your code looks great! No problems detected.</p>
+      {/* Repository Info */}
+      <div className="card">
+        <div className="card-header">
+          <h2 className="card-title">Repository Information</h2>
+        </div>
+        <div className="card-content">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Repository URL</label>
+              <div className="flex items-center space-x-2">
+                <GitBranch className="h-4 w-4 text-gray-400" />
+                <a
+                  href={job.repo_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 break-all"
+                >
+                  {job.repo_url}
+                </a>
+                <ExternalLink className="h-3 w-3 text-gray-400" />
+              </div>
+            </div>
+            
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Created</label>
+              <div className="flex items-center space-x-2">
+                <Calendar className="h-4 w-4 text-gray-400" />
+                <span>{formatDate(job.created_at)}</span>
+              </div>
+            </div>
+            
+            {job.completed_at && (
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Completed</label>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="h-4 w-4 text-gray-400" />
+                  <span>{formatDate(job.completed_at)}</span>
+                </div>
+              </div>
+            )}
+            
+            {job.completed_at && (
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Duration</label>
+                <div className="flex items-center space-x-2">
+                  <Clock className="h-4 w-4 text-gray-400" />
+                  <span>{formatDuration(new Date(job.created_at), new Date(job.completed_at))}</span>
+                </div>
+              </div>
+            )}
           </div>
-        ) : (
-          Object.entries(groupedFindings).map(([tool, findings]: [string, any]) => (
-            <div key={tool} style={{ marginBottom: '30px' }}>
-              <h4 style={{ 
-                color: '#333', 
-                borderBottom: '2px solid #e9ecef', 
-                paddingBottom: '10px',
-                marginBottom: '20px'
-              }}>
-                {tool === 'ruff' ? '🐍 Ruff (Code Style)' : 
-                 tool === 'mypy' ? '🔍 MyPy (Type Checking)' : 
-                 tool === 'semgrep' ? '🛡️ Semgrep (Security)' : 
-                 `${tool} Issues`}
-              </h4>
-              
-              <div style={{ display: 'grid', gap: '15px' }}>
-                {findings.map((finding: any, idx: number) => {
-                  const severityInfo = getSeverityInfo(finding.severity)
-                  const fileName = finding.file?.split('/').pop() || finding.file
-                  const filePath = finding.file?.replace(/^.*\/backend\//, 'backend/') || finding.file
-                  
-                  return (
-                    <div key={idx} style={{ 
-                      background: '#f8f9fa', 
-                      padding: '20px', 
-                      borderRadius: '10px',
-                      border: `2px solid ${severityInfo.color}`,
-                      borderLeft: `5px solid ${severityInfo.color}`
-                    }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '15px' }}>
-                        <div style={{ 
-                          background: severityInfo.color, 
-                          color: 'white', 
-                          padding: '5px 12px', 
-                          borderRadius: '15px',
-                          fontSize: '0.8em',
-                          fontWeight: 'bold'
-                        }}>
-                          {severityInfo.icon} {severityInfo.label}
-                        </div>
-                        <div style={{ color: '#666', fontSize: '0.9em' }}>
-                          Line {finding.line}
-                        </div>
-                      </div>
-                      
-                      <div style={{ marginBottom: '10px' }}>
-                        <strong style={{ color: '#333' }}>File:</strong> 
-                        <span style={{ 
-                          background: '#e9ecef', 
-                          padding: '3px 8px', 
-                          borderRadius: '5px', 
-                          marginLeft: '10px',
-                          fontFamily: 'monospace',
-                          fontSize: '0.9em'
-                        }}>
-                          {fileName}
-                        </span>
-                      </div>
-                      
-                      <div style={{ marginBottom: '10px' }}>
-                        <strong style={{ color: '#333' }}>Path:</strong> 
-                        <span style={{ 
-                          color: '#666', 
-                          marginLeft: '10px',
-                          fontFamily: 'monospace',
-                          fontSize: '0.9em'
-                        }}>
-                          {filePath}
-                        </span>
-                      </div>
-                      
-                      {finding.rule_id && (
-                        <div style={{ marginBottom: '10px' }}>
-                          <strong style={{ color: '#333' }}>Rule:</strong> 
-                          <span style={{ 
-                            background: '#007bff', 
-                            color: 'white', 
-                            padding: '3px 8px', 
-                            borderRadius: '5px', 
-                            marginLeft: '10px',
-                            fontSize: '0.8em'
-                          }}>
-                            {finding.rule_id}
-                          </span>
-                        </div>
-                      )}
-                      
-                      {finding.message && (
-                        <div style={{ 
-                          background: 'white', 
-                          padding: '15px', 
-                          borderRadius: '8px',
-                          border: '1px solid #e9ecef'
-                        }}>
-                          <strong style={{ color: '#333' }}>Issue:</strong>
-                          <p style={{ margin: '10px 0 0 0', color: '#555', lineHeight: '1.5' }}>
-                            {finding.message}
-                          </p>
-                        </div>
-                      )}
+        </div>
+      </div>
+
+      {/* Tab Navigation */}
+      <div className="border-b border-gray-200">
+        <nav className="-mb-px flex space-x-8">
+          {[
+            { id: 'overview', name: 'Overview', icon: Info },
+            { id: 'findings', name: 'Findings', icon: AlertTriangle },
+            { id: 'metrics', name: 'Metrics', icon: Code },
+            { id: 'files', name: 'Files', icon: FileText },
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id as any)}
+              className={cn(
+                'flex items-center space-x-2 py-2 px-1 border-b-2 font-medium text-sm',
+                activeTab === tab.id
+                  ? 'border-blue-500 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              )}
+            >
+              <tab.icon className="h-4 w-4" />
+              <span>{tab.name}</span>
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* Tab Content */}
+      {activeTab === 'overview' && (
+        <div className="space-y-6">
+          {/* Summary Statistics */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Findings Summary</h2>
+              <p className="card-description">
+                Overview of security and quality issues found
+              </p>
+            </div>
+            <div className="card-content">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {Object.entries(severityCounts).map(([severity, count]) => (
+                  <div key={severity} className="text-center">
+                    <div className={cn(
+                      "text-3xl font-bold mb-2",
+                      getSeverityColor(severity)
+                    )}>
+                      {count as number}
                     </div>
-                  )
-                })}
+                    <div className="flex items-center justify-center space-x-2">
+                      {getSeverityIcon(severity)}
+                      <span className="text-sm font-medium text-gray-700 capitalize">
+                        {severity}
+                      </span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))
-        )}
-      </div>
+          </div>
 
-      {/* Download Section */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)', 
-        color: 'white', 
-        padding: '25px', 
-        borderRadius: '15px',
-        marginTop: '30px',
-        textAlign: 'center'
-      }}>
-        <h3 style={{ margin: '0 0 15px 0' }}>💾 Download Report</h3>
-        <p style={{ margin: '0 0 20px 0', opacity: 0.9 }}>
-          Get a detailed report of all findings in JSON format
-        </p>
-        <button 
-          onClick={() => {
-            const dataStr = JSON.stringify(report, null, 2)
-            const dataBlob = new Blob([dataStr], {type: 'application/json'})
-            const url = URL.createObjectURL(dataBlob)
-            const link = document.createElement('a')
-            link.href = url
-            link.download = `code-review-report-${id?.slice(0,8)}.json`
-            link.click()
-            URL.revokeObjectURL(url)
-          }}
-          style={{
-            background: 'rgba(255,255,255,0.2)',
-            color: 'white',
-            border: '2px solid white',
-            padding: '12px 25px',
-            borderRadius: '25px',
-            fontSize: '1em',
-            cursor: 'pointer',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.3)'}
-          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
-        >
-          📥 Download JSON Report
-        </button>
-      </div>
+          {/* Tool Breakdown */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Analysis Tools</h2>
+              <p className="card-description">
+                Issues found by each security and quality analysis tool
+              </p>
+            </div>
+            <div className="card-content">
+              <div className="space-y-4">
+                {Object.entries(toolCounts).map(([tool, count]) => (
+                  <div key={tool} className="flex items-center justify-between p-3 border border-gray-200 rounded-lg">
+                    <div className="flex items-center space-x-3">
+                      {getToolIcon(tool)}
+                      <span className="font-medium text-gray-900">{tool}</span>
+                    </div>
+                    <div className="text-2xl font-bold text-blue-600">{count as number}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Risk Assessment */}
+          {detailedReport?.risk_assessment && (
+            <div className="card">
+              <div className="card-header">
+                <h2 className="card-title">Risk Assessment</h2>
+                <p className="card-description">
+                  AI-powered risk analysis and recommendations
+                </p>
+              </div>
+              <div className="card-content">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className={cn(
+                      "text-3xl font-bold mb-2",
+                      detailedReport.risk_assessment.overall_risk_score > 7 ? 'text-red-600' :
+                      detailedReport.risk_assessment.overall_risk_score > 4 ? 'text-orange-600' :
+                      'text-green-600'
+                    )}>
+                      {detailedReport.risk_assessment.overall_risk_score}/10
+                    </div>
+                    <div className="text-sm text-gray-600">Overall Risk Score</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600 mb-2">
+                      {detailedReport.risk_assessment.critical_issues_count || 0}
+                    </div>
+                    <div className="text-sm text-gray-600">Critical Issues</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-600 mb-2">
+                      {detailedReport.risk_assessment.recommendations?.length || 0}
+                    </div>
+                    <div className="text-sm text-gray-600">Recommendations</div>
+                  </div>
+                </div>
+                
+                {detailedReport.risk_assessment.recommendations && (
+                  <div className="mt-6">
+                    <h4 className="font-medium text-gray-900 mb-3">Key Recommendations</h4>
+                    <div className="space-y-2">
+                      {detailedReport.risk_assessment.recommendations.slice(0, 3).map((rec: any, index: number) => (
+                        <div key={index} className="flex items-start space-x-3 p-3 bg-blue-50 rounded-lg">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                          <p className="text-sm text-blue-800">{rec}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {activeTab === 'findings' && (
+        <div className="space-y-6">
+          {/* Filters */}
+          <div className="card">
+            <div className="card-content">
+              <div className="flex flex-col md:flex-row gap-4">
+                <div className="flex-1">
+                  <div className="relative">
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+                    <input
+                      type="text"
+                      placeholder="Search findings..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="input w-full pl-10"
+                    />
+                  </div>
+                </div>
+                
+                <select
+                  value={severityFilter}
+                  onChange={(e) => setSeverityFilter(e.target.value)}
+                  className="input"
+                >
+                  <option value="all">All Severities</option>
+                  <option value="critical">Critical</option>
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+                  <option value="low">Low</option>
+                </select>
+                
+                <select
+                  value={toolFilter}
+                  onChange={(e) => setToolFilter(e.target.value)}
+                  className="input"
+                >
+                  <option value="all">All Tools</option>
+                  {Object.keys(toolCounts).map((tool) => (
+                    <option key={tool} value={tool}>{tool}</option>
+                  ))}
+                </select>
+                
+                <button
+                  onClick={() => setShowRawFindings(!showRawFindings)}
+                  className="btn-outline"
+                >
+                  {showRawFindings ? <EyeOff className="h-4 w-4 mr-2" /> : <Eye className="h-4 w-4 mr-2" />}
+                  {showRawFindings ? 'Hide Raw' : 'Show Raw'}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Findings List */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">
+                Findings ({filteredFindings.length})
+              </h2>
+              <p className="card-description">
+                Security and quality issues found during analysis
+              </p>
+            </div>
+            <div className="card-content">
+              {filteredFindings.length > 0 ? (
+                <div className="space-y-4">
+                  {filteredFindings.map((finding: any) => (
+                    <div key={finding.id} className="border border-gray-200 rounded-lg p-4">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <div className="flex items-center space-x-3 mb-2">
+                            {getSeverityIcon(finding.severity)}
+                            <span className={cn(
+                              "px-2 py-1 rounded-full text-xs font-medium",
+                              getSeverityColor(finding.severity)
+                            )}>
+                              {finding.severity.toUpperCase()}
+                            </span>
+                            <span className="text-sm text-gray-500">{finding.tool}</span>
+                          </div>
+                          
+                          <h3 className="font-medium text-gray-900 mb-2">
+                            {finding.message}
+                          </h3>
+                          
+                          <div className="text-sm text-gray-600 mb-3">
+                            <span className="font-medium">File:</span> {finding.file_path}
+                            {finding.line_number && (
+                              <span className="ml-2">
+                                <span className="font-medium">Line:</span> {finding.line_number}
+                              </span>
+                            )}
+                          </div>
+                          
+                          {finding.description && (
+                            <p className="text-sm text-gray-700 mb-3">
+                              {finding.description}
+                            </p>
+                          )}
+                          
+                          {showRawFindings && finding.raw_data && (
+                            <details className="mt-3">
+                              <summary className="cursor-pointer text-sm font-medium text-gray-700 hover:text-gray-900">
+                                Raw Data
+                              </summary>
+                              <pre className="mt-2 p-3 bg-gray-50 rounded text-xs overflow-x-auto">
+                                {JSON.stringify(finding.raw_data, null, 2)}
+                              </pre>
+                            </details>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-8">
+                  <AlertTriangle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500">No findings match the current filters</p>
+                  <p className="text-gray-400 mt-1">Try adjusting your search or filter criteria</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'metrics' && (
+        <div className="space-y-6">
+          {/* Code Quality Metrics */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Code Quality Metrics</h2>
+              <p className="card-description">
+                Automated analysis of code structure and quality
+              </p>
+            </div>
+            <div className="card-content">
+              {detailedReport?.code_quality_metrics ? (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">
+                      {detailedReport.code_quality_metrics.complexity_score || 'N/A'}
+                    </div>
+                    <div className="text-sm text-gray-600">Complexity Score</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-green-600">
+                      {detailedReport.code_quality_metrics.maintainability_index || 'N/A'}
+                    </div>
+                    <div className="text-sm text-gray-600">Maintainability Index</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-600">
+                      {detailedReport.code_quality_metrics.test_coverage || 'N/A'}%
+                    </div>
+                    <div className="text-sm text-gray-600">Test Coverage</div>
+                  </div>
+                </div>
+              ) : (
+                <div className="text-center py-8">
+                  <Code className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500">Code quality metrics not available</p>
+                  <p className="text-gray-400 mt-1">Run a comprehensive analysis to get detailed metrics</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Performance Metrics */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Performance Metrics</h2>
+              <p className="card-description">
+                Analysis of performance-related issues and bottlenecks
+              </p>
+            </div>
+            <div className="card-content">
+              {detailedReport?.performance_metrics ? (
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-orange-600">
+                        {detailedReport.performance_metrics.performance_score || 'N/A'}
+                      </div>
+                      <div className="text-sm text-gray-600">Performance Score</div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-red-600">
+                        {detailedReport.performance_metrics.bottlenecks_count || 0}
+                      </div>
+                      <div className="text-sm text-gray-600">Bottlenecks Found</div>
+                    </div>
+                  </div>
+                  
+                  {detailedReport.performance_metrics.recommendations && (
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-3">Performance Recommendations</h4>
+                      <div className="space-y-2">
+                        {detailedReport.performance_metrics.recommendations.slice(0, 3).map((rec: any, index: number) => (
+                          <div key={index} className="flex items-start space-x-3 p-3 bg-orange-50 rounded-lg">
+                            <Zap className="h-4 w-4 text-orange-600 mt-0.5" />
+                            <p className="text-sm text-orange-800">{rec}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="text-center py-8">
+                  <Zap className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500">Performance metrics not available</p>
+                  <p className="text-gray-400 mt-1">Run a performance analysis to get detailed metrics</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Security Metrics */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Security Metrics</h2>
+              <p className="card-description">
+                Security analysis results and vulnerability assessment
+              </p>
+            </div>
+            <div className="card-content">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-red-600">
+                    {severityCounts.critical || 0}
+                  </div>
+                  <div className="text-sm text-gray-600">Critical</div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-600">
+                    {severityCounts.high || 0}
+                  </div>
+                  <div className="text-sm text-gray-600">High</div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-yellow-600">
+                    {severityCounts.medium || 0}
+                  </div>
+                  <div className="text-sm text-gray-600">Medium</div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600">
+                    {severityCounts.low || 0}
+                  </div>
+                  <div className="text-sm text-gray-600">Low</div>
+                </div>
+              </div>
+              
+              {detailedReport?.security_metrics && (
+                <div className="mt-6">
+                  <h4 className="font-medium text-gray-900 mb-3">Security Assessment</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="text-center">
+                      <div className={cn(
+                        "text-2xl font-bold mb-2",
+                        detailedReport.security_metrics.owasp_score > 7 ? 'text-red-600' :
+                        detailedReport.security_metrics.owasp_score > 4 ? 'text-orange-600' :
+                        'text-green-600'
+                      )}>
+                        {detailedReport.security_metrics.owasp_score}/10
+                      </div>
+                      <div className="text-sm text-gray-600">OWASP Score</div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-purple-600 mb-2">
+                        {detailedReport.security_metrics.vulnerability_types?.length || 0}
+                      </div>
+                      <div className="text-sm text-gray-600">Vulnerability Types</div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activeTab === 'files' && (
+        <div className="space-y-6">
+          {/* Files Analyzed */}
+          <div className="card">
+            <div className="card-header">
+              <h2 className="card-title">Files Analyzed</h2>
+              <p className="card-description">
+                Overview of files processed during the analysis
+              </p>
+            </div>
+            <div className="card-content">
+              {detailedReport?.files_analyzed ? (
+                <div className="space-y-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-blue-600">
+                        {detailedReport.files_analyzed.total_files || 0}
+                      </div>
+                      <div className="text-sm text-gray-600">Total Files</div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-green-600">
+                        {detailedReport.files_analyzed.languages?.length || 0}
+                      </div>
+                      <div className="text-sm text-gray-600">Languages</div>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="text-3xl font-bold text-purple-600">
+                        {detailedReport.files_analyzed.total_lines || 0}
+                      </div>
+                      <div className="text-sm text-gray-600">Total Lines</div>
+                    </div>
+                  </div>
+                  
+                  {detailedReport.files_analyzed.languages && (
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-3">Languages Detected</h4>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {detailedReport.files_analyzed.languages.map((lang: any) => (
+                          <div key={lang.name} className="text-center p-3 border border-gray-200 rounded-lg">
+                            <div className="text-lg font-semibold text-gray-900">{lang.name}</div>
+                            <div className="text-sm text-gray-600">{lang.files_count} files</div>
+                            <div className="text-xs text-gray-500">{lang.lines_count} lines</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="text-center py-8">
+                  <FileText className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <p className="text-gray-500">File analysis details not available</p>
+                  <p className="text-gray-400 mt-1">Run a comprehensive analysis to get file details</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
