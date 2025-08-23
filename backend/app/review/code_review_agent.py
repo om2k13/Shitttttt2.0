@@ -11,6 +11,8 @@ from .enhanced_ml_analyzer import EnhancedMLAnalyzer
 from .safe_neural_analyzer import SafeNeuralAnalyzer
 from .production_ml_analyzer import ProductionMLAnalyzer, analyze_code_with_ml
 from .advanced_ml_capabilities import AdvancedMLCapabilities, analyze_code_advanced
+from .local_llm_enhancer import LocalLLMEnhancer
+from .free_api_llm_enhancer import FreeAPILLMEnhancer
 
 @dataclass
 class CodeReviewFinding:
@@ -50,6 +52,31 @@ class CodeReviewAgent:
         self.production_ml_analyzer = None
         self.advanced_ml_capabilities = None
         print("🧠 ML analyzers will be loaded lazily when needed")
+        
+        # NEW: Initialize Local LLM Enhancer (Qwen2.5-7B)
+        try:
+            self.local_llm_enhancer = LocalLLMEnhancer("qwen2.5-coder:7b")
+            self.llm_enhanced = True
+            print("🧠 Local LLM Enhancer initialized (Qwen2.5-7B)")
+        except Exception as e:
+            self.local_llm_enhancer = None
+            self.llm_enhanced = False
+            print(f"⚠️ Local LLM Enhancer failed to initialize: {e}")
+            print("💡 Make sure Ollama is running with 'ollama serve'")
+        
+        # NEW: Initialize Free API LLM Enhancer (OpenRouter only)
+        try:
+            from ..core.settings import settings
+            self.free_api_llm_enhancer = FreeAPILLMEnhancer(
+                openrouter_token=getattr(settings, 'OPENROUTER_API_KEY', None)
+            )
+            self.free_api_enhanced = True
+            print("🌐 Free API LLM Enhancer initialized (OpenRouter)")
+        except Exception as e:
+            self.free_api_llm_enhancer = None
+            self.free_api_enhanced = False
+            print(f"⚠️ Free API LLM Enhancer failed to initialize: {e}")
+            print("💡 Check your OpenRouter API key in .env file")
         
     async def run_code_review(self, input_data: Optional[Dict] = None) -> Dict[str, Any]:
         """
@@ -113,7 +140,19 @@ class CodeReviewAgent:
             if self.ml_analyzer or self.neural_analyzer:
                 await self._enrich_with_ml_analysis()
             
-            # Enrich findings with LLM if available
+            # NEW: Enhance findings with Local LLM (Qwen2.5-7B)
+            try:
+                await self._enhance_findings_with_local_llm()
+            except Exception as e:
+                print(f"⚠️ Local LLM enhancement failed: {e}")
+            
+            # NEW: Enhance findings with Free API LLM (OpenRouter only)
+            try:
+                await self._enhance_findings_with_free_api_llm()
+            except Exception as e:
+                print(f"⚠️ Free API LLM enhancement failed: {e}")
+            
+            # Enrich findings with LLM if available (legacy)
             if not self.standalone:
                 await self._enrich_with_llm()
             
@@ -1293,6 +1332,207 @@ class CodeReviewAgent:
             json.dump(report, f, indent=2)
         
         print(f"📄 Findings exported to {output_path}")
+    
+    def cleanup(self):
+        """Clean up resources"""
+        if hasattr(self, 'local_llm_enhancer') and self.local_llm_enhancer:
+            self.local_llm_enhancer.cleanup()
+        if hasattr(self, 'free_api_llm_enhancer') and self.free_api_llm_enhancer:
+            # Free API enhancer doesn't need cleanup, but we can log stats
+            print(f"📊 Final Free API LLM Stats: {self.free_api_llm_enhancer.total_requests} requests, {self.free_api_llm_enhancer.successful_requests} successful")
+        print("🧹 Code Review Agent cleaned up")
+    
+    async def _enhance_findings_with_local_llm(self):
+        """Enhance ML findings with local Qwen2.5-7B LLM analysis"""
+        
+        if not self.llm_enhanced or not self.local_llm_enhancer:
+            print("⚠️ Local LLM not available, skipping enhancement")
+            return
+        
+        print("🧠 Enhancing findings with Local LLM (Qwen2.5-7B)...")
+        
+        enhanced_findings = []
+        total_findings = len(self.findings)
+        
+        for i, finding in enumerate(self.findings):
+            try:
+                print(f"   Enhancing finding {i+1}/{total_findings}...")
+                
+                # Get code snippet for the finding
+                file_path = finding.file
+                line_number = finding.line
+                
+                # Extract code context around the finding
+                code_context = await self._extract_code_context(file_path, line_number)
+                
+                if code_context:
+                    # Create finding dict for LLM enhancement
+                    finding_dict = {
+                        "file": finding.file,
+                        "line": finding.line,
+                        "severity": finding.severity,
+                        "category": finding.category,
+                        "message": finding.message,
+                        "suggestion": finding.suggestion
+                    }
+                    
+                    # Enhance with local LLM
+                    enhanced_finding = await self.local_llm_enhancer.enhance_finding(
+                        code_context, finding_dict
+                    )
+                    
+                    if enhanced_finding.get("llm_enhanced"):
+                        # Update the finding with LLM enhancement
+                        finding.suggestion = enhanced_finding.get("ai_explanation", finding.suggestion)
+                        finding.confidence = min(0.95, finding.confidence + 0.1)  # Boost confidence
+                        
+                        print(f"   ✅ Enhanced with LLM (latency: {enhanced_finding.get('latency_ms', 0):.0f}ms)")
+                    else:
+                        print(f"   ⚠️ LLM enhancement failed: {enhanced_finding.get('ai_explanation', 'Unknown error')}")
+                    
+                    enhanced_findings.append(finding)
+                else:
+                    enhanced_findings.append(finding)
+                    
+            except Exception as e:
+                print(f"   ❌ Error enhancing finding: {e}")
+                enhanced_findings.append(finding)
+        
+        # Update findings list
+        self.findings = enhanced_findings
+        
+        # Get performance stats
+        if self.local_llm_enhancer:
+            llm_stats = self.local_llm_enhancer.get_performance_stats()
+            print(f"📊 Local LLM Stats: {llm_stats}")
+        
+        print(f"✅ Enhanced {len(enhanced_findings)} findings with Local LLM")
+    
+    async def _enhance_findings_with_free_api_llm(self):
+        """Enhance ML findings with Free API LLM (OpenRouter only)"""
+        
+        if not self.free_api_enhanced or not self.free_api_llm_enhancer:
+            print("⚠️ Free API LLM not available, skipping enhancement")
+            return
+        
+        print("🌐 Enhancing findings with Free API LLM (OpenRouter)...")
+        
+        enhanced_findings = []
+        total_findings = len(self.findings)
+        
+        for i, finding in enumerate(self.findings):
+            try:
+                print(f"   Enhancing finding {i+1}/{total_findings} with Free API...")
+                
+                # Get code snippet for the finding
+                file_path = finding.file
+                line_number = finding.line
+                
+                # Extract code context around the finding
+                code_context = await self._extract_code_context(file_path, line_number)
+                
+                if code_context:
+                    # Create finding dict for LLM enhancement
+                    finding_dict = {
+                        "file": finding.file,
+                        "line": finding.line,
+                        "severity": finding.severity,
+                        "category": finding.category,
+                        "message": finding.message,
+                        "suggestion": finding.suggestion
+                    }
+                    
+                    # Enhance with free API LLM
+                    enhanced_finding = await self.free_api_llm_enhancer.enhance_finding(
+                        code_context, finding_dict
+                    )
+                    
+                    if enhanced_finding.get("llm_enhanced"):
+                        # Update the finding with LLM enhancement
+                        finding.suggestion = enhanced_finding.get("ai_explanation", finding.suggestion)
+                        finding.confidence = min(0.95, finding.confidence + 0.1)  # Boost confidence
+                        
+                        print(f"   ✅ Enhanced with Free API LLM (latency: {enhanced_finding.get('latency_ms', 0):.0f}ms)")
+                    else:
+                        print(f"   ⚠️ Free API LLM enhancement failed: {enhanced_finding.get('ai_explanation', 'Unknown error')}")
+                    
+                    enhanced_findings.append(finding)
+                else:
+                    enhanced_findings.append(finding)
+                    
+            except Exception as e:
+                print(f"   ❌ Error enhancing finding with Free API: {e}")
+                enhanced_findings.append(finding)
+        
+        # Update findings list
+        self.findings = enhanced_findings
+        
+        # Get performance stats
+        if self.free_api_llm_enhancer:
+            print(f"📊 Free API LLM Stats: {self.free_api_llm_enhancer.total_requests} requests, {self.free_api_llm_enhancer.successful_requests} successful")
+        
+        print(f"✅ Enhanced {len(enhanced_findings)} findings with Free API LLM")
+    
+    def get_llm_status(self) -> Dict[str, Any]:
+        """Get status of all LLM enhancers"""
+        status = {
+            "local_llm": {
+                "available": self.llm_enhanced,
+                "model": "qwen2.5-coder:7b" if self.llm_enhanced else None,
+                "type": "local_ollama"
+            },
+            "free_api_llm": {
+                "available": self.free_api_enhanced,
+                "providers": [],
+                "type": "free_api"
+            }
+        }
+        
+        if self.free_api_enhanced and self.free_api_llm_enhancer:
+            # Get available providers
+            for provider_enum, provider in self.free_api_llm_enhancer.providers.items():
+                status["free_api_llm"]["providers"].append({
+                    "name": provider_enum.value,
+                    "available": True,
+                    "current": provider_enum == self.free_api_llm_enhancer.current_provider
+                })
+        
+        return status
+    
+    async def _extract_code_context(self, file_path: str, line_number: int) -> Optional[str]:
+        """Extract code context around a specific line"""
+        try:
+            full_path = self.repo_path / file_path
+            if not full_path.exists():
+                return None
+            
+            with open(full_path, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            
+            # Extract context around the line (3 lines before, 2 lines after)
+            start_line = max(0, line_number - 4)  # -4 because line numbers are 1-indexed
+            end_line = min(len(lines), line_number + 1)
+            
+            context_lines = lines[start_line:end_line]
+            return ''.join(context_lines)
+            
+        except Exception as e:
+            print(f"Warning: Could not extract code context for {file_path}:{line_number}: {e}")
+            return None
+    
+    def get_llm_status(self) -> Dict[str, Any]:
+        """Get status of Local LLM integration"""
+        if not self.llm_enhanced or not self.local_llm_enhancer:
+            return {
+                "status": "not_available",
+                "error": "Local LLM not initialized"
+            }
+        
+        return {
+            "status": "available",
+            "model_info": self.local_llm_enhancer.get_model_status(),
+            "performance": self.local_llm_enhancer.get_performance_stats()
+        }
     
     async def export_findings_to_markdown(self, output_path: str) -> None:
         """Export findings to Markdown file"""
