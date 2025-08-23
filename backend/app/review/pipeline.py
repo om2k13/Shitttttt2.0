@@ -65,11 +65,32 @@ async def run_review(job_id: str):
     print(f"🔍 Running Bandit security analysis...")
     rc, out, err = run_cmd(["bandit","-q","-r",".","-f","json"], repo_path)
     print(f"   Bandit exit code: {rc}, output length: {len(out)}, errors: {len(err)}")
-    if rc == 0 and out.strip():
+    
+    # Bandit exit codes: 0 = no issues, 1 = issues found, 2 = error
+    if rc == 0:
+        if out.strip():
+            try:
+                data = json.loads(out)
+                findings_count = len(data.get("results", []))
+                print(f"   Found {findings_count} Bandit issues")
+                for issue in data.get("results", []):
+                    await add("bandit", [{
+                        "severity": _severity_map(issue.get("issue_severity","LOW")),
+                        "file": issue.get("filename"),
+                        "line": issue.get("line_number"),
+                        "rule_id": issue.get("test_id"),
+                        "message": issue.get("issue_text"),
+                    }])
+            except Exception as e:
+                print(f"   Error parsing Bandit output: {e}")
+        else:
+            print("   ✅ Bandit found no security issues")
+    elif rc == 1 and out.strip():
+        # Exit code 1 means issues were found (this is good!)
         try:
             data = json.loads(out)
             findings_count = len(data.get("results", []))
-            print(f"   Found {findings_count} Bandit issues")
+            print(f"   ✅ Found {findings_count} Bandit security issues")
             for issue in data.get("results", []):
                 await add("bandit", [{
                     "severity": _severity_map(issue.get("issue_severity","LOW")),
@@ -80,27 +101,64 @@ async def run_review(job_id: str):
                 }])
         except Exception as e:
             print(f"   Error parsing Bandit output: {e}")
+    elif rc == 1 and not out.strip():
+        print("   ⚠️ Bandit found issues but produced no output")
+    elif rc == 2:
+        print(f"   ❌ Bandit failed to run: {err}")
     else:
-        print(f"   Bandit failed or no output: rc={rc}, err={err}")
+        print(f"   ⚠️ Unexpected Bandit result: rc={rc}, output_length={len(out)}")
 
     # --- Semgrep ---
+    print(f"🔍 Running Semgrep security analysis...")
     rc, out, err = run_cmd(["semgrep","--quiet","--json","--error","--timeout","0","--config","p/ci"], repo_path)
-    if out.strip():
+    print(f"   Semgrep exit code: {rc}, output length: {len(out)}, errors: {len(err)}")
+    
+    # Semgrep exit codes: 0 = no issues, 1 = issues found, 2 = error
+    if rc == 0:
+        if out.strip():
+            try:
+                data = json.loads(out)
+                findings_count = len(data.get("results", []))
+                print(f"   Found {findings_count} Semgrep issues")
+                for r in data.get("results", []):
+                    await add("semgrep", [{
+                        "severity": r.get("extra",{}).get("severity","LOW"),
+                        "file": r.get("path"),
+                        "line": r.get("start",{}).get("line"),
+                        "rule_id": r.get("check_id"),
+                        "message": r.get("extra",{}).get("message"),
+                    }])
+            except Exception as e:
+                print(f"   Error parsing Semgrep output: {e}")
+        else:
+            print("   ✅ Semgrep found no security issues")
+    elif rc == 1 and out.strip():
+        # Exit code 1 means issues were found (this is good!)
         try:
             data = json.loads(out)
+            findings_count = len(data.get("results", []))
+            print(f"   ✅ Found {findings_count} Semgrep security issues")
             for r in data.get("results", []):
                 await add("semgrep", [{
                     "severity": r.get("extra",{}).get("severity","LOW"),
                     "file": r.get("path"),
                     "line": r.get("start",{}).get("line"),
-                    "rule_id": r.get("check_id"),
-                    "message": r.get("extra",{}).get("message"),
+                        "rule_id": r.get("check_id"),
+                        "message": r.get("extra",{}).get("message"),
                 }])
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"   Error parsing Semgrep output: {e}")
+    elif rc == 1 and not out.strip():
+        print("   ⚠️ Semgrep found issues but produced no output")
+    elif rc == 2:
+        print(f"   ❌ Semgrep failed to run: {err}")
+    else:
+        print(f"   ⚠️ Unexpected Semgrep result: rc={rc}, output_length={len(out)}")
 
     # --- detect-secrets ---
+    print(f"🔍 Running detect-secrets scan...")
     rc, out, err = run_cmd(["detect-secrets","scan","--all-files","--json"], repo_path)
+    print(f"   detect-secrets exit code: {rc}, output length: {len(out)}, errors: {len(err)}")
     if out.strip():
         try:
             data = json.loads(out)
@@ -123,7 +181,9 @@ async def run_review(job_id: str):
             req_file = cand
             break
     if req_file:
+        print(f"🔍 Running pip-audit dependency scan...")
         rc, out, err = run_cmd(["pip-audit","-r",req_file,"--format","json"], repo_path)
+        print(f"   pip-audit exit code: {rc}, output length: {len(out)}, errors: {len(err)}")
         if out.strip():
             try:
                 data = json.loads(out)
@@ -143,7 +203,9 @@ async def run_review(job_id: str):
                 pass
 
     # --- ruff (lint) ---
+    print(f"🔍 Running ruff code quality analysis...")
     rc, out, err = run_cmd(["ruff","check","--output-format","json","."], repo_path)
+    print(f"   ruff exit code: {rc}, output length: {len(out)}, errors: {len(err)}")
     if out.strip():
         try:
             data = json.loads(out)
