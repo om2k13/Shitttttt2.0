@@ -1,0 +1,18 @@
+{
+  "training_data_source": "REAL_INDUSTRY_DATASETS",
+  "datasets_used": [
+    "debian_cve",
+    "quality_rules"
+  ],
+  "total_samples": 2023,
+  "features_extracted": 9,
+  "training_date": "2025-08-23T15:19:27.689524",
+  "data_sources": {
+    "vuldeepecker_samples": 0,
+    "nvd_cve_samples": 0,
+    "debian_cve_samples": 52512,
+    "mitre_cwe_samples": 0,
+    "quality_rules": 1023,
+    "code_analysis_samples": 0
+  }
+}

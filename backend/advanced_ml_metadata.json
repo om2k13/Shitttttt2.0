@@ -1,0 +1,16 @@
+{
+  "models_trained": [
+    "complexity_predictor",
+    "maintainability_scorer",
+    "technical_debt_estimator",
+    "code_smell_detector"
+  ],
+  "training_date": "2025-08-23T15:19:27.688404",
+  "feature_count": 9,
+  "model_types": {
+    "complexity_predictor": "PyTorch Neural Network",
+    "maintainability_scorer": "PyTorch Neural Network",
+    "technical_debt_estimator": "Random Forest Regressor",
+    "code_smell_detector": "Random Forest Classifier"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "total_real_samples": 120510,
+  "total_security_samples": 120315,
+  "total_quality_rules": 195,
+  "datasets": {
+    "vuldeepecker": {
+      "count": 16180,
+      "type": "security_samples",
+      "source": "VulDeePecker Dataset"
+    },
+    "nist_nvd_cve": {
+      "count": 50000,
+      "type": "security_samples",
+      "source": "NIST National Vulnerability Database"
+    },
+    "mitre_cwe": {
+      "count": 1623,
+      "type": "security_samples",
+      "source": "MITRE Common Weakness Enumeration"
+    },
+    "debian_cve": {
+      "count": 52512,
+      "type": "security_samples",
+      "source": "Debian Security Tracker"
+    },
+    "eslint_rules": {
+      "count": 55,
+      "type": "quality_rules",
+      "source": "ESLint Security Rules"
+    },
+    "bandit_rules": {
+      "count": 60,
+      "type": "quality_rules",
+      "source": "Bandit Security Rules"
+    },
+    "codeql_rules": {
+      "count": 70,
+      "type": "quality_rules",
+      "source": "GitHub CodeQL Security Queries"
+    },
+    "owasp_top10": {
+      "count": 10,
+      "type": "quality_rules",
+      "source": "OWASP Top 10 2021"
+    }
+  },
+  "industry_standards": {
+    "security_samples_target": 50000,
+    "security_samples_achieved": 120315,
+    "security_samples_status": "EXCEEDED",
+    "quality_rules_target": 1000,
+    "quality_rules_achieved": 195,
+    "quality_rules_status": "INCOMPLETE"
+  },
+  "official_sources": [
+    "VulDeePecker Academic Dataset",
+    "NIST National Vulnerability Database",
+    "MITRE Common Weakness Enumeration",
+    "Debian Security Tracker",
+    "ESLint Security Rules",
+    "Bandit Security Rules",
+    "GitHub CodeQL Security Queries",
+    "OWASP Top 10 2021"
+  ]
+}

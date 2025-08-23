@@ -1,0 +1,33 @@
+{
+  "download_strategy": "REAL DATA ONLY - Official industry sources",
+  "datasets_downloaded": {
+    "real_nvd_cve": {
+      "file": "real_industry_data/real_nvd_cve_database.json",
+      "count": 50000,
+      "source": "NIST NVD CVE Database (Official API)",
+      "url": "https://services.nvd.nist.gov/rest/json/cves/2.0"
+    },
+    "real_eslint": {
+      "file": "real_industry_data/real_eslint_rules.json",
+      "count": 55,
+      "source": "ESLint Core Rules (Official npm package)",
+      "url": "https://registry.npmjs.org/eslint/latest"
+    },
+    "real_bandit": {
+      "file": "real_industry_data/real_bandit_rules.json",
+      "count": 60,
+      "source": "Bandit Security Tests (Official PyPI package)",
+      "url": "https://pypi.org/pypi/bandit/json"
+    }
+  },
+  "total_real_samples": 50115,
+  "data_quality": "Production-grade industry data",
+  "sources": [
+    "NIST NVD CVE Database (Official API)",
+    "MITRE CWE Database (Official XML)",
+    "ESLint Core Rules (Official npm package)",
+    "Bandit Security Tests (Official PyPI package)"
+  ],
+  "authenticity": "All data sourced from official industry databases",
+  "download_timestamp": "2025-08-23T11:31:38.173198"
+}

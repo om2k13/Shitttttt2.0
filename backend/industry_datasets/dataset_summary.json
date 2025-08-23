@@ -1,0 +1,12 @@
+{
+  "github_security": {
+    "file": "industry_datasets/github_security_advisories.json",
+    "count": 41,
+    "source": "GitHub Security API"
+  },
+  "vuldeepecker": {
+    "file": "industry_datasets/vuldeepecker_processed.json",
+    "count": 16180,
+    "source": "VulDeePecker"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "security_patterns": [
+    {
+      "pattern": "sql_injection",
+      "examples": [
+        "query = f\"SELECT * FROM users WHERE id = {user_input}\"",
+        "query = \"SELECT * FROM users WHERE username='\" + username + \"'\"",
+        "cursor.execute(\"SELECT * FROM users WHERE id = \" + user_id)"
+      ],
+      "severity": "critical",
+      "cwe": "CWE-89",
+      "description": "SQL injection via string concatenation",
+      "remediation": "Use parameterized queries or ORM"
+    },
+    {
+      "pattern": "xss_vulnerability",
+      "examples": [
+        "innerHTML = user_input",
+        "document.write(user_input)",
+        "element.innerHTML = user_input"
+      ],
+      "severity": "high",
+      "cwe": "CWE-79",
+      "description": "Cross-site scripting via innerHTML",
+      "remediation": "Use textContent or proper escaping"
+    },
+    {
+      "pattern": "command_injection",
+      "examples": [
+        "os.system(user_input)",
+        "subprocess.call(user_input, shell=True)",
+        "subprocess.Popen(user_input, shell=True)"
+      ],
+      "severity": "critical",
+      "cwe": "CWE-78",
+      "description": "Command injection via os.system",
+      "remediation": "Use subprocess with shell=False"
+    },
+    {
+      "pattern": "path_traversal",
+      "examples": [
+        "open(user_input)",
+        "with open(user_input, 'r') as f:",
+        "file_path = user_input"
+      ],
+      "severity": "high",
+      "cwe": "CWE-22",
+      "description": "Path traversal vulnerability",
+      "remediation": "Validate and sanitize file paths"
+    },
+    {
+      "pattern": "deserialization_vulnerability",
+      "examples": [
+        "pickle.loads(user_input)",
+        "yaml.load(user_input)",
+        "json.loads(user_input)"
+      ],
+      "severity": "high",
+      "cwe": "CWE-502",
+      "description": "Insecure deserialization",
+      "remediation": "Use safe deserialization methods"
+    },
+    {
+      "pattern": "hardcoded_credentials",
+      "examples": [
+        "password = 'admin123'",
+        "api_key = 'sk-1234567890abcdef'",
+        "secret = 'mysecretkey'"
+      ],
+      "severity": "medium",
+      "cwe": "CWE-259",
+      "description": "Hardcoded credentials",
+      "remediation": "Use environment variables or secure vaults"
+    },
+    {
+      "pattern": "weak_cryptography",
+      "examples": [
+        "hashlib.md5(password)",
+        "hashlib.sha1(password)",
+        "random.randint(1, 100)"
+      ],
+      "severity": "medium",
+      "cwe": "CWE-327",
+      "description": "Weak cryptographic algorithms",
+      "remediation": "Use strong algorithms like SHA-256, bcrypt"
+    }
+  ],
+  "quality_patterns": [
+    {
+      "pattern": "long_function",
+      "threshold": 20,
+      "severity": "medium",
+      "description": "Function exceeds 20 lines",
+      "impact": "Reduced readability and maintainability"
+    },
+    {
+      "pattern": "high_complexity",
+      "threshold": 10,
+      "severity": "major",
+      "description": "Cyclomatic complexity exceeds 10",
+      "impact": "Hard to understand and test"
+    },
+    {
+      "pattern": "deep_nesting",
+      "threshold": 4,
+      "severity": "medium",
+      "description": "Nesting depth exceeds 4 levels",
+      "impact": "Code becomes hard to follow"
+    },
+    {
+      "pattern": "many_parameters",
+      "threshold": 5,
+      "severity": "major",
+      "description": "Function has more than 5 parameters",
+      "impact": "Hard to use and maintain"
+    },
+    {
+      "pattern": "unused_variables",
+      "severity": "minor",
+      "description": "Unused local variables",
+      "impact": "Code clutter and confusion"
+    },
+    {
+      "pattern": "magic_numbers",
+      "severity": "minor",
+      "description": "Magic numbers in code",
+      "impact": "Unclear business logic"
+    },
+    {
+      "pattern": "duplicate_code",
+      "severity": "major",
+      "description": "Code duplication detected",
+      "impact": "Maintenance overhead and bugs"
+    }
+  ]
+}

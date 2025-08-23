@@ -838,7 +838,7 @@ async def run_comprehensive_analysis_task(
         
         # Clone repository and run enhanced pipeline
         from ..core.vcs import clone_repo
-        from ..review.enhanced_pipeline import run_enhanced_review
+        from ..review.pipeline import run_review
         from pathlib import Path
         import tempfile
         
@@ -846,11 +846,8 @@ async def run_comprehensive_analysis_task(
             repo_path = Path(temp_dir) / "repo"
             await clone_repo(repo_url, repo_path)
             
-            # Run enhanced pipeline with code review
-            pipeline_results = await run_enhanced_review(
-                job_id=str(job_id),
-                include_code_review=True
-            )
+            # Run pipeline with ML analysis
+            pipeline_results = await run_review(str(job_id))
             
             # Update job status and store results
             async with get_session() as session:

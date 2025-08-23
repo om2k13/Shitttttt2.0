@@ -1,0 +1,1969 @@
+[
+  {
+    "rule_id": "eslint-accessor-pairs",
+    "name": "accessor-pairs",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: accessor-pairs",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-array-bracket-newline",
+    "name": "array-bracket-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: array-bracket-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-array-bracket-spacing",
+    "name": "array-bracket-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: array-bracket-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-array-callback-return",
+    "name": "array-callback-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: array-callback-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-array-element-newline",
+    "name": "array-element-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: array-element-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-arrow-body-style",
+    "name": "arrow-body-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: arrow-body-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-arrow-parens",
+    "name": "arrow-parens",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: arrow-parens",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-arrow-spacing",
+    "name": "arrow-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: arrow-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-block-scoped-var",
+    "name": "block-scoped-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: block-scoped-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-block-spacing",
+    "name": "block-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: block-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-brace-style",
+    "name": "brace-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: brace-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-callback-return",
+    "name": "callback-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: callback-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-capitalized-comments",
+    "name": "capitalized-comments",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: capitalized-comments",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-class-methods-use-this",
+    "name": "class-methods-use-this",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: class-methods-use-this",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-comma-dangle",
+    "name": "comma-dangle",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: comma-dangle",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-comma-spacing",
+    "name": "comma-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: comma-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-comma-style",
+    "name": "comma-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: comma-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-computed-property-spacing",
+    "name": "computed-property-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: computed-property-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-consistent-return",
+    "name": "consistent-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: consistent-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-consistent-this",
+    "name": "consistent-this",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: consistent-this",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-constructor-super",
+    "name": "constructor-super",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: constructor-super",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-default-case",
+    "name": "default-case",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: default-case",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-default-case-last",
+    "name": "default-case-last",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: default-case-last",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-default-param-last",
+    "name": "default-param-last",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: default-param-last",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-dot-location",
+    "name": "dot-location",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: dot-location",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-dot-notation",
+    "name": "dot-notation",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: dot-notation",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-eol-last",
+    "name": "eol-last",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: eol-last",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-for-direction",
+    "name": "for-direction",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: for-direction",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-func-call-spacing",
+    "name": "func-call-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: func-call-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-func-name-matching",
+    "name": "func-name-matching",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: func-name-matching",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-func-names",
+    "name": "func-names",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: func-names",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-func-style",
+    "name": "func-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: func-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-function-call-argument-newline",
+    "name": "function-call-argument-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: function-call-argument-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-function-paren-newline",
+    "name": "function-paren-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: function-paren-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-generator-star-spacing",
+    "name": "generator-star-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: generator-star-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-getter-return",
+    "name": "getter-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: getter-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-global-require",
+    "name": "global-require",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: global-require",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-grouped-accessor-pairs",
+    "name": "grouped-accessor-pairs",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: grouped-accessor-pairs",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-guard-for-in",
+    "name": "guard-for-in",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: guard-for-in",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-handle-callback-err",
+    "name": "handle-callback-err",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: handle-callback-err",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-id-blacklist",
+    "name": "id-blacklist",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: id-blacklist",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-id-denylist",
+    "name": "id-denylist",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: id-denylist",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-id-length",
+    "name": "id-length",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: id-length",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-id-match",
+    "name": "id-match",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: id-match",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-implicit-arrow-linebreak",
+    "name": "implicit-arrow-linebreak",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: implicit-arrow-linebreak",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-indent-legacy",
+    "name": "indent-legacy",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: indent-legacy",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-init-declarations",
+    "name": "init-declarations",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: init-declarations",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-jsx-quotes",
+    "name": "jsx-quotes",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: jsx-quotes",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-key-spacing",
+    "name": "key-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: key-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-keyword-spacing",
+    "name": "keyword-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: keyword-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-line-comment-position",
+    "name": "line-comment-position",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: line-comment-position",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-linebreak-style",
+    "name": "linebreak-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: linebreak-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-lines-around-comment",
+    "name": "lines-around-comment",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: lines-around-comment",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-lines-around-directive",
+    "name": "lines-around-directive",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: lines-around-directive",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-lines-between-class-members",
+    "name": "lines-between-class-members",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: lines-between-class-members",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-logical-assignment-operators",
+    "name": "logical-assignment-operators",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: logical-assignment-operators",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-classes-per-file",
+    "name": "max-classes-per-file",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-classes-per-file",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-depth",
+    "name": "max-depth",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-depth",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-len",
+    "name": "max-len",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-len",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-lines",
+    "name": "max-lines",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-lines",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-lines-per-function",
+    "name": "max-lines-per-function",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-lines-per-function",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-nested-callbacks",
+    "name": "max-nested-callbacks",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-nested-callbacks",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-params",
+    "name": "max-params",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-params",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-statements",
+    "name": "max-statements",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-statements",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-max-statements-per-line",
+    "name": "max-statements-per-line",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: max-statements-per-line",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-multiline-comment-style",
+    "name": "multiline-comment-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: multiline-comment-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-multiline-ternary",
+    "name": "multiline-ternary",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: multiline-ternary",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-new-cap",
+    "name": "new-cap",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: new-cap",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-new-parens",
+    "name": "new-parens",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: new-parens",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-newline-after-var",
+    "name": "newline-after-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: newline-after-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-newline-before-return",
+    "name": "newline-before-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: newline-before-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-newline-per-chained-call",
+    "name": "newline-per-chained-call",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: newline-per-chained-call",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-alert",
+    "name": "no-alert",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-alert",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-array-constructor",
+    "name": "no-array-constructor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-array-constructor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-async-promise-executor",
+    "name": "no-async-promise-executor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-async-promise-executor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-await-in-loop",
+    "name": "no-await-in-loop",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-await-in-loop",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-bitwise",
+    "name": "no-bitwise",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-bitwise",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-buffer-constructor",
+    "name": "no-buffer-constructor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-buffer-constructor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-caller",
+    "name": "no-caller",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-caller",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-case-declarations",
+    "name": "no-case-declarations",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-case-declarations",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-catch-shadow",
+    "name": "no-catch-shadow",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-catch-shadow",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-class-assign",
+    "name": "no-class-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-class-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-compare-neg-zero",
+    "name": "no-compare-neg-zero",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-compare-neg-zero",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-cond-assign",
+    "name": "no-cond-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-cond-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-confusing-arrow",
+    "name": "no-confusing-arrow",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-confusing-arrow",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-console",
+    "name": "no-console",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-console",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-const-assign",
+    "name": "no-const-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-const-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-constant-binary-expression",
+    "name": "no-constant-binary-expression",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-constant-binary-expression",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-constant-condition",
+    "name": "no-constant-condition",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-constant-condition",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-constructor-return",
+    "name": "no-constructor-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-constructor-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-continue",
+    "name": "no-continue",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-continue",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-control-regex",
+    "name": "no-control-regex",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-control-regex",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-debugger",
+    "name": "no-debugger",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-debugger",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-delete-var",
+    "name": "no-delete-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-delete-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-div-regex",
+    "name": "no-div-regex",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-div-regex",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-dupe-args",
+    "name": "no-dupe-args",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-dupe-args",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-dupe-class-members",
+    "name": "no-dupe-class-members",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-dupe-class-members",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-dupe-else-if",
+    "name": "no-dupe-else-if",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-dupe-else-if",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-dupe-keys",
+    "name": "no-dupe-keys",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-dupe-keys",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-duplicate-case",
+    "name": "no-duplicate-case",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-duplicate-case",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-duplicate-imports",
+    "name": "no-duplicate-imports",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-duplicate-imports",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-else-return",
+    "name": "no-else-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-else-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-empty",
+    "name": "no-empty",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-empty",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-empty-character-class",
+    "name": "no-empty-character-class",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-empty-character-class",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-empty-function",
+    "name": "no-empty-function",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-empty-function",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-empty-pattern",
+    "name": "no-empty-pattern",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-empty-pattern",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-empty-static-block",
+    "name": "no-empty-static-block",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-empty-static-block",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-eq-null",
+    "name": "no-eq-null",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-eq-null",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-eval",
+    "name": "no-eval",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-eval",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-ex-assign",
+    "name": "no-ex-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-ex-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extend-native",
+    "name": "no-extend-native",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extend-native",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extra-bind",
+    "name": "no-extra-bind",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extra-bind",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extra-boolean-cast",
+    "name": "no-extra-boolean-cast",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extra-boolean-cast",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extra-label",
+    "name": "no-extra-label",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extra-label",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extra-parens",
+    "name": "no-extra-parens",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extra-parens",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-extra-semi",
+    "name": "no-extra-semi",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-extra-semi",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-fallthrough",
+    "name": "no-fallthrough",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-fallthrough",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-floating-decimal",
+    "name": "no-floating-decimal",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-floating-decimal",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-func-assign",
+    "name": "no-func-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-func-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-global-assign",
+    "name": "no-global-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-global-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-implicit-coercion",
+    "name": "no-implicit-coercion",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-implicit-coercion",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-implicit-globals",
+    "name": "no-implicit-globals",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-implicit-globals",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-implied-eval",
+    "name": "no-implied-eval",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-implied-eval",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-import-assign",
+    "name": "no-import-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-import-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-inline-comments",
+    "name": "no-inline-comments",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-inline-comments",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-inner-declarations",
+    "name": "no-inner-declarations",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-inner-declarations",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-invalid-regexp",
+    "name": "no-invalid-regexp",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-invalid-regexp",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-invalid-this",
+    "name": "no-invalid-this",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-invalid-this",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-irregular-whitespace",
+    "name": "no-irregular-whitespace",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-irregular-whitespace",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-iterator",
+    "name": "no-iterator",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-iterator",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-label-var",
+    "name": "no-label-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-label-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-labels",
+    "name": "no-labels",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-labels",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-lone-blocks",
+    "name": "no-lone-blocks",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-lone-blocks",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-lonely-if",
+    "name": "no-lonely-if",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-lonely-if",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-loop-func",
+    "name": "no-loop-func",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-loop-func",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-loss-of-precision",
+    "name": "no-loss-of-precision",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-loss-of-precision",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-magic-numbers",
+    "name": "no-magic-numbers",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-magic-numbers",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-misleading-character-class",
+    "name": "no-misleading-character-class",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-misleading-character-class",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-mixed-operators",
+    "name": "no-mixed-operators",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-mixed-operators",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-mixed-requires",
+    "name": "no-mixed-requires",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-mixed-requires",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-mixed-spaces-and-tabs",
+    "name": "no-mixed-spaces-and-tabs",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-mixed-spaces-and-tabs",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-multi-assign",
+    "name": "no-multi-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-multi-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-multi-spaces",
+    "name": "no-multi-spaces",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-multi-spaces",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-multi-str",
+    "name": "no-multi-str",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-multi-str",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-multiple-empty-lines",
+    "name": "no-multiple-empty-lines",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-multiple-empty-lines",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-native-reassign",
+    "name": "no-native-reassign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-native-reassign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-negated-condition",
+    "name": "no-negated-condition",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-negated-condition",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-negated-in-lhs",
+    "name": "no-negated-in-lhs",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-negated-in-lhs",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-nested-ternary",
+    "name": "no-nested-ternary",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-nested-ternary",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new",
+    "name": "no-new",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-func",
+    "name": "no-new-func",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-func",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-native-nonconstructor",
+    "name": "no-new-native-nonconstructor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-native-nonconstructor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-object",
+    "name": "no-new-object",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-object",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-require",
+    "name": "no-new-require",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-require",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-symbol",
+    "name": "no-new-symbol",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-symbol",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-new-wrappers",
+    "name": "no-new-wrappers",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-new-wrappers",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-nonoctal-decimal-escape",
+    "name": "no-nonoctal-decimal-escape",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-nonoctal-decimal-escape",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-obj-calls",
+    "name": "no-obj-calls",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-obj-calls",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-object-constructor",
+    "name": "no-object-constructor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-object-constructor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-octal",
+    "name": "no-octal",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-octal",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-octal-escape",
+    "name": "no-octal-escape",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-octal-escape",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-param-reassign",
+    "name": "no-param-reassign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-param-reassign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-path-concat",
+    "name": "no-path-concat",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-path-concat",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-plusplus",
+    "name": "no-plusplus",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-plusplus",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-process-env",
+    "name": "no-process-env",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-process-env",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-process-exit",
+    "name": "no-process-exit",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-process-exit",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-promise-executor-return",
+    "name": "no-promise-executor-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-promise-executor-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-proto",
+    "name": "no-proto",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-proto",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-prototype-builtins",
+    "name": "no-prototype-builtins",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-prototype-builtins",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-redeclare",
+    "name": "no-redeclare",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-redeclare",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-regex-spaces",
+    "name": "no-regex-spaces",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-regex-spaces",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-exports",
+    "name": "no-restricted-exports",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-exports",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-globals",
+    "name": "no-restricted-globals",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-globals",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-imports",
+    "name": "no-restricted-imports",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-imports",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-modules",
+    "name": "no-restricted-modules",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-modules",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-properties",
+    "name": "no-restricted-properties",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-properties",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-restricted-syntax",
+    "name": "no-restricted-syntax",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-restricted-syntax",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-return-assign",
+    "name": "no-return-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-return-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-return-await",
+    "name": "no-return-await",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-return-await",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-script-url",
+    "name": "no-script-url",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-script-url",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-self-assign",
+    "name": "no-self-assign",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-self-assign",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-self-compare",
+    "name": "no-self-compare",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-self-compare",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-sequences",
+    "name": "no-sequences",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-sequences",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-setter-return",
+    "name": "no-setter-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-setter-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-shadow",
+    "name": "no-shadow",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-shadow",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-shadow-restricted-names",
+    "name": "no-shadow-restricted-names",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-shadow-restricted-names",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-spaced-func",
+    "name": "no-spaced-func",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-spaced-func",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-sparse-arrays",
+    "name": "no-sparse-arrays",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-sparse-arrays",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-sync",
+    "name": "no-sync",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-sync",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-tabs",
+    "name": "no-tabs",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-tabs",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-template-curly-in-string",
+    "name": "no-template-curly-in-string",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-template-curly-in-string",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-ternary",
+    "name": "no-ternary",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-ternary",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-this-before-super",
+    "name": "no-this-before-super",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-this-before-super",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-throw-literal",
+    "name": "no-throw-literal",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-throw-literal",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-trailing-spaces",
+    "name": "no-trailing-spaces",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-trailing-spaces",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unassigned-vars",
+    "name": "no-unassigned-vars",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unassigned-vars",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-undef",
+    "name": "no-undef",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-undef",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-undef-init",
+    "name": "no-undef-init",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-undef-init",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-undefined",
+    "name": "no-undefined",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-undefined",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-underscore-dangle",
+    "name": "no-underscore-dangle",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-underscore-dangle",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unexpected-multiline",
+    "name": "no-unexpected-multiline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unexpected-multiline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unmodified-loop-condition",
+    "name": "no-unmodified-loop-condition",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unmodified-loop-condition",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unneeded-ternary",
+    "name": "no-unneeded-ternary",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unneeded-ternary",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unreachable",
+    "name": "no-unreachable",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unreachable",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unreachable-loop",
+    "name": "no-unreachable-loop",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unreachable-loop",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unsafe-finally",
+    "name": "no-unsafe-finally",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unsafe-finally",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unsafe-negation",
+    "name": "no-unsafe-negation",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unsafe-negation",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unsafe-optional-chaining",
+    "name": "no-unsafe-optional-chaining",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unsafe-optional-chaining",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unused-expressions",
+    "name": "no-unused-expressions",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unused-expressions",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unused-labels",
+    "name": "no-unused-labels",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unused-labels",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unused-private-class-members",
+    "name": "no-unused-private-class-members",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unused-private-class-members",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-unused-vars",
+    "name": "no-unused-vars",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-unused-vars",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-use-before-define",
+    "name": "no-use-before-define",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-use-before-define",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-assignment",
+    "name": "no-useless-assignment",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-assignment",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-backreference",
+    "name": "no-useless-backreference",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-backreference",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-call",
+    "name": "no-useless-call",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-call",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-catch",
+    "name": "no-useless-catch",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-catch",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-computed-key",
+    "name": "no-useless-computed-key",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-computed-key",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-concat",
+    "name": "no-useless-concat",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-concat",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-constructor",
+    "name": "no-useless-constructor",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-constructor",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-escape",
+    "name": "no-useless-escape",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-escape",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-rename",
+    "name": "no-useless-rename",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-rename",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-useless-return",
+    "name": "no-useless-return",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-useless-return",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-var",
+    "name": "no-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-void",
+    "name": "no-void",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-void",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-warning-comments",
+    "name": "no-warning-comments",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-warning-comments",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-whitespace-before-property",
+    "name": "no-whitespace-before-property",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-whitespace-before-property",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-no-with",
+    "name": "no-with",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: no-with",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-nonblock-statement-body-position",
+    "name": "nonblock-statement-body-position",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: nonblock-statement-body-position",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-object-curly-newline",
+    "name": "object-curly-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: object-curly-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-object-curly-spacing",
+    "name": "object-curly-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: object-curly-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-object-property-newline",
+    "name": "object-property-newline",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: object-property-newline",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-object-shorthand",
+    "name": "object-shorthand",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: object-shorthand",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-one-var",
+    "name": "one-var",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: one-var",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-one-var-declaration-per-line",
+    "name": "one-var-declaration-per-line",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: one-var-declaration-per-line",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-operator-assignment",
+    "name": "operator-assignment",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: operator-assignment",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-operator-linebreak",
+    "name": "operator-linebreak",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: operator-linebreak",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-padded-blocks",
+    "name": "padded-blocks",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: padded-blocks",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-padding-line-between-statements",
+    "name": "padding-line-between-statements",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: padding-line-between-statements",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-arrow-callback",
+    "name": "prefer-arrow-callback",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-arrow-callback",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-const",
+    "name": "prefer-const",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-const",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-destructuring",
+    "name": "prefer-destructuring",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-destructuring",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-exponentiation-operator",
+    "name": "prefer-exponentiation-operator",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-exponentiation-operator",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-named-capture-group",
+    "name": "prefer-named-capture-group",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-named-capture-group",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-numeric-literals",
+    "name": "prefer-numeric-literals",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-numeric-literals",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-object-has-own",
+    "name": "prefer-object-has-own",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-object-has-own",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-object-spread",
+    "name": "prefer-object-spread",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-object-spread",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-promise-reject-errors",
+    "name": "prefer-promise-reject-errors",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-promise-reject-errors",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-reflect",
+    "name": "prefer-reflect",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-reflect",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-regex-literals",
+    "name": "prefer-regex-literals",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-regex-literals",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-rest-params",
+    "name": "prefer-rest-params",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-rest-params",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-spread",
+    "name": "prefer-spread",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-spread",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-prefer-template",
+    "name": "prefer-template",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: prefer-template",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-quote-props",
+    "name": "quote-props",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: quote-props",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-require-atomic-updates",
+    "name": "require-atomic-updates",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: require-atomic-updates",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-require-await",
+    "name": "require-await",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: require-await",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-require-unicode-regexp",
+    "name": "require-unicode-regexp",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: require-unicode-regexp",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-require-yield",
+    "name": "require-yield",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: require-yield",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-rest-spread-spacing",
+    "name": "rest-spread-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: rest-spread-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-semi-spacing",
+    "name": "semi-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: semi-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-semi-style",
+    "name": "semi-style",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: semi-style",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-sort-imports",
+    "name": "sort-imports",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: sort-imports",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-sort-keys",
+    "name": "sort-keys",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: sort-keys",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-sort-vars",
+    "name": "sort-vars",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: sort-vars",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-space-before-blocks",
+    "name": "space-before-blocks",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: space-before-blocks",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-space-before-function-paren",
+    "name": "space-before-function-paren",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: space-before-function-paren",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-space-in-parens",
+    "name": "space-in-parens",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: space-in-parens",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-space-infix-ops",
+    "name": "space-infix-ops",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: space-infix-ops",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-space-unary-ops",
+    "name": "space-unary-ops",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: space-unary-ops",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-spaced-comment",
+    "name": "spaced-comment",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: spaced-comment",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-switch-colon-spacing",
+    "name": "switch-colon-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: switch-colon-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-symbol-description",
+    "name": "symbol-description",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: symbol-description",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-template-curly-spacing",
+    "name": "template-curly-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: template-curly-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-template-tag-spacing",
+    "name": "template-tag-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: template-tag-spacing",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-unicode-bom",
+    "name": "unicode-bom",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: unicode-bom",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-use-isnan",
+    "name": "use-isnan",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: use-isnan",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-valid-typeof",
+    "name": "valid-typeof",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: valid-typeof",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-vars-on-top",
+    "name": "vars-on-top",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: vars-on-top",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-wrap-iife",
+    "name": "wrap-iife",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: wrap-iife",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-wrap-regex",
+    "name": "wrap-regex",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: wrap-regex",
+    "source": "ESLint Official Repository"
+  },
+  {
+    "rule_id": "eslint-yield-star-spacing",
+    "name": "yield-star-spacing",
+    "category": "ESLint Core Rules",
+    "description": "ESLint core rule: yield-star-spacing",
+    "source": "ESLint Official Repository"
+  }
+]

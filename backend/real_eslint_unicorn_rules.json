@@ -1,0 +1,947 @@
+[
+  {
+    "rule_id": "eslint-unicorn-better-regex",
+    "name": "better-regex",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: better-regex",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-catch-error-name",
+    "name": "catch-error-name",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: catch-error-name",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-assert",
+    "name": "consistent-assert",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-assert",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-date-clone",
+    "name": "consistent-date-clone",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-date-clone",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-destructuring",
+    "name": "consistent-destructuring",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-destructuring",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-empty-array-spread",
+    "name": "consistent-empty-array-spread",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-empty-array-spread",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-existence-index-check",
+    "name": "consistent-existence-index-check",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-existence-index-check",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-consistent-function-scoping",
+    "name": "consistent-function-scoping",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: consistent-function-scoping",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-custom-error-definition",
+    "name": "custom-error-definition",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: custom-error-definition",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-empty-brace-spaces",
+    "name": "empty-brace-spaces",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: empty-brace-spaces",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-error-message",
+    "name": "error-message",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: error-message",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-escape-case",
+    "name": "escape-case",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: escape-case",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-expiring-todo-comments",
+    "name": "expiring-todo-comments",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: expiring-todo-comments",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-explicit-length-check",
+    "name": "explicit-length-check",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: explicit-length-check",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-filename-case",
+    "name": "filename-case",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: filename-case",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-import-style",
+    "name": "import-style",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: import-style",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-new-for-builtins",
+    "name": "new-for-builtins",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: new-for-builtins",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-abusive-eslint-disable",
+    "name": "no-abusive-eslint-disable",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-abusive-eslint-disable",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-accessor-recursion",
+    "name": "no-accessor-recursion",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-accessor-recursion",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-anonymous-default-export",
+    "name": "no-anonymous-default-export",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-anonymous-default-export",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-callback-reference",
+    "name": "no-array-callback-reference",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-callback-reference",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-for-each",
+    "name": "no-array-for-each",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-for-each",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-method-this-argument",
+    "name": "no-array-method-this-argument",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-method-this-argument",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-reduce",
+    "name": "no-array-reduce",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-reduce",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-reverse",
+    "name": "no-array-reverse",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-reverse",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-array-sort",
+    "name": "no-array-sort",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-array-sort",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-await-expression-member",
+    "name": "no-await-expression-member",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-await-expression-member",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-await-in-promise-methods",
+    "name": "no-await-in-promise-methods",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-await-in-promise-methods",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-console-spaces",
+    "name": "no-console-spaces",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-console-spaces",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-document-cookie",
+    "name": "no-document-cookie",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-document-cookie",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-empty-file",
+    "name": "no-empty-file",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-empty-file",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-for-loop",
+    "name": "no-for-loop",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-for-loop",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-hex-escape",
+    "name": "no-hex-escape",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-hex-escape",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-instanceof-builtins",
+    "name": "no-instanceof-builtins",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-instanceof-builtins",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-invalid-fetch-options",
+    "name": "no-invalid-fetch-options",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-invalid-fetch-options",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-invalid-remove-event-listener",
+    "name": "no-invalid-remove-event-listener",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-invalid-remove-event-listener",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-keyword-prefix",
+    "name": "no-keyword-prefix",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-keyword-prefix",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-lonely-if",
+    "name": "no-lonely-if",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-lonely-if",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-magic-array-flat-depth",
+    "name": "no-magic-array-flat-depth",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-magic-array-flat-depth",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-named-default",
+    "name": "no-named-default",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-named-default",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-negated-condition",
+    "name": "no-negated-condition",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-negated-condition",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-negation-in-equality-check",
+    "name": "no-negation-in-equality-check",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-negation-in-equality-check",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-nested-ternary",
+    "name": "no-nested-ternary",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-nested-ternary",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-new-array",
+    "name": "no-new-array",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-new-array",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-new-buffer",
+    "name": "no-new-buffer",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-new-buffer",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-null",
+    "name": "no-null",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-null",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-object-as-default-parameter",
+    "name": "no-object-as-default-parameter",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-object-as-default-parameter",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-process-exit",
+    "name": "no-process-exit",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-process-exit",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-single-promise-in-promise-methods",
+    "name": "no-single-promise-in-promise-methods",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-single-promise-in-promise-methods",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-static-only-class",
+    "name": "no-static-only-class",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-static-only-class",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-thenable",
+    "name": "no-thenable",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-thenable",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-this-assignment",
+    "name": "no-this-assignment",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-this-assignment",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-typeof-undefined",
+    "name": "no-typeof-undefined",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-typeof-undefined",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unnecessary-array-flat-depth",
+    "name": "no-unnecessary-array-flat-depth",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unnecessary-array-flat-depth",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unnecessary-array-splice-count",
+    "name": "no-unnecessary-array-splice-count",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unnecessary-array-splice-count",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unnecessary-await",
+    "name": "no-unnecessary-await",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unnecessary-await",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unnecessary-polyfills",
+    "name": "no-unnecessary-polyfills",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unnecessary-polyfills",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unnecessary-slice-end",
+    "name": "no-unnecessary-slice-end",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unnecessary-slice-end",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unreadable-array-destructuring",
+    "name": "no-unreadable-array-destructuring",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unreadable-array-destructuring",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unreadable-iife",
+    "name": "no-unreadable-iife",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unreadable-iife",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-unused-properties",
+    "name": "no-unused-properties",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-unused-properties",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-error-capture-stack-trace",
+    "name": "no-useless-error-capture-stack-trace",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-error-capture-stack-trace",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-fallback-in-spread",
+    "name": "no-useless-fallback-in-spread",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-fallback-in-spread",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-length-check",
+    "name": "no-useless-length-check",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-length-check",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-promise-resolve-reject",
+    "name": "no-useless-promise-resolve-reject",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-promise-resolve-reject",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-spread",
+    "name": "no-useless-spread",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-spread",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-switch-case",
+    "name": "no-useless-switch-case",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-switch-case",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-useless-undefined",
+    "name": "no-useless-undefined",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-useless-undefined",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-no-zero-fractions",
+    "name": "no-zero-fractions",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: no-zero-fractions",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-number-literal-case",
+    "name": "number-literal-case",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: number-literal-case",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-numeric-separators-style",
+    "name": "numeric-separators-style",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: numeric-separators-style",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-add-event-listener",
+    "name": "prefer-add-event-listener",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-add-event-listener",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-array-find",
+    "name": "prefer-array-find",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-array-find",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-array-flat",
+    "name": "prefer-array-flat",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-array-flat",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-array-flat-map",
+    "name": "prefer-array-flat-map",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-array-flat-map",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-array-index-of",
+    "name": "prefer-array-index-of",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-array-index-of",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-array-some",
+    "name": "prefer-array-some",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-array-some",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-at",
+    "name": "prefer-at",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-at",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-blob-reading-methods",
+    "name": "prefer-blob-reading-methods",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-blob-reading-methods",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-class-fields",
+    "name": "prefer-class-fields",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-class-fields",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-code-point",
+    "name": "prefer-code-point",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-code-point",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-date-now",
+    "name": "prefer-date-now",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-date-now",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-default-parameters",
+    "name": "prefer-default-parameters",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-default-parameters",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-dom-node-append",
+    "name": "prefer-dom-node-append",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-dom-node-append",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-dom-node-dataset",
+    "name": "prefer-dom-node-dataset",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-dom-node-dataset",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-dom-node-remove",
+    "name": "prefer-dom-node-remove",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-dom-node-remove",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-dom-node-text-content",
+    "name": "prefer-dom-node-text-content",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-dom-node-text-content",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-event-target",
+    "name": "prefer-event-target",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-event-target",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-export-from",
+    "name": "prefer-export-from",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-export-from",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-global-this",
+    "name": "prefer-global-this",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-global-this",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-import-meta-properties",
+    "name": "prefer-import-meta-properties",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-import-meta-properties",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-includes",
+    "name": "prefer-includes",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-includes",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-json-parse-buffer",
+    "name": "prefer-json-parse-buffer",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-json-parse-buffer",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-keyboard-event-key",
+    "name": "prefer-keyboard-event-key",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-keyboard-event-key",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-logical-operator-over-ternary",
+    "name": "prefer-logical-operator-over-ternary",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-logical-operator-over-ternary",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-math-min-max",
+    "name": "prefer-math-min-max",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-math-min-max",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-math-trunc",
+    "name": "prefer-math-trunc",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-math-trunc",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-modern-dom-apis",
+    "name": "prefer-modern-dom-apis",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-modern-dom-apis",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-modern-math-apis",
+    "name": "prefer-modern-math-apis",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-modern-math-apis",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-module",
+    "name": "prefer-module",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-module",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-native-coercion-functions",
+    "name": "prefer-native-coercion-functions",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-native-coercion-functions",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-negative-index",
+    "name": "prefer-negative-index",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-negative-index",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-node-protocol",
+    "name": "prefer-node-protocol",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-node-protocol",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-number-properties",
+    "name": "prefer-number-properties",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-number-properties",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-object-from-entries",
+    "name": "prefer-object-from-entries",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-object-from-entries",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-optional-catch-binding",
+    "name": "prefer-optional-catch-binding",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-optional-catch-binding",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-prototype-methods",
+    "name": "prefer-prototype-methods",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-prototype-methods",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-query-selector",
+    "name": "prefer-query-selector",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-query-selector",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-reflect-apply",
+    "name": "prefer-reflect-apply",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-reflect-apply",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-regexp-test",
+    "name": "prefer-regexp-test",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-regexp-test",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-set-has",
+    "name": "prefer-set-has",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-set-has",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-set-size",
+    "name": "prefer-set-size",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-set-size",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-single-call",
+    "name": "prefer-single-call",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-single-call",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-spread",
+    "name": "prefer-spread",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-spread",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-string-raw",
+    "name": "prefer-string-raw",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-string-raw",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-string-replace-all",
+    "name": "prefer-string-replace-all",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-string-replace-all",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-string-slice",
+    "name": "prefer-string-slice",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-string-slice",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-string-starts-ends-with",
+    "name": "prefer-string-starts-ends-with",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-string-starts-ends-with",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-string-trim-start-end",
+    "name": "prefer-string-trim-start-end",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-string-trim-start-end",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-structured-clone",
+    "name": "prefer-structured-clone",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-structured-clone",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-switch",
+    "name": "prefer-switch",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-switch",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-ternary",
+    "name": "prefer-ternary",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-ternary",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-top-level-await",
+    "name": "prefer-top-level-await",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-top-level-await",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prefer-type-error",
+    "name": "prefer-type-error",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prefer-type-error",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-prevent-abbreviations",
+    "name": "prevent-abbreviations",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: prevent-abbreviations",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-relative-url-style",
+    "name": "relative-url-style",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: relative-url-style",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-require-array-join-separator",
+    "name": "require-array-join-separator",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: require-array-join-separator",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-require-module-specifiers",
+    "name": "require-module-specifiers",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: require-module-specifiers",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-require-number-to-fixed-digits-argument",
+    "name": "require-number-to-fixed-digits-argument",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: require-number-to-fixed-digits-argument",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-require-post-message-target-origin",
+    "name": "require-post-message-target-origin",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: require-post-message-target-origin",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-string-content",
+    "name": "string-content",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: string-content",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-switch-case-braces",
+    "name": "switch-case-braces",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: switch-case-braces",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-template-indent",
+    "name": "template-indent",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: template-indent",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-text-encoding-identifier-case",
+    "name": "text-encoding-identifier-case",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: text-encoding-identifier-case",
+    "source": "ESLint Unicorn Plugin Repository"
+  },
+  {
+    "rule_id": "eslint-unicorn-throw-new-error",
+    "name": "throw-new-error",
+    "category": "ESLint Unicorn Plugin",
+    "description": "ESLint Unicorn plugin rule: throw-new-error",
+    "source": "ESLint Unicorn Plugin Repository"
+  }
+]

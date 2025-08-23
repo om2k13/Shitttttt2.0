@@ -1,0 +1,11 @@
+[
+  "lines",
+  "complexity",
+  "nesting",
+  "imports",
+  "functions",
+  "classes",
+  "security_risk",
+  "user_inputs",
+  "external_calls"
+]

@@ -1,0 +1,497 @@
+[
+  {
+    "rule_id": "no-unused-vars",
+    "category": "Variables",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-undef",
+    "category": "Variables",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-console",
+    "category": "Possible Errors",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-debugger",
+    "category": "Possible Errors",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-alert",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-eval",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-implied-eval",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-new-func",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-script-url",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "eqeqeq",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "curly",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "default-case",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-fallthrough",
+    "category": "Best Practices",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-global-assign",
+    "category": "Best Practices",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-implicit-globals",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-lone-blocks",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-loop-func",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-multi-spaces",
+    "category": "Layout & Formatting",
+    "type": "layout",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-multi-str",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-new",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-new-object",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-new-wrappers",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-octal",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-octal-escape",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-redeclare",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-return-assign",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-return-await",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-self-assign",
+    "category": "Best Practices",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-self-compare",
+    "category": "Best Practices",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-throw-literal",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-unused-expressions",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-unused-labels",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-useless-call",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-useless-concat",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-useless-escape",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-useless-return",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-void",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-with",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "prefer-promise-reject-errors",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "radix",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "require-await",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "vars-on-top",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "wrap-iife",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "yoda",
+    "category": "Best Practices",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "strict",
+    "category": "Strict Mode",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "init-declarations",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-catch-shadow",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-delete-var",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-label-var",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-restricted-globals",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-shadow",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-shadow-restricted-names",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-undef-init",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-undefined",
+    "category": "Variables",
+    "type": "suggestion",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  },
+  {
+    "rule_id": "no-use-before-define",
+    "category": "Variables",
+    "type": "problem",
+    "language": "javascript",
+    "source": "ESLint Core Rules (Official npm package)",
+    "package_version": "9.34.0",
+    "npm_url": "https://registry.npmjs.org/eslint/latest"
+  }
+]

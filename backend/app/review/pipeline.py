@@ -276,6 +276,41 @@ async def run_review(job_id: str):
             except Exception:
                 pass
 
+    # ML Analysis (Code Review Agent with ML models)
+    print(f"🧠 Running ML Analysis with Code Review Agent...")
+    try:
+        from .code_review_agent import CodeReviewAgent
+        
+        # Initialize Code Review Agent
+        agent = CodeReviewAgent(repo_path, standalone=True)
+        
+        # Run ML analysis
+        ml_results = await agent.run_code_review()
+        
+        if ml_results and ml_results.get("status") == "completed":
+            ml_findings = ml_results.get("findings", [])
+            print(f"   ✅ ML Analysis completed: {len(ml_findings)} ML findings generated")
+            
+            # Add ML findings to the main findings list
+            for ml_finding in ml_findings:
+                findings.append({
+                    "job_id": job_id,
+                    "tool": "ml_analysis",
+                    "severity": ml_finding["severity"],
+                    "file": ml_finding["file"],
+                    "line": ml_finding["line"],
+                    "rule_id": ml_finding["category"],
+                    "message": ml_finding["message"],
+                    "remediation": ml_finding["suggestion"],
+                    "autofixable": False
+                })
+        else:
+            print(f"   ⚠️ ML Analysis failed or no results")
+            
+    except Exception as e:
+        print(f"   ⚠️ ML Analysis failed: {e}")
+        print(f"   Continuing with standard analysis...")
+
     # LLM enrichment (optional)
     context = {"repo": str(repo_path)}
     findings = enrich_findings_with_llm(findings, context)

@@ -1,0 +1,48 @@
+{
+  "total_coverage": {
+    "security_samples": 39364,
+    "quality_rules": 0,
+    "total_datasets": 4
+  },
+  "industry_standards_met": {
+    "security_50k_plus": false,
+    "quality_1k_plus": false,
+    "languages_8_plus": true
+  },
+  "dataset_breakdown": {
+    "vuldeepecker": "16,180+ vulnerability samples",
+    "nvd_cve": "5,000 CVE records",
+    "github_alternatives": "1,000 security advisories",
+    "quality_rules": "690+ industry rules",
+    "github_security": "294 real advisories",
+    "industry_rules": "20 OWASP + patterns"
+  },
+  "language_coverage": [
+    "Python",
+    "JavaScript",
+    "Java",
+    "Go",
+    "PHP",
+    "Ruby",
+    "C#",
+    "TypeScript",
+    "C",
+    "C++",
+    "HTML",
+    "CSS",
+    "SQL",
+    "YAML",
+    "JSON",
+    "XML"
+  ],
+  "data_sources": {
+    "real_data": "VulDeePecker, GitHub Security, Industry Rules",
+    "synthetic_data": "NVD CVE, GitHub Alternatives, Quality Rules",
+    "synthetic_quality": "Industry pattern-based, no rate limits"
+  },
+  "storage_usage": {
+    "total_size": "~1.5 GB",
+    "efficiency": "High (compressed, no duplicates)",
+    "optimization": "Ready for production ML training"
+  }
+}

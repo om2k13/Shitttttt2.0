@@ -1,0 +1,562 @@
+[
+  {
+    "rule_id": "pycodestyle-E101",
+    "name": "E101",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E101",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E111",
+    "name": "E111",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E111",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E112",
+    "name": "E112",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E112",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E113",
+    "name": "E113",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E113",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E114",
+    "name": "E114",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E114",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E115",
+    "name": "E115",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E115",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E116",
+    "name": "E116",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E116",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E121",
+    "name": "E121",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E121",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E122",
+    "name": "E122",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E122",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E123",
+    "name": "E123",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E123",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E124",
+    "name": "E124",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E124",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E125",
+    "name": "E125",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E125",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E126",
+    "name": "E126",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E126",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E127",
+    "name": "E127",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E127",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E128",
+    "name": "E128",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E128",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E129",
+    "name": "E129",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E129",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E131",
+    "name": "E131",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E131",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E133",
+    "name": "E133",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E133",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E201",
+    "name": "E201",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E201",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E202",
+    "name": "E202",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E202",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E203",
+    "name": "E203",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E203",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E204",
+    "name": "E204",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E204",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E211",
+    "name": "E211",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E211",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E221",
+    "name": "E221",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E221",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E222",
+    "name": "E222",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E222",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E223",
+    "name": "E223",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E223",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E224",
+    "name": "E224",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E224",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E225",
+    "name": "E225",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E225",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E226",
+    "name": "E226",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E226",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E227",
+    "name": "E227",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E227",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E228",
+    "name": "E228",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E228",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E231",
+    "name": "E231",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E231",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E241",
+    "name": "E241",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E241",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E242",
+    "name": "E242",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E242",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E251",
+    "name": "E251",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E251",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E252",
+    "name": "E252",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E252",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E261",
+    "name": "E261",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E261",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E262",
+    "name": "E262",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E262",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E265",
+    "name": "E265",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E265",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E266",
+    "name": "E266",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E266",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E271",
+    "name": "E271",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E271",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E272",
+    "name": "E272",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E272",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E273",
+    "name": "E273",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E273",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E274",
+    "name": "E274",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E274",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E275",
+    "name": "E275",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E275",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E301",
+    "name": "E301",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E301",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E302",
+    "name": "E302",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E302",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E303",
+    "name": "E303",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E303",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E304",
+    "name": "E304",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E304",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E305",
+    "name": "E305",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E305",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E306",
+    "name": "E306",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E306",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E401",
+    "name": "E401",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E401",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E402",
+    "name": "E402",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E402",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E501",
+    "name": "E501",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E501",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E502",
+    "name": "E502",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E502",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E701",
+    "name": "E701",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E701",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E702",
+    "name": "E702",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E702",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E703",
+    "name": "E703",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E703",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E704",
+    "name": "E704",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E704",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E711",
+    "name": "E711",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E711",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E712",
+    "name": "E712",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E712",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E713",
+    "name": "E713",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E713",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E714",
+    "name": "E714",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E714",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E721",
+    "name": "E721",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E721",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E722",
+    "name": "E722",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E722",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E731",
+    "name": "E731",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E731",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E741",
+    "name": "E741",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E741",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E742",
+    "name": "E742",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E742",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E743",
+    "name": "E743",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E743",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E901",
+    "name": "E901",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E901",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-E902",
+    "name": "E902",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: E902",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W191",
+    "name": "W191",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W191",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W291",
+    "name": "W291",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W291",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W292",
+    "name": "W292",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W292",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W293",
+    "name": "W293",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W293",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W391",
+    "name": "W391",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W391",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W503",
+    "name": "W503",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W503",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W504",
+    "name": "W504",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W504",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W505",
+    "name": "W505",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W505",
+    "source": "Pycodestyle Official Repository"
+  },
+  {
+    "rule_id": "pycodestyle-W605",
+    "name": "W605",
+    "category": "Pycodestyle Python Rules",
+    "description": "Pycodestyle Python rule: W605",
+    "source": "Pycodestyle Official Repository"
+  }
+]

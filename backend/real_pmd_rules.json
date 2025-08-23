@@ -1,0 +1,2004 @@
+[
+  {
+    "rule_id": "pmd-AbstractClassWithoutAbstractMethod",
+    "name": "AbstractClassWithoutAbstractMethod",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AbstractClassWithoutAbstractMethod in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AccessorClassGeneration",
+    "name": "AccessorClassGeneration",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AccessorClassGeneration in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AccessorMethodGeneration",
+    "name": "AccessorMethodGeneration",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AccessorMethodGeneration in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ArrayIsStoredDirectly",
+    "name": "ArrayIsStoredDirectly",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ArrayIsStoredDirectly in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidPrintStackTrace",
+    "name": "AvoidPrintStackTrace",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidPrintStackTrace in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidReassigningCatchVariables",
+    "name": "AvoidReassigningCatchVariables",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidReassigningCatchVariables in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidReassigningLoopVariables",
+    "name": "AvoidReassigningLoopVariables",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidReassigningLoopVariables in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidReassigningParameters",
+    "name": "AvoidReassigningParameters",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidReassigningParameters in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidMessageDigestField",
+    "name": "AvoidMessageDigestField",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidMessageDigestField in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidStringBufferField",
+    "name": "AvoidStringBufferField",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidStringBufferField in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidUsingHardCodedIP",
+    "name": "AvoidUsingHardCodedIP",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: AvoidUsingHardCodedIP in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CheckResultSet",
+    "name": "CheckResultSet",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: CheckResultSet in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConstantsInInterface",
+    "name": "ConstantsInInterface",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ConstantsInInterface in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DefaultLabelNotLastInSwitch",
+    "name": "DefaultLabelNotLastInSwitch",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: DefaultLabelNotLastInSwitch in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoubleBraceInitialization",
+    "name": "DoubleBraceInitialization",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: DoubleBraceInitialization in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExhaustiveSwitchHasDefault",
+    "name": "ExhaustiveSwitchHasDefault",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ExhaustiveSwitchHasDefault in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ForLoopCanBeForeach",
+    "name": "ForLoopCanBeForeach",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ForLoopCanBeForeach in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ForLoopVariableCount",
+    "name": "ForLoopVariableCount",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ForLoopVariableCount in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-GuardLogStatement",
+    "name": "GuardLogStatement",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: GuardLogStatement in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ImplicitFunctionalInterface",
+    "name": "ImplicitFunctionalInterface",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ImplicitFunctionalInterface in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JUnit4SuitesShouldUseSuiteAnnotation",
+    "name": "JUnit4SuitesShouldUseSuiteAnnotation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: JUnit4SuitesShouldUseSuiteAnnotation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JUnit5TestShouldBePackagePrivate",
+    "name": "JUnit5TestShouldBePackagePrivate",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: JUnit5TestShouldBePackagePrivate in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JUnitUseExpected",
+    "name": "JUnitUseExpected",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: JUnitUseExpected in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LiteralsFirstInComparisons",
+    "name": "LiteralsFirstInComparisons",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: LiteralsFirstInComparisons in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LooseCoupling",
+    "name": "LooseCoupling",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: LooseCoupling in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MethodReturnsInternalArray",
+    "name": "MethodReturnsInternalArray",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: MethodReturnsInternalArray in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MissingOverride",
+    "name": "MissingOverride",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: MissingOverride in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NonExhaustiveSwitch",
+    "name": "NonExhaustiveSwitch",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: NonExhaustiveSwitch in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-OneDeclarationPerLine",
+    "name": "OneDeclarationPerLine",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: OneDeclarationPerLine in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-PrimitiveWrapperInstantiation",
+    "name": "PrimitiveWrapperInstantiation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: PrimitiveWrapperInstantiation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-RelianceOnDefaultCharset",
+    "name": "RelianceOnDefaultCharset",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: RelianceOnDefaultCharset in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-PreserveStackTrace",
+    "name": "PreserveStackTrace",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: PreserveStackTrace in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReplaceEnumerationWithIterator",
+    "name": "ReplaceEnumerationWithIterator",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ReplaceEnumerationWithIterator in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReplaceHashtableWithMap",
+    "name": "ReplaceHashtableWithMap",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ReplaceHashtableWithMap in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReplaceVectorWithList",
+    "name": "ReplaceVectorWithList",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: ReplaceVectorWithList in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimplifiableTestAssertion",
+    "name": "SimplifiableTestAssertion",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: SimplifiableTestAssertion in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SystemPrintln",
+    "name": "SystemPrintln",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: SystemPrintln in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestAssertionsShouldIncludeMessage",
+    "name": "UnitTestAssertionsShouldIncludeMessage",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestAssertionsShouldIncludeMessage in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestContainsTooManyAsserts",
+    "name": "UnitTestContainsTooManyAsserts",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestContainsTooManyAsserts in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestShouldIncludeAssert",
+    "name": "UnitTestShouldIncludeAssert",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestShouldIncludeAssert in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestShouldUseAfterAnnotation",
+    "name": "UnitTestShouldUseAfterAnnotation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestShouldUseAfterAnnotation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestShouldUseBeforeAnnotation",
+    "name": "UnitTestShouldUseBeforeAnnotation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestShouldUseBeforeAnnotation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnitTestShouldUseTestAnnotation",
+    "name": "UnitTestShouldUseTestAnnotation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnitTestShouldUseTestAnnotation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryVarargsArrayCreation",
+    "name": "UnnecessaryVarargsArrayCreation",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnnecessaryVarargsArrayCreation in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryWarningSuppression",
+    "name": "UnnecessaryWarningSuppression",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnnecessaryWarningSuppression in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedAssignment",
+    "name": "UnusedAssignment",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnusedAssignment in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedFormalParameter",
+    "name": "UnusedFormalParameter",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnusedFormalParameter in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedLocalVariable",
+    "name": "UnusedLocalVariable",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnusedLocalVariable in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedPrivateField",
+    "name": "UnusedPrivateField",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnusedPrivateField in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedPrivateMethod",
+    "name": "UnusedPrivateMethod",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UnusedPrivateMethod in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseCollectionIsEmpty",
+    "name": "UseCollectionIsEmpty",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UseCollectionIsEmpty in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseEnumCollections",
+    "name": "UseEnumCollections",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UseEnumCollections in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseStandardCharsets",
+    "name": "UseStandardCharsets",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UseStandardCharsets in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseTryWithResources",
+    "name": "UseTryWithResources",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UseTryWithResources in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseVarargs",
+    "name": "UseVarargs",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: UseVarargs in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-WhileLoopWithLiteralBoolean",
+    "name": "WhileLoopWithLiteralBoolean",
+    "category": "PMD Java Bestpractices",
+    "description": "PMD Java rule: WhileLoopWithLiteralBoolean in bestpractices category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ClassNamingConventions",
+    "name": "ClassNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ClassNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FieldNamingConventions",
+    "name": "FieldNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: FieldNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FormalParameterNamingConventions",
+    "name": "FormalParameterNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: FormalParameterNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LambdaCanBeMethodReference",
+    "name": "LambdaCanBeMethodReference",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LambdaCanBeMethodReference in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LinguisticNaming",
+    "name": "LinguisticNaming",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LinguisticNaming in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LocalVariableNamingConventions",
+    "name": "LocalVariableNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LocalVariableNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LongVariable",
+    "name": "LongVariable",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LongVariable in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MethodNamingConventions",
+    "name": "MethodNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: MethodNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-PackageCase",
+    "name": "PackageCase",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: PackageCase in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ShortClassName",
+    "name": "ShortClassName",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ShortClassName in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ShortMethodName",
+    "name": "ShortMethodName",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ShortMethodName in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ShortVariable",
+    "name": "ShortVariable",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ShortVariable in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TypeParameterNamingConventions",
+    "name": "TypeParameterNamingConventions",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: TypeParameterNamingConventions in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LocalHomeNamingConvention",
+    "name": "LocalHomeNamingConvention",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LocalHomeNamingConvention in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LocalInterfaceSessionNamingConvention",
+    "name": "LocalInterfaceSessionNamingConvention",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LocalInterfaceSessionNamingConvention in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MDBAndSessionBeanNamingConvention",
+    "name": "MDBAndSessionBeanNamingConvention",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: MDBAndSessionBeanNamingConvention in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-RemoteInterfaceNamingConvention",
+    "name": "RemoteInterfaceNamingConvention",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: RemoteInterfaceNamingConvention in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-RemoteSessionInterfaceNamingConvention",
+    "name": "RemoteSessionInterfaceNamingConvention",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: RemoteSessionInterfaceNamingConvention in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AtLeastOneConstructor",
+    "name": "AtLeastOneConstructor",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: AtLeastOneConstructor in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidDollarSigns",
+    "name": "AvoidDollarSigns",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: AvoidDollarSigns in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidProtectedFieldInFinalClass",
+    "name": "AvoidProtectedFieldInFinalClass",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: AvoidProtectedFieldInFinalClass in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidProtectedMethodInFinalClassNotExtending",
+    "name": "AvoidProtectedMethodInFinalClassNotExtending",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: AvoidProtectedMethodInFinalClassNotExtending in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidUsingNativeCode",
+    "name": "AvoidUsingNativeCode",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: AvoidUsingNativeCode in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-BooleanGetMethodName",
+    "name": "BooleanGetMethodName",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: BooleanGetMethodName in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CallSuperInConstructor",
+    "name": "CallSuperInConstructor",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: CallSuperInConstructor in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CommentDefaultAccessModifier",
+    "name": "CommentDefaultAccessModifier",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: CommentDefaultAccessModifier in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConfusingTernary",
+    "name": "ConfusingTernary",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ConfusingTernary in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ControlStatementBraces",
+    "name": "ControlStatementBraces",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ControlStatementBraces in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-EmptyMethodInAbstractClassShouldBeAbstract",
+    "name": "EmptyMethodInAbstractClassShouldBeAbstract",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: EmptyMethodInAbstractClassShouldBeAbstract in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExtendsObject",
+    "name": "ExtendsObject",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ExtendsObject in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FieldDeclarationsShouldBeAtStartOfClass",
+    "name": "FieldDeclarationsShouldBeAtStartOfClass",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: FieldDeclarationsShouldBeAtStartOfClass in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalParameterInAbstractMethod",
+    "name": "FinalParameterInAbstractMethod",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: FinalParameterInAbstractMethod in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ForLoopShouldBeWhileLoop",
+    "name": "ForLoopShouldBeWhileLoop",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: ForLoopShouldBeWhileLoop in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-IdenticalCatchBranches",
+    "name": "IdenticalCatchBranches",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: IdenticalCatchBranches in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LocalVariableCouldBeFinal",
+    "name": "LocalVariableCouldBeFinal",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: LocalVariableCouldBeFinal in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MethodArgumentCouldBeFinal",
+    "name": "MethodArgumentCouldBeFinal",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: MethodArgumentCouldBeFinal in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NoPackage",
+    "name": "NoPackage",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: NoPackage in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseExplicitTypes",
+    "name": "UseExplicitTypes",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UseExplicitTypes in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseUnderscoresInNumericLiterals",
+    "name": "UseUnderscoresInNumericLiterals",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UseUnderscoresInNumericLiterals in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-OnlyOneReturn",
+    "name": "OnlyOneReturn",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: OnlyOneReturn in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-PrematureDeclaration",
+    "name": "PrematureDeclaration",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: PrematureDeclaration in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TooManyStaticImports",
+    "name": "TooManyStaticImports",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: TooManyStaticImports in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryAnnotationValueElement",
+    "name": "UnnecessaryAnnotationValueElement",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryAnnotationValueElement in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryBoxing",
+    "name": "UnnecessaryBoxing",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryBoxing in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryCast",
+    "name": "UnnecessaryCast",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryCast in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryConstructor",
+    "name": "UnnecessaryConstructor",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryConstructor in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryFullyQualifiedName",
+    "name": "UnnecessaryFullyQualifiedName",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryFullyQualifiedName in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryImport",
+    "name": "UnnecessaryImport",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryImport in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryModifier",
+    "name": "UnnecessaryModifier",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryModifier in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryReturn",
+    "name": "UnnecessaryReturn",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessaryReturn in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseDiamondOperator",
+    "name": "UseDiamondOperator",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UseDiamondOperator in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UselessParentheses",
+    "name": "UselessParentheses",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UselessParentheses in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UselessQualifiedThis",
+    "name": "UselessQualifiedThis",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UselessQualifiedThis in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-VariableCanBeInlined",
+    "name": "VariableCanBeInlined",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: VariableCanBeInlined in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AbstractClassWithoutAnyMethod",
+    "name": "AbstractClassWithoutAnyMethod",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AbstractClassWithoutAnyMethod in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidCatchingGenericException",
+    "name": "AvoidCatchingGenericException",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidCatchingGenericException in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidDeeplyNestedIfStmts",
+    "name": "AvoidDeeplyNestedIfStmts",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidDeeplyNestedIfStmts in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidRethrowingException",
+    "name": "AvoidRethrowingException",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidRethrowingException in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidThrowingNewInstanceOfSameException",
+    "name": "AvoidThrowingNewInstanceOfSameException",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidThrowingNewInstanceOfSameException in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidThrowingNullPointerException",
+    "name": "AvoidThrowingNullPointerException",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidThrowingNullPointerException in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidThrowingRawExceptionTypes",
+    "name": "AvoidThrowingRawExceptionTypes",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidThrowingRawExceptionTypes in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidUncheckedExceptionsInSignatures",
+    "name": "AvoidUncheckedExceptionsInSignatures",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: AvoidUncheckedExceptionsInSignatures in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ClassWithOnlyPrivateConstructorsShouldBeFinal",
+    "name": "ClassWithOnlyPrivateConstructorsShouldBeFinal",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ClassWithOnlyPrivateConstructorsShouldBeFinal in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CognitiveComplexity",
+    "name": "CognitiveComplexity",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: CognitiveComplexity in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CollapsibleIfStatements",
+    "name": "CollapsibleIfStatements",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: CollapsibleIfStatements in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CouplingBetweenObjects",
+    "name": "CouplingBetweenObjects",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: CouplingBetweenObjects in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CyclomaticComplexity",
+    "name": "CyclomaticComplexity",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: CyclomaticComplexity in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DataClass",
+    "name": "DataClass",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: DataClass in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotExtendJavaLangError",
+    "name": "DoNotExtendJavaLangError",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: DoNotExtendJavaLangError in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExceptionAsFlowControl",
+    "name": "ExceptionAsFlowControl",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ExceptionAsFlowControl in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExcessiveImports",
+    "name": "ExcessiveImports",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ExcessiveImports in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExcessiveParameterList",
+    "name": "ExcessiveParameterList",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ExcessiveParameterList in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ExcessivePublicCount",
+    "name": "ExcessivePublicCount",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ExcessivePublicCount in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalFieldCouldBeStatic",
+    "name": "FinalFieldCouldBeStatic",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: FinalFieldCouldBeStatic in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-GodClass",
+    "name": "GodClass",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: GodClass in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ImmutableField",
+    "name": "ImmutableField",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: ImmutableField in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InvalidJavaBean",
+    "name": "InvalidJavaBean",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: InvalidJavaBean in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LawOfDemeter",
+    "name": "LawOfDemeter",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: LawOfDemeter in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LogicInversion",
+    "name": "LogicInversion",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: LogicInversion in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LoosePackageCoupling",
+    "name": "LoosePackageCoupling",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: LoosePackageCoupling in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MutableStaticState",
+    "name": "MutableStaticState",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: MutableStaticState in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NcssCount",
+    "name": "NcssCount",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: NcssCount in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NPathComplexity",
+    "name": "NPathComplexity",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: NPathComplexity in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SignatureDeclareThrowsException",
+    "name": "SignatureDeclareThrowsException",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SignatureDeclareThrowsException in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimplifiedTernary",
+    "name": "SimplifiedTernary",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SimplifiedTernary in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimplifyBooleanExpressions",
+    "name": "SimplifyBooleanExpressions",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SimplifyBooleanExpressions in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimplifyBooleanReturns",
+    "name": "SimplifyBooleanReturns",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SimplifyBooleanReturns in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimplifyConditional",
+    "name": "SimplifyConditional",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SimplifyConditional in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SingularField",
+    "name": "SingularField",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SingularField in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SwitchDensity",
+    "name": "SwitchDensity",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: SwitchDensity in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TooManyFields",
+    "name": "TooManyFields",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: TooManyFields in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TooManyMethods",
+    "name": "TooManyMethods",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: TooManyMethods in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UselessOverridingMethod",
+    "name": "UselessOverridingMethod",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: UselessOverridingMethod in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseObjectForClearerAPI",
+    "name": "UseObjectForClearerAPI",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: UseObjectForClearerAPI in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseUtilityClass",
+    "name": "UseUtilityClass",
+    "category": "PMD Java Design",
+    "description": "PMD Java rule: UseUtilityClass in design category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CommentContent",
+    "name": "CommentContent",
+    "category": "PMD Java Documentation",
+    "description": "PMD Java rule: CommentContent in documentation category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CommentRequired",
+    "name": "CommentRequired",
+    "category": "PMD Java Documentation",
+    "description": "PMD Java rule: CommentRequired in documentation category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CommentSize",
+    "name": "CommentSize",
+    "category": "PMD Java Documentation",
+    "description": "PMD Java rule: CommentSize in documentation category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UncommentedEmptyConstructor",
+    "name": "UncommentedEmptyConstructor",
+    "category": "PMD Java Documentation",
+    "description": "PMD Java rule: UncommentedEmptyConstructor in documentation category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UncommentedEmptyMethodBody",
+    "name": "UncommentedEmptyMethodBody",
+    "category": "PMD Java Documentation",
+    "description": "PMD Java rule: UncommentedEmptyMethodBody in documentation category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AssignmentInOperand",
+    "name": "AssignmentInOperand",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AssignmentInOperand in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AssignmentToNonFinalStatic",
+    "name": "AssignmentToNonFinalStatic",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AssignmentToNonFinalStatic in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidAccessibilityAlteration",
+    "name": "AvoidAccessibilityAlteration",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidAccessibilityAlteration in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidAssertAsIdentifier",
+    "name": "AvoidAssertAsIdentifier",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidAssertAsIdentifier in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidBranchingStatementAsLastInLoop",
+    "name": "AvoidBranchingStatementAsLastInLoop",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidBranchingStatementAsLastInLoop in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidCallingFinalize",
+    "name": "AvoidCallingFinalize",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidCallingFinalize in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidCatchingNPE",
+    "name": "AvoidCatchingNPE",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidCatchingNPE in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidCatchingThrowable",
+    "name": "AvoidCatchingThrowable",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidCatchingThrowable in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidDecimalLiteralsInBigDecimalConstructor",
+    "name": "AvoidDecimalLiteralsInBigDecimalConstructor",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidDecimalLiteralsInBigDecimalConstructor in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidDuplicateLiterals",
+    "name": "AvoidDuplicateLiterals",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidDuplicateLiterals in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidEnumAsIdentifier",
+    "name": "AvoidEnumAsIdentifier",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidEnumAsIdentifier in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidFieldNameMatchingMethodName",
+    "name": "AvoidFieldNameMatchingMethodName",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidFieldNameMatchingMethodName in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidFieldNameMatchingTypeName",
+    "name": "AvoidFieldNameMatchingTypeName",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidFieldNameMatchingTypeName in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidInstanceofChecksInCatchClause",
+    "name": "AvoidInstanceofChecksInCatchClause",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidInstanceofChecksInCatchClause in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidLiteralsInIfCondition",
+    "name": "AvoidLiteralsInIfCondition",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidLiteralsInIfCondition in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidMultipleUnaryOperators",
+    "name": "AvoidMultipleUnaryOperators",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidMultipleUnaryOperators in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidUsingOctalValues",
+    "name": "AvoidUsingOctalValues",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: AvoidUsingOctalValues in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-BeanMembersShouldSerialize",
+    "name": "BeanMembersShouldSerialize",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: BeanMembersShouldSerialize in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-BrokenNullCheck",
+    "name": "BrokenNullCheck",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: BrokenNullCheck in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CallSuperFirst",
+    "name": "CallSuperFirst",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CallSuperFirst in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CallSuperLast",
+    "name": "CallSuperLast",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CallSuperLast in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CheckSkipResult",
+    "name": "CheckSkipResult",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CheckSkipResult in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ClassCastExceptionWithToArray",
+    "name": "ClassCastExceptionWithToArray",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ClassCastExceptionWithToArray in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CloneMethodMustBePublic",
+    "name": "CloneMethodMustBePublic",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CloneMethodMustBePublic in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CloneMethodMustImplementCloneable",
+    "name": "CloneMethodMustImplementCloneable",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CloneMethodMustImplementCloneable in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CloneMethodReturnTypeMustMatchClassName",
+    "name": "CloneMethodReturnTypeMustMatchClassName",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CloneMethodReturnTypeMustMatchClassName in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CloneThrowsCloneNotSupportedException",
+    "name": "CloneThrowsCloneNotSupportedException",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CloneThrowsCloneNotSupportedException in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CloseResource",
+    "name": "CloseResource",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CloseResource in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConfusingArgumentToVarargsMethod",
+    "name": "ConfusingArgumentToVarargsMethod",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ConfusingArgumentToVarargsMethod in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-CompareObjectsWithEquals",
+    "name": "CompareObjectsWithEquals",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: CompareObjectsWithEquals in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ComparisonWithNaN",
+    "name": "ComparisonWithNaN",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ComparisonWithNaN in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConstructorCallsOverridableMethod",
+    "name": "ConstructorCallsOverridableMethod",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ConstructorCallsOverridableMethod in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DataflowAnomalyAnalysis",
+    "name": "DataflowAnomalyAnalysis",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DataflowAnomalyAnalysis in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DetachedTestCase",
+    "name": "DetachedTestCase",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DetachedTestCase in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotCallGarbageCollectionExplicitly",
+    "name": "DoNotCallGarbageCollectionExplicitly",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DoNotCallGarbageCollectionExplicitly in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotCallSystemExit",
+    "name": "DoNotCallSystemExit",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DoNotCallSystemExit in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotExtendJavaLangThrowable",
+    "name": "DoNotExtendJavaLangThrowable",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DoNotExtendJavaLangThrowable in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotHardCodeSDCard",
+    "name": "DoNotHardCodeSDCard",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DoNotHardCodeSDCard in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotThrowExceptionInFinally",
+    "name": "DoNotThrowExceptionInFinally",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DoNotThrowExceptionInFinally in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DontImportSun",
+    "name": "DontImportSun",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DontImportSun in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DontUseFloatTypeForLoopIndices",
+    "name": "DontUseFloatTypeForLoopIndices",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: DontUseFloatTypeForLoopIndices in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-EqualsNull",
+    "name": "EqualsNull",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: EqualsNull in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalizeDoesNotCallSuperFinalize",
+    "name": "FinalizeDoesNotCallSuperFinalize",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: FinalizeDoesNotCallSuperFinalize in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalizeOnlyCallsSuperFinalize",
+    "name": "FinalizeOnlyCallsSuperFinalize",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: FinalizeOnlyCallsSuperFinalize in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalizeOverloaded",
+    "name": "FinalizeOverloaded",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: FinalizeOverloaded in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-FinalizeShouldBeProtected",
+    "name": "FinalizeShouldBeProtected",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: FinalizeShouldBeProtected in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-IdempotentOperations",
+    "name": "IdempotentOperations",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: IdempotentOperations in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ImplicitSwitchFallThrough",
+    "name": "ImplicitSwitchFallThrough",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ImplicitSwitchFallThrough in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InstantiationToGetClass",
+    "name": "InstantiationToGetClass",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: InstantiationToGetClass in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InvalidLogMessageFormat",
+    "name": "InvalidLogMessageFormat",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: InvalidLogMessageFormat in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JumbledIncrementer",
+    "name": "JumbledIncrementer",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: JumbledIncrementer in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JUnitSpelling",
+    "name": "JUnitSpelling",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: JUnitSpelling in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-JUnitStaticSuite",
+    "name": "JUnitStaticSuite",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: JUnitStaticSuite in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-LoggerIsNotStaticFinal",
+    "name": "LoggerIsNotStaticFinal",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: LoggerIsNotStaticFinal in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MethodWithSameNameAsEnclosingClass",
+    "name": "MethodWithSameNameAsEnclosingClass",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: MethodWithSameNameAsEnclosingClass in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MisplacedNullCheck",
+    "name": "MisplacedNullCheck",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: MisplacedNullCheck in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MissingSerialVersionUID",
+    "name": "MissingSerialVersionUID",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: MissingSerialVersionUID in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MissingStaticMethodInNonInstantiatableClass",
+    "name": "MissingStaticMethodInNonInstantiatableClass",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: MissingStaticMethodInNonInstantiatableClass in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-MoreThanOneLogger",
+    "name": "MoreThanOneLogger",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: MoreThanOneLogger in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NonCaseLabelInSwitch",
+    "name": "NonCaseLabelInSwitch",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: NonCaseLabelInSwitch in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NonStaticInitializer",
+    "name": "NonStaticInitializer",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: NonStaticInitializer in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NullAssignment",
+    "name": "NullAssignment",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: NullAssignment in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-OverrideBothEqualsAndHashcode",
+    "name": "OverrideBothEqualsAndHashcode",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: OverrideBothEqualsAndHashcode in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-OverrideBothEqualsAndHashCodeOnComparable",
+    "name": "OverrideBothEqualsAndHashCodeOnComparable",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: OverrideBothEqualsAndHashCodeOnComparable in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ProperCloneImplementation",
+    "name": "ProperCloneImplementation",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ProperCloneImplementation in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ProperLogger",
+    "name": "ProperLogger",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ProperLogger in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReplaceJavaUtilCalendar",
+    "name": "ReplaceJavaUtilCalendar",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ReplaceJavaUtilCalendar in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReplaceJavaUtilDate",
+    "name": "ReplaceJavaUtilDate",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ReplaceJavaUtilDate in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReturnEmptyCollectionRatherThanNull",
+    "name": "ReturnEmptyCollectionRatherThanNull",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ReturnEmptyCollectionRatherThanNull in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ReturnFromFinallyBlock",
+    "name": "ReturnFromFinallyBlock",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: ReturnFromFinallyBlock in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SimpleDateFormatNeedsLocale",
+    "name": "SimpleDateFormatNeedsLocale",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SimpleDateFormatNeedsLocale in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SingleMethodSingleton",
+    "name": "SingleMethodSingleton",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SingleMethodSingleton in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SingletonClassReturningNewInstance",
+    "name": "SingletonClassReturningNewInstance",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SingletonClassReturningNewInstance in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-StaticEJBFieldShouldBeFinal",
+    "name": "StaticEJBFieldShouldBeFinal",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: StaticEJBFieldShouldBeFinal in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-StringBufferInstantiationWithChar",
+    "name": "StringBufferInstantiationWithChar",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: StringBufferInstantiationWithChar in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SuspiciousEqualsMethodName",
+    "name": "SuspiciousEqualsMethodName",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SuspiciousEqualsMethodName in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SuspiciousHashcodeMethodName",
+    "name": "SuspiciousHashcodeMethodName",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SuspiciousHashcodeMethodName in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-SuspiciousOctalEscape",
+    "name": "SuspiciousOctalEscape",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: SuspiciousOctalEscape in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TestClassWithoutTestCases",
+    "name": "TestClassWithoutTestCases",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: TestClassWithoutTestCases in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnconditionalIfStatement",
+    "name": "UnconditionalIfStatement",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UnconditionalIfStatement in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryBooleanAssertion",
+    "name": "UnnecessaryBooleanAssertion",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UnnecessaryBooleanAssertion in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryCaseChange",
+    "name": "UnnecessaryCaseChange",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UnnecessaryCaseChange in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessaryConversionTemporary",
+    "name": "UnnecessaryConversionTemporary",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UnnecessaryConversionTemporary in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnusedNullCheckInEquals",
+    "name": "UnusedNullCheckInEquals",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UnusedNullCheckInEquals in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseCorrectExceptionLogging",
+    "name": "UseCorrectExceptionLogging",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UseCorrectExceptionLogging in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseEqualsToCompareStrings",
+    "name": "UseEqualsToCompareStrings",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UseEqualsToCompareStrings in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UselessPureMethodCall",
+    "name": "UselessPureMethodCall",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UselessPureMethodCall in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseLocaleWithCaseConversions",
+    "name": "UseLocaleWithCaseConversions",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UseLocaleWithCaseConversions in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseProperClassLoader",
+    "name": "UseProperClassLoader",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: UseProperClassLoader in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-EmptyControlStatement",
+    "name": "EmptyControlStatement",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: EmptyControlStatement in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnnecessarySemicolon",
+    "name": "UnnecessarySemicolon",
+    "category": "PMD Java Codestyle",
+    "description": "PMD Java rule: UnnecessarySemicolon in codestyle category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-EmptyCatchBlock",
+    "name": "EmptyCatchBlock",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: EmptyCatchBlock in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-EmptyFinalizer",
+    "name": "EmptyFinalizer",
+    "category": "PMD Java Errorprone",
+    "description": "PMD Java rule: EmptyFinalizer in errorprone category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidSynchronizedAtMethodLevel",
+    "name": "AvoidSynchronizedAtMethodLevel",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: AvoidSynchronizedAtMethodLevel in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidSynchronizedStatement",
+    "name": "AvoidSynchronizedStatement",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: AvoidSynchronizedStatement in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidThreadGroup",
+    "name": "AvoidThreadGroup",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: AvoidThreadGroup in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidUsingVolatile",
+    "name": "AvoidUsingVolatile",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: AvoidUsingVolatile in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoNotUseThreads",
+    "name": "DoNotUseThreads",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: DoNotUseThreads in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DontCallThreadRun",
+    "name": "DontCallThreadRun",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: DontCallThreadRun in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-DoubleCheckedLocking",
+    "name": "DoubleCheckedLocking",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: DoubleCheckedLocking in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-NonThreadSafeSingleton",
+    "name": "NonThreadSafeSingleton",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: NonThreadSafeSingleton in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UnsynchronizedStaticFormatter",
+    "name": "UnsynchronizedStaticFormatter",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: UnsynchronizedStaticFormatter in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseConcurrentHashMap",
+    "name": "UseConcurrentHashMap",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: UseConcurrentHashMap in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseNotifyAllInsteadOfNotify",
+    "name": "UseNotifyAllInsteadOfNotify",
+    "category": "PMD Java Multithreading",
+    "description": "PMD Java rule: UseNotifyAllInsteadOfNotify in multithreading category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AddEmptyString",
+    "name": "AddEmptyString",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AddEmptyString in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AppendCharacterWithChar",
+    "name": "AppendCharacterWithChar",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AppendCharacterWithChar in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidArrayLoops",
+    "name": "AvoidArrayLoops",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AvoidArrayLoops in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidCalendarDateCreation",
+    "name": "AvoidCalendarDateCreation",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AvoidCalendarDateCreation in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidFileStream",
+    "name": "AvoidFileStream",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AvoidFileStream in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-AvoidInstantiatingObjectsInLoops",
+    "name": "AvoidInstantiatingObjectsInLoops",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: AvoidInstantiatingObjectsInLoops in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-BigIntegerInstantiation",
+    "name": "BigIntegerInstantiation",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: BigIntegerInstantiation in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConsecutiveAppendsShouldReuse",
+    "name": "ConsecutiveAppendsShouldReuse",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: ConsecutiveAppendsShouldReuse in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-ConsecutiveLiteralAppends",
+    "name": "ConsecutiveLiteralAppends",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: ConsecutiveLiteralAppends in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InefficientEmptyStringCheck",
+    "name": "InefficientEmptyStringCheck",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: InefficientEmptyStringCheck in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InefficientStringBuffering",
+    "name": "InefficientStringBuffering",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: InefficientStringBuffering in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InsufficientStringBufferDeclaration",
+    "name": "InsufficientStringBufferDeclaration",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: InsufficientStringBufferDeclaration in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-OptimizableToArrayCall",
+    "name": "OptimizableToArrayCall",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: OptimizableToArrayCall in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-RedundantFieldInitializer",
+    "name": "RedundantFieldInitializer",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: RedundantFieldInitializer in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-StringInstantiation",
+    "name": "StringInstantiation",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: StringInstantiation in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-StringToString",
+    "name": "StringToString",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: StringToString in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-TooFewBranchesForSwitch",
+    "name": "TooFewBranchesForSwitch",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: TooFewBranchesForSwitch in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseArrayListInsteadOfVector",
+    "name": "UseArrayListInsteadOfVector",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseArrayListInsteadOfVector in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseArraysAsList",
+    "name": "UseArraysAsList",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseArraysAsList in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseIndexOfChar",
+    "name": "UseIndexOfChar",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseIndexOfChar in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseIOStreamsWithApacheCommonsFileItem",
+    "name": "UseIOStreamsWithApacheCommonsFileItem",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseIOStreamsWithApacheCommonsFileItem in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UselessStringValueOf",
+    "name": "UselessStringValueOf",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UselessStringValueOf in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseStringBufferForStringAppends",
+    "name": "UseStringBufferForStringAppends",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseStringBufferForStringAppends in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-UseStringBufferLength",
+    "name": "UseStringBufferLength",
+    "category": "PMD Java Performance",
+    "description": "PMD Java rule: UseStringBufferLength in performance category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-HardCodedCryptoKey",
+    "name": "HardCodedCryptoKey",
+    "category": "PMD Java Security",
+    "description": "PMD Java rule: HardCodedCryptoKey in security category",
+    "source": "PMD Official Repository"
+  },
+  {
+    "rule_id": "pmd-InsecureCryptoIv",
+    "name": "InsecureCryptoIv",
+    "category": "PMD Java Security",
+    "description": "PMD Java rule: InsecureCryptoIv in security category",
+    "source": "PMD Official Repository"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "feature_names": [
+    "lines",
+    "complexity",
+    "nesting",
+    "imports",
+    "functions",
+    "classes",
+    "security_risk",
+    "user_inputs",
+    "external_calls"
+  ],
+  "input_dim": 9,
+  "traditional_models": [
+    "RandomForest",
+    "GradientBoosting",
+    "LogisticRegression",
+    "SVM",
+    "MLP",
+    "IsolationForest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "neural_models": [
+    "SecurityDetector",
+    "QualityPredictor"
+  ],
+  "total_models_trained": 10,
+  "training_timestamp": "2025-08-23 12:40:53.820853",
+  "scaler_file": "production_scaler.joblib",
+  "ensemble_file": "production_super_ensemble.json"
+}

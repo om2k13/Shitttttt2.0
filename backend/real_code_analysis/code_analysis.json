@@ -1,0 +1,1191 @@
+[
+  {
+    "file": "test_safe_neural.py",
+    "language": "python",
+    "metrics": {
+      "lines": 59,
+      "complexity": 4,
+      "nesting": 3,
+      "imports": 5,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "workspace_cli.py",
+    "language": "python",
+    "metrics": {
+      "lines": 374,
+      "complexity": 32,
+      "nesting": 31,
+      "imports": 12,
+      "functions": 16,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "startup.py",
+    "language": "python",
+    "metrics": {
+      "lines": 123,
+      "complexity": 6,
+      "nesting": 5,
+      "imports": 9,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.5000000000000001,
+    "issues": [
+      "file_too_long",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "test_cleanup.py",
+    "language": "python",
+    "metrics": {
+      "lines": 87,
+      "complexity": 3,
+      "nesting": 2,
+      "imports": 5,
+      "functions": 2,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "safe_test.py",
+    "language": "python",
+    "metrics": {
+      "lines": 212,
+      "complexity": 23,
+      "nesting": 20,
+      "imports": 10,
+      "functions": 5,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "test_new_workflow.py",
+    "language": "python",
+    "metrics": {
+      "lines": 125,
+      "complexity": 4,
+      "nesting": 3,
+      "imports": 5,
+      "functions": 2,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.6000000000000001,
+    "issues": [
+      "file_too_long"
+    ]
+  },
+  {
+    "file": "train_ml_models.py",
+    "language": "python",
+    "metrics": {
+      "lines": 171,
+      "complexity": 7,
+      "nesting": 6,
+      "imports": 8,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.4,
+    "issues": [
+      "file_too_long",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "collect_real_data.py",
+    "language": "python",
+    "metrics": {
+      "lines": 284,
+      "complexity": 42,
+      "nesting": 41,
+      "imports": 5,
+      "functions": 12,
+      "classes": 1
+    },
+    "patterns": [
+      "command_injection",
+      "code_injection",
+      "deserialization_vulnerability",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting",
+      "security_risk",
+      "security_risk",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "neural_demo.py",
+    "language": "python",
+    "metrics": {
+      "lines": 261,
+      "complexity": 14,
+      "nesting": 12,
+      "imports": 9,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "command_injection",
+      "code_injection",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "deep_nesting",
+      "security_risk",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "test_ml_integration.py",
+    "language": "python",
+    "metrics": {
+      "lines": 323,
+      "complexity": 20,
+      "nesting": 20,
+      "imports": 11,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "command_injection",
+      "code_injection",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting",
+      "security_risk",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "test_safe_integration.py",
+    "language": "python",
+    "metrics": {
+      "lines": 94,
+      "complexity": 4,
+      "nesting": 3,
+      "imports": 6,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [
+      "command_injection"
+    ],
+    "quality_score": 0.4,
+    "issues": [
+      "security_risk"
+    ]
+  },
+  {
+    "file": "app/main.py",
+    "language": "python",
+    "metrics": {
+      "lines": 141,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 12,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.6000000000000001,
+    "issues": [
+      "file_too_long"
+    ]
+  },
+  {
+    "file": "app/core/logging.py",
+    "language": "python",
+    "metrics": {
+      "lines": 8,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 1,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/core/token_manager.py",
+    "language": "python",
+    "metrics": {
+      "lines": 259,
+      "complexity": 21,
+      "nesting": 15,
+      "imports": 17,
+      "functions": 6,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/core/enhanced_config.py",
+    "language": "python",
+    "metrics": {
+      "lines": 278,
+      "complexity": 28,
+      "nesting": 18,
+      "imports": 6,
+      "functions": 6,
+      "classes": 13
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/core/llm.py",
+    "language": "python",
+    "metrics": {
+      "lines": 28,
+      "complexity": 7,
+      "nesting": 5,
+      "imports": 3,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.7000000000000001,
+    "issues": [
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/core/utils.py",
+    "language": "python",
+    "metrics": {
+      "lines": 4,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 1,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/core/vcs.py",
+    "language": "python",
+    "metrics": {
+      "lines": 341,
+      "complexity": 51,
+      "nesting": 47,
+      "imports": 5,
+      "functions": 16,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/core/settings.py",
+    "language": "python",
+    "metrics": {
+      "lines": 23,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 2,
+      "functions": 0,
+      "classes": 2
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/cli/code_review_cli.py",
+    "language": "python",
+    "metrics": {
+      "lines": 378,
+      "complexity": 52,
+      "nesting": 42,
+      "imports": 12,
+      "functions": 3,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/cli/advanced_cli.py",
+    "language": "python",
+    "metrics": {
+      "lines": 584,
+      "complexity": 49,
+      "nesting": 57,
+      "imports": 24,
+      "functions": 16,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/integrations/cicd.py",
+    "language": "python",
+    "metrics": {
+      "lines": 683,
+      "complexity": 28,
+      "nesting": 31,
+      "imports": 12,
+      "functions": 8,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/integrations/git_automation.py",
+    "language": "python",
+    "metrics": {
+      "lines": 424,
+      "complexity": 66,
+      "nesting": 56,
+      "imports": 6,
+      "functions": 3,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/integrations/notifications.py",
+    "language": "python",
+    "metrics": {
+      "lines": 571,
+      "complexity": 44,
+      "nesting": 44,
+      "imports": 11,
+      "functions": 7,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/integrations/github.py",
+    "language": "python",
+    "metrics": {
+      "lines": 353,
+      "complexity": 40,
+      "nesting": 37,
+      "imports": 7,
+      "functions": 4,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/advanced_reporter.py",
+    "language": "python",
+    "metrics": {
+      "lines": 712,
+      "complexity": 42,
+      "nesting": 40,
+      "imports": 13,
+      "functions": 22,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/advanced_security.py",
+    "language": "python",
+    "metrics": {
+      "lines": 1001,
+      "complexity": 104,
+      "nesting": 102,
+      "imports": 9,
+      "functions": 20,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/ml_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 484,
+      "complexity": 37,
+      "nesting": 34,
+      "imports": 12,
+      "functions": 16,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/test_generator.py",
+    "language": "python",
+    "metrics": {
+      "lines": 615,
+      "complexity": 48,
+      "nesting": 45,
+      "imports": 6,
+      "functions": 11,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/safe_neural_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 143,
+      "complexity": 8,
+      "nesting": 9,
+      "imports": 6,
+      "functions": 11,
+      "classes": 4
+    },
+    "patterns": [
+      "code_injection",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "deep_nesting",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "app/review/performance_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 419,
+      "complexity": 41,
+      "nesting": 42,
+      "imports": 6,
+      "functions": 3,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/compliance_checker.py",
+    "language": "python",
+    "metrics": {
+      "lines": 789,
+      "complexity": 44,
+      "nesting": 45,
+      "imports": 7,
+      "functions": 6,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/pr_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 339,
+      "complexity": 43,
+      "nesting": 42,
+      "imports": 8,
+      "functions": 5,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/neural_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 532,
+      "complexity": 30,
+      "nesting": 30,
+      "imports": 15,
+      "functions": 22,
+      "classes": 4
+    },
+    "patterns": [
+      "code_injection",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "app/review/enhanced_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 625,
+      "complexity": 78,
+      "nesting": 65,
+      "imports": 4,
+      "functions": 11,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/enhanced_pipeline.py",
+    "language": "python",
+    "metrics": {
+      "lines": 705,
+      "complexity": 84,
+      "nesting": 77,
+      "imports": 14,
+      "functions": 3,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/pipeline.py",
+    "language": "python",
+    "metrics": {
+      "lines": 310,
+      "complexity": 58,
+      "nesting": 50,
+      "imports": 10,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/security_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 420,
+      "complexity": 35,
+      "nesting": 35,
+      "imports": 6,
+      "functions": 2,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/api_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 514,
+      "complexity": 85,
+      "nesting": 69,
+      "imports": 6,
+      "functions": 7,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/code_review_agent.py",
+    "language": "python",
+    "metrics": {
+      "lines": 1043,
+      "complexity": 129,
+      "nesting": 123,
+      "imports": 11,
+      "functions": 6,
+      "classes": 2
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/enhanced_ml_analyzer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 899,
+      "complexity": 70,
+      "nesting": 59,
+      "imports": 24,
+      "functions": 25,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/real_data_generator.py",
+    "language": "python",
+    "metrics": {
+      "lines": 339,
+      "complexity": 18,
+      "nesting": 15,
+      "imports": 5,
+      "functions": 9,
+      "classes": 1
+    },
+    "patterns": [
+      "command_injection",
+      "long_file"
+    ],
+    "quality_score": 0.0,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting",
+      "security_risk"
+    ]
+  },
+  {
+    "file": "app/db/models.py",
+    "language": "python",
+    "metrics": {
+      "lines": 119,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 4,
+      "functions": 0,
+      "classes": 10
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.6000000000000001,
+    "issues": [
+      "file_too_long"
+    ]
+  },
+  {
+    "file": "app/db/base.py",
+    "language": "python",
+    "metrics": {
+      "lines": 20,
+      "complexity": 1,
+      "nesting": 0,
+      "imports": 4,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/api/config.py",
+    "language": "python",
+    "metrics": {
+      "lines": 64,
+      "complexity": 2,
+      "nesting": 1,
+      "imports": 6,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/api/code_review.py",
+    "language": "python",
+    "metrics": {
+      "lines": 545,
+      "complexity": 44,
+      "nesting": 40,
+      "imports": 18,
+      "functions": 2,
+      "classes": 5
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/api/users.py",
+    "language": "python",
+    "metrics": {
+      "lines": 448,
+      "complexity": 25,
+      "nesting": 24,
+      "imports": 8,
+      "functions": 0,
+      "classes": 2
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/api/actions.py",
+    "language": "python",
+    "metrics": {
+      "lines": 994,
+      "complexity": 79,
+      "nesting": 78,
+      "imports": 36,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/api/enhanced_actions.py",
+    "language": "python",
+    "metrics": {
+      "lines": 431,
+      "complexity": 34,
+      "nesting": 29,
+      "imports": 9,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/api/jobs.py",
+    "language": "python",
+    "metrics": {
+      "lines": 89,
+      "complexity": 3,
+      "nesting": 2,
+      "imports": 14,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/api/reports.py",
+    "language": "python",
+    "metrics": {
+      "lines": 464,
+      "complexity": 41,
+      "nesting": 33,
+      "imports": 11,
+      "functions": 0,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/api/analytics.py",
+    "language": "python",
+    "metrics": {
+      "lines": 343,
+      "complexity": 31,
+      "nesting": 15,
+      "imports": 8,
+      "functions": 1,
+      "classes": 0
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/analytics/business_intelligence.py",
+    "language": "python",
+    "metrics": {
+      "lines": 820,
+      "complexity": 46,
+      "nesting": 44,
+      "imports": 9,
+      "functions": 20,
+      "classes": 4
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/analytics/predictive_analytics.py",
+    "language": "python",
+    "metrics": {
+      "lines": 781,
+      "complexity": 97,
+      "nesting": 93,
+      "imports": 16,
+      "functions": 11,
+      "classes": 5
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/autofix/safe_fixes.py",
+    "language": "python",
+    "metrics": {
+      "lines": 20,
+      "complexity": 6,
+      "nesting": 1,
+      "imports": 3,
+      "functions": 2,
+      "classes": 0
+    },
+    "patterns": [],
+    "quality_score": 0.8,
+    "issues": []
+  },
+  {
+    "file": "app/review/autofix/security_fixes.py",
+    "language": "python",
+    "metrics": {
+      "lines": 195,
+      "complexity": 23,
+      "nesting": 18,
+      "imports": 5,
+      "functions": 1,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 0.10000000000000006,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/autofix/code_quality_fixes.py",
+    "language": "python",
+    "metrics": {
+      "lines": 261,
+      "complexity": 37,
+      "nesting": 31,
+      "imports": 5,
+      "functions": 1,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/autofix/master_fixer.py",
+    "language": "python",
+    "metrics": {
+      "lines": 240,
+      "complexity": 21,
+      "nesting": 18,
+      "imports": 8,
+      "functions": 1,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  },
+  {
+    "file": "app/review/autofix/type_fixes.py",
+    "language": "python",
+    "metrics": {
+      "lines": 315,
+      "complexity": 39,
+      "nesting": 36,
+      "imports": 5,
+      "functions": 1,
+      "classes": 1
+    },
+    "patterns": [
+      "long_file"
+    ],
+    "quality_score": 8.326672684688674e-17,
+    "issues": [
+      "file_too_long",
+      "high_complexity",
+      "deep_nesting"
+    ]
+  }
+]

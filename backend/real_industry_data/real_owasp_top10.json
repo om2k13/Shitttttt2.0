@@ -1,0 +1,72 @@
+[
+  {
+    "rank": 1,
+    "name": "Broken Access Control",
+    "description": "Access control enforces policy such that users cannot act outside of their intended permissions.",
+    "category": "Security Control",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 2,
+    "name": "Cryptographic Failures",
+    "description": "Failures related to cryptography which often lead to exposure of sensitive data.",
+    "category": "Cryptography",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 3,
+    "name": "Injection",
+    "description": "Injection flaws allow attackers to relay malicious code through an application to another system.",
+    "category": "Input Validation",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 4,
+    "name": "Insecure Design",
+    "description": "Flaws in design and architecture cannot be fixed by proper implementation.",
+    "category": "Design",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 5,
+    "name": "Security Misconfiguration",
+    "description": "Improperly configured permissions on cloud services, unnecessary features enabled.",
+    "category": "Configuration",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 6,
+    "name": "Vulnerable and Outdated Components",
+    "description": "Using components with known vulnerabilities undermines application defenses.",
+    "category": "Dependencies",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 7,
+    "name": "Identification and Authentication Failures",
+    "description": "Authentication and session management functions are often implemented incorrectly.",
+    "category": "Authentication",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 8,
+    "name": "Software and Data Integrity Failures",
+    "description": "Software and data integrity failures relate to code and infrastructure that is not protected from integrity violations.",
+    "category": "Integrity",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 9,
+    "name": "Security Logging and Monitoring Failures",
+    "description": "This category helps detect, escalate, and respond to active breaches.",
+    "category": "Monitoring",
+    "source": "OWASP Top 10 2021 (Official)"
+  },
+  {
+    "rank": 10,
+    "name": "Server-Side Request Forgery",
+    "description": "SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL.",
+    "category": "Request Validation",
+    "source": "OWASP Top 10 2021 (Official)"
+  }
+]

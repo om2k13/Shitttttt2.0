@@ -1,0 +1,23 @@
+{
+  "total_samples": 5000,
+  "real_samples": 59,
+  "synthetic_samples": 4941,
+  "features": 9,
+  "quality_distribution": {
+    "high": 1270,
+    "medium": 351,
+    "low": 3379
+  },
+  "security_distribution": {
+    "safe": 3012,
+    "risky": 1988
+  },
+  "data_sources": [
+    "synthetic_industry_based",
+    "real_code_analysis"
+  ],
+  "industry_patterns": {
+    "security": 7,
+    "quality": 7
+  }
+}

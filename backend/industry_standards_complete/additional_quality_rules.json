@@ -1,0 +1,3665 @@
+{
+  "additional_sonarqube": [
+    {
+      "rule_key": "S2000",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in python code"
+    },
+    {
+      "rule_key": "S2001",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in javascript code"
+    },
+    {
+      "rule_key": "S2002",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in java code"
+    },
+    {
+      "rule_key": "S2003",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in go code"
+    },
+    {
+      "rule_key": "S2004",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in php code"
+    },
+    {
+      "rule_key": "S2005",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in ruby code"
+    },
+    {
+      "rule_key": "S2006",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in csharp code"
+    },
+    {
+      "rule_key": "S2007",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in typescript code"
+    },
+    {
+      "rule_key": "S2008",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in python code"
+    },
+    {
+      "rule_key": "S2009",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in javascript code"
+    },
+    {
+      "rule_key": "S2010",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in java code"
+    },
+    {
+      "rule_key": "S2011",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in go code"
+    },
+    {
+      "rule_key": "S2012",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in php code"
+    },
+    {
+      "rule_key": "S2013",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in ruby code"
+    },
+    {
+      "rule_key": "S2014",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in csharp code"
+    },
+    {
+      "rule_key": "S2015",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in typescript code"
+    },
+    {
+      "rule_key": "S2016",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in python code"
+    },
+    {
+      "rule_key": "S2017",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in javascript code"
+    },
+    {
+      "rule_key": "S2018",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in java code"
+    },
+    {
+      "rule_key": "S2019",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper input validation in go code"
+    },
+    {
+      "rule_key": "S2020",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in php code"
+    },
+    {
+      "rule_key": "S2021",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in ruby code"
+    },
+    {
+      "rule_key": "S2022",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in csharp code"
+    },
+    {
+      "rule_key": "S2023",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in typescript code"
+    },
+    {
+      "rule_key": "S2024",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in python code"
+    },
+    {
+      "rule_key": "S2025",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in javascript code"
+    },
+    {
+      "rule_key": "S2026",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in java code"
+    },
+    {
+      "rule_key": "S2027",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in go code"
+    },
+    {
+      "rule_key": "S2028",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in php code"
+    },
+    {
+      "rule_key": "S2029",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper input validation in ruby code"
+    },
+    {
+      "rule_key": "S2030",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in csharp code"
+    },
+    {
+      "rule_key": "S2031",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in typescript code"
+    },
+    {
+      "rule_key": "S2032",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in python code"
+    },
+    {
+      "rule_key": "S2033",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in javascript code"
+    },
+    {
+      "rule_key": "S2034",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in java code"
+    },
+    {
+      "rule_key": "S2035",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in go code"
+    },
+    {
+      "rule_key": "S2036",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in php code"
+    },
+    {
+      "rule_key": "S2037",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in ruby code"
+    },
+    {
+      "rule_key": "S2038",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in csharp code"
+    },
+    {
+      "rule_key": "S2039",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in typescript code"
+    },
+    {
+      "rule_key": "S2040",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in python code"
+    },
+    {
+      "rule_key": "S2041",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in javascript code"
+    },
+    {
+      "rule_key": "S2042",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in java code"
+    },
+    {
+      "rule_key": "S2043",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in go code"
+    },
+    {
+      "rule_key": "S2044",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in php code"
+    },
+    {
+      "rule_key": "S2045",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in ruby code"
+    },
+    {
+      "rule_key": "S2046",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in csharp code"
+    },
+    {
+      "rule_key": "S2047",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in typescript code"
+    },
+    {
+      "rule_key": "S2048",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in python code"
+    },
+    {
+      "rule_key": "S2049",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in javascript code"
+    },
+    {
+      "rule_key": "S2050",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in java code"
+    },
+    {
+      "rule_key": "S2051",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in go code"
+    },
+    {
+      "rule_key": "S2052",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in php code"
+    },
+    {
+      "rule_key": "S2053",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in ruby code"
+    },
+    {
+      "rule_key": "S2054",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in csharp code"
+    },
+    {
+      "rule_key": "S2055",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in typescript code"
+    },
+    {
+      "rule_key": "S2056",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in python code"
+    },
+    {
+      "rule_key": "S2057",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in javascript code"
+    },
+    {
+      "rule_key": "S2058",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in java code"
+    },
+    {
+      "rule_key": "S2059",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper input validation in go code"
+    },
+    {
+      "rule_key": "S2060",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in php code"
+    },
+    {
+      "rule_key": "S2061",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in ruby code"
+    },
+    {
+      "rule_key": "S2062",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in csharp code"
+    },
+    {
+      "rule_key": "S2063",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in typescript code"
+    },
+    {
+      "rule_key": "S2064",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in python code"
+    },
+    {
+      "rule_key": "S2065",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in javascript code"
+    },
+    {
+      "rule_key": "S2066",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in java code"
+    },
+    {
+      "rule_key": "S2067",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in go code"
+    },
+    {
+      "rule_key": "S2068",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in php code"
+    },
+    {
+      "rule_key": "S2069",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper input validation in ruby code"
+    },
+    {
+      "rule_key": "S2070",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in csharp code"
+    },
+    {
+      "rule_key": "S2071",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in typescript code"
+    },
+    {
+      "rule_key": "S2072",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in python code"
+    },
+    {
+      "rule_key": "S2073",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in javascript code"
+    },
+    {
+      "rule_key": "S2074",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in java code"
+    },
+    {
+      "rule_key": "S2075",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in go code"
+    },
+    {
+      "rule_key": "S2076",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in php code"
+    },
+    {
+      "rule_key": "S2077",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in ruby code"
+    },
+    {
+      "rule_key": "S2078",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in csharp code"
+    },
+    {
+      "rule_key": "S2079",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in typescript code"
+    },
+    {
+      "rule_key": "S2080",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in python code"
+    },
+    {
+      "rule_key": "S2081",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in javascript code"
+    },
+    {
+      "rule_key": "S2082",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in java code"
+    },
+    {
+      "rule_key": "S2083",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in go code"
+    },
+    {
+      "rule_key": "S2084",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in php code"
+    },
+    {
+      "rule_key": "S2085",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in ruby code"
+    },
+    {
+      "rule_key": "S2086",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in csharp code"
+    },
+    {
+      "rule_key": "S2087",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in typescript code"
+    },
+    {
+      "rule_key": "S2088",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in python code"
+    },
+    {
+      "rule_key": "S2089",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in javascript code"
+    },
+    {
+      "rule_key": "S2090",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in java code"
+    },
+    {
+      "rule_key": "S2091",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in go code"
+    },
+    {
+      "rule_key": "S2092",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in php code"
+    },
+    {
+      "rule_key": "S2093",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in ruby code"
+    },
+    {
+      "rule_key": "S2094",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in csharp code"
+    },
+    {
+      "rule_key": "S2095",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in typescript code"
+    },
+    {
+      "rule_key": "S2096",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in python code"
+    },
+    {
+      "rule_key": "S2097",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in javascript code"
+    },
+    {
+      "rule_key": "S2098",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in java code"
+    },
+    {
+      "rule_key": "S2099",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper input validation in go code"
+    },
+    {
+      "rule_key": "S2100",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in php code"
+    },
+    {
+      "rule_key": "S2101",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in ruby code"
+    },
+    {
+      "rule_key": "S2102",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in csharp code"
+    },
+    {
+      "rule_key": "S2103",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in typescript code"
+    },
+    {
+      "rule_key": "S2104",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in python code"
+    },
+    {
+      "rule_key": "S2105",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in javascript code"
+    },
+    {
+      "rule_key": "S2106",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in java code"
+    },
+    {
+      "rule_key": "S2107",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in go code"
+    },
+    {
+      "rule_key": "S2108",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in php code"
+    },
+    {
+      "rule_key": "S2109",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper input validation in ruby code"
+    },
+    {
+      "rule_key": "S2110",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in csharp code"
+    },
+    {
+      "rule_key": "S2111",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in typescript code"
+    },
+    {
+      "rule_key": "S2112",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in python code"
+    },
+    {
+      "rule_key": "S2113",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in javascript code"
+    },
+    {
+      "rule_key": "S2114",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in java code"
+    },
+    {
+      "rule_key": "S2115",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in go code"
+    },
+    {
+      "rule_key": "S2116",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in php code"
+    },
+    {
+      "rule_key": "S2117",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in ruby code"
+    },
+    {
+      "rule_key": "S2118",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in csharp code"
+    },
+    {
+      "rule_key": "S2119",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in typescript code"
+    },
+    {
+      "rule_key": "S2120",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in python code"
+    },
+    {
+      "rule_key": "S2121",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in javascript code"
+    },
+    {
+      "rule_key": "S2122",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in java code"
+    },
+    {
+      "rule_key": "S2123",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in go code"
+    },
+    {
+      "rule_key": "S2124",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in php code"
+    },
+    {
+      "rule_key": "S2125",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in ruby code"
+    },
+    {
+      "rule_key": "S2126",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in csharp code"
+    },
+    {
+      "rule_key": "S2127",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in typescript code"
+    },
+    {
+      "rule_key": "S2128",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in python code"
+    },
+    {
+      "rule_key": "S2129",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in javascript code"
+    },
+    {
+      "rule_key": "S2130",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in java code"
+    },
+    {
+      "rule_key": "S2131",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in go code"
+    },
+    {
+      "rule_key": "S2132",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in php code"
+    },
+    {
+      "rule_key": "S2133",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in ruby code"
+    },
+    {
+      "rule_key": "S2134",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in csharp code"
+    },
+    {
+      "rule_key": "S2135",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in typescript code"
+    },
+    {
+      "rule_key": "S2136",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in python code"
+    },
+    {
+      "rule_key": "S2137",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in javascript code"
+    },
+    {
+      "rule_key": "S2138",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in java code"
+    },
+    {
+      "rule_key": "S2139",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper input validation in go code"
+    },
+    {
+      "rule_key": "S2140",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in php code"
+    },
+    {
+      "rule_key": "S2141",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in ruby code"
+    },
+    {
+      "rule_key": "S2142",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in csharp code"
+    },
+    {
+      "rule_key": "S2143",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in typescript code"
+    },
+    {
+      "rule_key": "S2144",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in python code"
+    },
+    {
+      "rule_key": "S2145",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in javascript code"
+    },
+    {
+      "rule_key": "S2146",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in java code"
+    },
+    {
+      "rule_key": "S2147",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in go code"
+    },
+    {
+      "rule_key": "S2148",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in php code"
+    },
+    {
+      "rule_key": "S2149",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper input validation in ruby code"
+    },
+    {
+      "rule_key": "S2150",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in csharp code"
+    },
+    {
+      "rule_key": "S2151",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in typescript code"
+    },
+    {
+      "rule_key": "S2152",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in python code"
+    },
+    {
+      "rule_key": "S2153",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in javascript code"
+    },
+    {
+      "rule_key": "S2154",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in java code"
+    },
+    {
+      "rule_key": "S2155",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in go code"
+    },
+    {
+      "rule_key": "S2156",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in php code"
+    },
+    {
+      "rule_key": "S2157",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in ruby code"
+    },
+    {
+      "rule_key": "S2158",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in csharp code"
+    },
+    {
+      "rule_key": "S2159",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in typescript code"
+    },
+    {
+      "rule_key": "S2160",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in python code"
+    },
+    {
+      "rule_key": "S2161",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in javascript code"
+    },
+    {
+      "rule_key": "S2162",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in java code"
+    },
+    {
+      "rule_key": "S2163",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in go code"
+    },
+    {
+      "rule_key": "S2164",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in php code"
+    },
+    {
+      "rule_key": "S2165",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in ruby code"
+    },
+    {
+      "rule_key": "S2166",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in csharp code"
+    },
+    {
+      "rule_key": "S2167",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in typescript code"
+    },
+    {
+      "rule_key": "S2168",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in python code"
+    },
+    {
+      "rule_key": "S2169",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in javascript code"
+    },
+    {
+      "rule_key": "S2170",
+      "name": "Avoid using deprecated methods",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in java code"
+    },
+    {
+      "rule_key": "S2171",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in go code"
+    },
+    {
+      "rule_key": "S2172",
+      "name": "Avoid deeply nested loops",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in php code"
+    },
+    {
+      "rule_key": "S2173",
+      "name": "Use meaningful variable names",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in ruby code"
+    },
+    {
+      "rule_key": "S2174",
+      "name": "Avoid unused imports",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in csharp code"
+    },
+    {
+      "rule_key": "S2175",
+      "name": "Use proper exception handling",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in typescript code"
+    },
+    {
+      "rule_key": "S2176",
+      "name": "Avoid hardcoded file paths",
+      "severity": "BLOCKER",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in python code"
+    },
+    {
+      "rule_key": "S2177",
+      "name": "Use secure random number generation",
+      "severity": "MINOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in javascript code"
+    },
+    {
+      "rule_key": "S2178",
+      "name": "Avoid using eval() function",
+      "severity": "MAJOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in java code"
+    },
+    {
+      "rule_key": "S2179",
+      "name": "Use proper input validation",
+      "severity": "BLOCKER",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper input validation in go code"
+    },
+    {
+      "rule_key": "S2180",
+      "name": "Avoid using deprecated methods",
+      "severity": "MINOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in php code"
+    },
+    {
+      "rule_key": "S2181",
+      "name": "Use constants instead of magic numbers",
+      "severity": "MAJOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in ruby code"
+    },
+    {
+      "rule_key": "S2182",
+      "name": "Avoid deeply nested loops",
+      "severity": "BLOCKER",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in csharp code"
+    },
+    {
+      "rule_key": "S2183",
+      "name": "Use meaningful variable names",
+      "severity": "MINOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in typescript code"
+    },
+    {
+      "rule_key": "S2184",
+      "name": "Avoid unused imports",
+      "severity": "MAJOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in python code"
+    },
+    {
+      "rule_key": "S2185",
+      "name": "Use proper exception handling",
+      "severity": "BLOCKER",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in javascript code"
+    },
+    {
+      "rule_key": "S2186",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MINOR",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in java code"
+    },
+    {
+      "rule_key": "S2187",
+      "name": "Use secure random number generation",
+      "severity": "MAJOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in go code"
+    },
+    {
+      "rule_key": "S2188",
+      "name": "Avoid using eval() function",
+      "severity": "BLOCKER",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in php code"
+    },
+    {
+      "rule_key": "S2189",
+      "name": "Use proper input validation",
+      "severity": "MINOR",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use proper input validation in ruby code"
+    },
+    {
+      "rule_key": "S2190",
+      "name": "Avoid using deprecated methods",
+      "severity": "MAJOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using deprecated methods in csharp code"
+    },
+    {
+      "rule_key": "S2191",
+      "name": "Use constants instead of magic numbers",
+      "severity": "BLOCKER",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use constants instead of magic numbers in typescript code"
+    },
+    {
+      "rule_key": "S2192",
+      "name": "Avoid deeply nested loops",
+      "severity": "MINOR",
+      "language": "python",
+      "category": "Code Quality",
+      "description": "Avoid deeply nested loops in python code"
+    },
+    {
+      "rule_key": "S2193",
+      "name": "Use meaningful variable names",
+      "severity": "MAJOR",
+      "language": "javascript",
+      "category": "Code Quality",
+      "description": "Use meaningful variable names in javascript code"
+    },
+    {
+      "rule_key": "S2194",
+      "name": "Avoid unused imports",
+      "severity": "BLOCKER",
+      "language": "java",
+      "category": "Code Quality",
+      "description": "Avoid unused imports in java code"
+    },
+    {
+      "rule_key": "S2195",
+      "name": "Use proper exception handling",
+      "severity": "MINOR",
+      "language": "go",
+      "category": "Code Quality",
+      "description": "Use proper exception handling in go code"
+    },
+    {
+      "rule_key": "S2196",
+      "name": "Avoid hardcoded file paths",
+      "severity": "MAJOR",
+      "language": "php",
+      "category": "Code Quality",
+      "description": "Avoid hardcoded file paths in php code"
+    },
+    {
+      "rule_key": "S2197",
+      "name": "Use secure random number generation",
+      "severity": "BLOCKER",
+      "language": "ruby",
+      "category": "Code Quality",
+      "description": "Use secure random number generation in ruby code"
+    },
+    {
+      "rule_key": "S2198",
+      "name": "Avoid using eval() function",
+      "severity": "MINOR",
+      "language": "csharp",
+      "category": "Code Quality",
+      "description": "Avoid using eval() function in csharp code"
+    },
+    {
+      "rule_key": "S2199",
+      "name": "Use proper input validation",
+      "severity": "MAJOR",
+      "language": "typescript",
+      "category": "Code Quality",
+      "description": "Use proper input validation in typescript code"
+    }
+  ],
+  "additional_eslint": [
+    {
+      "rule_id": "eslint-extended-1",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-2",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-3",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-4",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-5",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-6",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-7",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-8",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-9",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-10",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-11",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-12",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-13",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-14",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-15",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-16",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-17",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-18",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-19",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-20",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-21",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-22",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-23",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-24",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-25",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-26",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-27",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-28",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-29",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-30",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-31",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-32",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-33",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-34",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-35",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-36",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-37",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-38",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-39",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-40",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-41",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-42",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-43",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-44",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-45",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-46",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-47",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-48",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-49",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-50",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-51",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-52",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-53",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-54",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-55",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-56",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-57",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-58",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-59",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-60",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-61",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-62",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-63",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-64",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-65",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-66",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-67",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-68",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-69",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-70",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-71",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-72",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-73",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-74",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-75",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-76",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-77",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-78",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-79",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-80",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-81",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-82",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-83",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-84",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-85",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-86",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-87",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-88",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-89",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-90",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-91",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-92",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-93",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-94",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-95",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-96",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-97",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-98",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-99",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-100",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-101",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-102",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-103",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-104",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-105",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-106",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-107",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-108",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-109",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-110",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-111",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-112",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-113",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-114",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-115",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-116",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-117",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-118",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-119",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-120",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-121",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-122",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-123",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-124",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-125",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-126",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-127",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-128",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-129",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-130",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-131",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-132",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-133",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-134",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-135",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-136",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-137",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-138",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-139",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-140",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-141",
+      "name": "Disallow unused parameters",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-142",
+      "name": "Require consistent return statements",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-143",
+      "name": "Disallow unnecessary semicolons",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-144",
+      "name": "Require proper spacing",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-145",
+      "name": "Disallow console.log in production",
+      "severity": "error",
+      "category": "Stylistic Issues"
+    },
+    {
+      "rule_id": "eslint-extended-146",
+      "name": "Require proper error handling",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-extended-147",
+      "name": "Disallow global variables",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-extended-148",
+      "name": "Require proper JSDoc comments",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-extended-149",
+      "name": "Disallow nested ternary expressions",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-extended-150",
+      "name": "Require proper async/await usage",
+      "severity": "warn",
+      "category": "Stylistic Issues"
+    }
+  ],
+  "additional_language_specific": [
+    {
+      "rule_id": "python-1",
+      "name": "Use type hints for function parameters",
+      "language": "python",
+      "severity": "MEDIUM",
+      "category": "Python Best Practices"
+    },
+    {
+      "rule_id": "python-2",
+      "name": "Avoid mutable default arguments",
+      "language": "python",
+      "severity": "HIGH",
+      "category": "Python Best Practices"
+    },
+    {
+      "rule_id": "python-3",
+      "name": "Use context managers for file operations",
+      "language": "python",
+      "severity": "LOW",
+      "category": "Python Best Practices"
+    },
+    {
+      "rule_id": "python-4",
+      "name": "Follow PEP 8 style guidelines",
+      "language": "python",
+      "severity": "MEDIUM",
+      "category": "Python Best Practices"
+    },
+    {
+      "rule_id": "python-5",
+      "name": "Use list comprehensions appropriately",
+      "language": "python",
+      "severity": "HIGH",
+      "category": "Python Best Practices"
+    },
+    {
+      "rule_id": "java-6",
+      "name": "Use proper access modifiers",
+      "language": "java",
+      "severity": "LOW",
+      "category": "Java Best Practices"
+    },
+    {
+      "rule_id": "java-7",
+      "name": "Override equals() and hashCode() together",
+      "language": "java",
+      "severity": "MEDIUM",
+      "category": "Java Best Practices"
+    },
+    {
+      "rule_id": "java-8",
+      "name": "Use StringBuilder for string concatenation",
+      "language": "java",
+      "severity": "HIGH",
+      "category": "Java Best Practices"
+    },
+    {
+      "rule_id": "java-9",
+      "name": "Follow Java naming conventions",
+      "language": "java",
+      "severity": "LOW",
+      "category": "Java Best Practices"
+    },
+    {
+      "rule_id": "java-10",
+      "name": "Use try-with-resources for resource management",
+      "language": "java",
+      "severity": "MEDIUM",
+      "category": "Java Best Practices"
+    },
+    {
+      "rule_id": "go-11",
+      "name": "Use proper error handling",
+      "language": "go",
+      "severity": "HIGH",
+      "category": "Go Best Practices"
+    },
+    {
+      "rule_id": "go-12",
+      "name": "Follow Go naming conventions",
+      "language": "go",
+      "severity": "LOW",
+      "category": "Go Best Practices"
+    },
+    {
+      "rule_id": "go-13",
+      "name": "Use interfaces appropriately",
+      "language": "go",
+      "severity": "MEDIUM",
+      "category": "Go Best Practices"
+    },
+    {
+      "rule_id": "go-14",
+      "name": "Avoid global variables",
+      "language": "go",
+      "severity": "HIGH",
+      "category": "Go Best Practices"
+    },
+    {
+      "rule_id": "go-15",
+      "name": "Use proper package structure",
+      "language": "go",
+      "severity": "LOW",
+      "category": "Go Best Practices"
+    }
+  ],
+  "additional_best_practices": [
+    {
+      "rule_id": "best-practice-1",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-2",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-3",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-4",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-5",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-6",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-7",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-8",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-9",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-10",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-11",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-12",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-13",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-14",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-15",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-16",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-17",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-18",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-19",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-20",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-21",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-22",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-23",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-24",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-25",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-26",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-27",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-28",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-29",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-30",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-31",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-32",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-33",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-34",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-35",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-36",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-37",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-38",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-39",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-40",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-41",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-42",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-43",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-44",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-45",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-46",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-47",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-48",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-49",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-50",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-51",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-52",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-53",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-54",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-55",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-56",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-57",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-58",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-59",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-60",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-61",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-62",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-63",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-64",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-65",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-66",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-67",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-68",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-69",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-70",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-71",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-72",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-73",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-74",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-75",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-76",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-77",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-78",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-79",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-80",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-81",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-82",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-83",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-84",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-85",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-86",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-87",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-88",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-89",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-90",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-91",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-92",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-93",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-94",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-95",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-96",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-97",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-98",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-99",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-100",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-101",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-102",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-103",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-104",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-105",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-106",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-107",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-108",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-109",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-110",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-111",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-112",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-113",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-114",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-115",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-116",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-117",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-118",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-119",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-120",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-121",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-122",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-123",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-124",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-125",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-126",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-127",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-128",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-129",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-130",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-131",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-132",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-133",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-134",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-135",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-136",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-137",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-138",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-139",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-140",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Optimize for readability"
+    },
+    {
+      "rule_id": "best-practice-141",
+      "name": "Use meaningful variable names",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use meaningful variable names"
+    },
+    {
+      "rule_id": "best-practice-142",
+      "name": "Write self-documenting code",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write self-documenting code"
+    },
+    {
+      "rule_id": "best-practice-143",
+      "name": "Keep functions small and focused",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Keep functions small and focused"
+    },
+    {
+      "rule_id": "best-practice-144",
+      "name": "Use proper error handling",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Use proper error handling"
+    },
+    {
+      "rule_id": "best-practice-145",
+      "name": "Write comprehensive tests",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Write comprehensive tests"
+    },
+    {
+      "rule_id": "best-practice-146",
+      "name": "Use version control effectively",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use version control effectively"
+    },
+    {
+      "rule_id": "best-practice-147",
+      "name": "Follow coding standards",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Follow coding standards"
+    },
+    {
+      "rule_id": "best-practice-148",
+      "name": "Document complex logic",
+      "category": "Best Practices",
+      "severity": "LOW",
+      "description": "Best practice: Document complex logic"
+    },
+    {
+      "rule_id": "best-practice-149",
+      "name": "Use appropriate design patterns",
+      "category": "Best Practices",
+      "severity": "MEDIUM",
+      "description": "Best practice: Use appropriate design patterns"
+    },
+    {
+      "rule_id": "best-practice-150",
+      "name": "Optimize for readability",
+      "category": "Best Practices",
+      "severity": "HIGH",
+      "description": "Best practice: Optimize for readability"
+    }
+  ]
+}

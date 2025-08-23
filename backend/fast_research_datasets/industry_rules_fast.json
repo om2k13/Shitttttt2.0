@@ -1,0 +1,93 @@
+{
+  "owasp_top10": [
+    {
+      "rank": 1,
+      "name": "Broken Access Control",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "name": "Cryptographic Failures",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "name": "Injection",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 4,
+      "name": "Insecure Design",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 5,
+      "name": "Security Misconfiguration",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 6,
+      "name": "Vulnerable Components",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 7,
+      "name": "Auth Failures",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 8,
+      "name": "Data Integrity Failures",
+      "severity": "HIGH"
+    },
+    {
+      "rank": 9,
+      "name": "Logging Failures",
+      "severity": "MEDIUM"
+    },
+    {
+      "rank": 10,
+      "name": "SSRF",
+      "severity": "MEDIUM"
+    }
+  ],
+  "security_patterns": {
+    "sql_injection": [
+      "UNION SELECT",
+      "DROP TABLE",
+      "OR 1=1",
+      "--"
+    ],
+    "xss": [
+      "<script>",
+      "javascript:",
+      "onload=",
+      "onerror="
+    ],
+    "command_injection": [
+      "; rm -rf",
+      "| cat /etc/passwd",
+      "&& whoami"
+    ],
+    "path_traversal": [
+      "../",
+      "..\\",
+      "/etc/passwd",
+      "C:\\Windows\\"
+    ],
+    "hardcoded_secrets": [
+      "password",
+      "secret",
+      "key",
+      "token",
+      "api_key"
+    ]
+  },
+  "quality_patterns": {
+    "long_function": "Functions with >20 lines",
+    "high_complexity": "Cyclomatic complexity >10",
+    "deep_nesting": "Nesting depth >4 levels",
+    "unused_variables": "Declared but never used",
+    "magic_numbers": "Hardcoded numbers without constants"
+  }
+}

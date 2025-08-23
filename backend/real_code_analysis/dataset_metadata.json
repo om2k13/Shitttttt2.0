@@ -1,0 +1,15 @@
+{
+  "total_files": 59,
+  "python_files": 59,
+  "dataset_size": 59,
+  "features": 6,
+  "quality_distribution": {
+    "high": 9,
+    "medium": 4,
+    "low": 46
+  },
+  "security_distribution": {
+    "safe": 52,
+    "risky": 7
+  }
+}

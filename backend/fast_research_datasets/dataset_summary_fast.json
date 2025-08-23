@@ -1,0 +1,12 @@
+{
+  "github_security": {
+    "file": "fast_research_datasets/github_security_fast.json",
+    "count": 294,
+    "source": "GitHub Security API (Fast Mode)"
+  },
+  "industry_rules": {
+    "file": "fast_research_datasets/industry_rules_fast.json",
+    "count": 20,
+    "source": "Industry Standards (Fast Mode)"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "training_summary": {
+    "traditional_ml_models": 8,
+    "neural_network_models": 2,
+    "total_models": 10,
+    "feature_count": 9,
+    "training_completed": "2025-08-23 12:40:53.822330"
+  },
+  "traditional_models": [
+    "RandomForest",
+    "GradientBoosting",
+    "LogisticRegression",
+    "SVM",
+    "MLP",
+    "IsolationForest",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "neural_models": [
+    "SecurityDetector",
+    "QualityPredictor"
+  ],
+  "data_sources": {
+    "security_datasets": [
+      "VulDeePecker (16,180 samples)",
+      "NIST NVD CVE (50,000 samples)",
+      "Debian Security (52,512 samples)",
+      "MITRE CWE (1,623 samples)"
+    ],
+    "quality_rules": [
+      "ESLint Core & Unicorn (416 rules)",
+      "PMD Java (286 rules)",
+      "Pycodestyle Python (80 rules)",
+      "Pydocstyle Python (46 rules)",
+      "Bandit Security (60 rules)",
+      "CodeQL Security (70 rules)",
+      "OWASP Top 10 (10 rules)"
+    ]
+  },
+  "model_files": {
+    "traditional_models": [
+      "production_gradientboosting.joblib",
+      "production_logisticregression.joblib",
+      "production_mlp.joblib",
+      "production_xgboost.joblib",
+      "production_svm.joblib",
+      "production_isolationforest.joblib",
+      "production_scaler.joblib",
+      "production_lightgbm.joblib",
+      "production_randomforest.joblib"
+    ],
+    "neural_models": [
+      "production_securitydetector_neural.pth",
+      "production_qualitypredictor_neural.pth"
+    ],
+    "ensemble_file": "production_super_ensemble.json",
+    "scaler_file": "production_scaler.joblib",
+    "metadata_file": "production_training_metadata.json"
+  },
+  "next_steps": [
+    "Integrate models into code review agent pipeline",
+    "Test complete ML+Neural system",
+    "Deploy production models"
+  ]
+}

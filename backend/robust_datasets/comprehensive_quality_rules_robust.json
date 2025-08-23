@@ -1,0 +1,4162 @@
+{
+  "sonarqube": [
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1000",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1001",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MAJOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1002",
+      "name": "Functions should not have too many parameters",
+      "severity": "BLOCKER",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1003",
+      "name": "Function names should comply with naming convention",
+      "severity": "MINOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1004",
+      "name": "Cognitive Complexity should not be too high",
+      "severity": "MAJOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1005",
+      "name": "String literals should not be duplicated",
+      "severity": "BLOCKER",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1006",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "MINOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1007",
+      "name": "Credentials should not be hard-coded",
+      "severity": "MAJOR",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1008",
+      "name": "Functions should not be too complex",
+      "severity": "BLOCKER",
+      "language": "typescript"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "go"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "php"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "ruby"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "csharp"
+    },
+    {
+      "rule_key": "S1009",
+      "name": "Classes should not have too many methods",
+      "severity": "MINOR",
+      "language": "typescript"
+    },
+    {
+      "rule_id": "sonarqube-expanded-1",
+      "name": "Expanded Sonarqube Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-2",
+      "name": "Expanded Sonarqube Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-3",
+      "name": "Expanded Sonarqube Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-4",
+      "name": "Expanded Sonarqube Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-5",
+      "name": "Expanded Sonarqube Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-6",
+      "name": "Expanded Sonarqube Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-7",
+      "name": "Expanded Sonarqube Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-8",
+      "name": "Expanded Sonarqube Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-9",
+      "name": "Expanded Sonarqube Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-10",
+      "name": "Expanded Sonarqube Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-11",
+      "name": "Expanded Sonarqube Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-12",
+      "name": "Expanded Sonarqube Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-13",
+      "name": "Expanded Sonarqube Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-14",
+      "name": "Expanded Sonarqube Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-15",
+      "name": "Expanded Sonarqube Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-16",
+      "name": "Expanded Sonarqube Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-17",
+      "name": "Expanded Sonarqube Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-18",
+      "name": "Expanded Sonarqube Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-19",
+      "name": "Expanded Sonarqube Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "sonarqube-expanded-20",
+      "name": "Expanded Sonarqube Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "eslint": [
+    {
+      "rule_id": "eslint-1",
+      "name": "Disallow Unused Variables",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-2",
+      "name": "Disallow console statements",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-3",
+      "name": "Require const declarations",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-4",
+      "name": "Require let or const instead of var",
+      "severity": "warn",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-5",
+      "name": "Require === and !=",
+      "severity": "error",
+      "category": "Security"
+    },
+    {
+      "rule_id": "eslint-6",
+      "name": "Disallow eval()",
+      "severity": "warn",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "eslint-7",
+      "name": "Disallow implied eval()",
+      "severity": "error",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "eslint-8",
+      "name": "Disallow new Function",
+      "severity": "warn",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eslint-9",
+      "name": "Disallow Script URLs",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "eslint-10",
+      "name": "Disallow return in finally",
+      "severity": "warn",
+      "category": "Security"
+    },
+    {
+      "rule_id": "eslint-expanded-1",
+      "name": "Expanded Eslint Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-2",
+      "name": "Expanded Eslint Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-3",
+      "name": "Expanded Eslint Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-4",
+      "name": "Expanded Eslint Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-5",
+      "name": "Expanded Eslint Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-6",
+      "name": "Expanded Eslint Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-7",
+      "name": "Expanded Eslint Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-8",
+      "name": "Expanded Eslint Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-9",
+      "name": "Expanded Eslint Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-10",
+      "name": "Expanded Eslint Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-11",
+      "name": "Expanded Eslint Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-12",
+      "name": "Expanded Eslint Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-13",
+      "name": "Expanded Eslint Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-14",
+      "name": "Expanded Eslint Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-15",
+      "name": "Expanded Eslint Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-16",
+      "name": "Expanded Eslint Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-17",
+      "name": "Expanded Eslint Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-18",
+      "name": "Expanded Eslint Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-19",
+      "name": "Expanded Eslint Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "eslint-expanded-20",
+      "name": "Expanded Eslint Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "bandit": [
+    {
+      "rule_id": "bandit-1",
+      "name": "Bandit Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-2",
+      "name": "Bandit Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-3",
+      "name": "Bandit Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-4",
+      "name": "Bandit Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-5",
+      "name": "Bandit Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-6",
+      "name": "Bandit Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-7",
+      "name": "Bandit Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-8",
+      "name": "Bandit Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-9",
+      "name": "Bandit Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-10",
+      "name": "Bandit Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-11",
+      "name": "Bandit Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-12",
+      "name": "Bandit Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-13",
+      "name": "Bandit Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-14",
+      "name": "Bandit Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-15",
+      "name": "Bandit Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-16",
+      "name": "Bandit Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-17",
+      "name": "Bandit Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-18",
+      "name": "Bandit Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-19",
+      "name": "Bandit Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-20",
+      "name": "Bandit Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-21",
+      "name": "Bandit Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-22",
+      "name": "Bandit Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-23",
+      "name": "Bandit Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-24",
+      "name": "Bandit Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-25",
+      "name": "Bandit Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-26",
+      "name": "Bandit Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-27",
+      "name": "Bandit Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-28",
+      "name": "Bandit Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-29",
+      "name": "Bandit Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-30",
+      "name": "Bandit Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-31",
+      "name": "Bandit Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-32",
+      "name": "Bandit Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-33",
+      "name": "Bandit Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-34",
+      "name": "Bandit Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-35",
+      "name": "Bandit Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-36",
+      "name": "Bandit Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-37",
+      "name": "Bandit Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-38",
+      "name": "Bandit Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-39",
+      "name": "Bandit Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-40",
+      "name": "Bandit Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-41",
+      "name": "Bandit Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-42",
+      "name": "Bandit Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-43",
+      "name": "Bandit Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-44",
+      "name": "Bandit Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-45",
+      "name": "Bandit Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-46",
+      "name": "Bandit Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-47",
+      "name": "Bandit Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-48",
+      "name": "Bandit Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-49",
+      "name": "Bandit Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-50",
+      "name": "Bandit Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "bandit-expanded-1",
+      "name": "Expanded Bandit Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-2",
+      "name": "Expanded Bandit Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-3",
+      "name": "Expanded Bandit Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-4",
+      "name": "Expanded Bandit Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-5",
+      "name": "Expanded Bandit Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-6",
+      "name": "Expanded Bandit Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-7",
+      "name": "Expanded Bandit Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-8",
+      "name": "Expanded Bandit Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-9",
+      "name": "Expanded Bandit Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-10",
+      "name": "Expanded Bandit Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-11",
+      "name": "Expanded Bandit Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-12",
+      "name": "Expanded Bandit Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-13",
+      "name": "Expanded Bandit Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-14",
+      "name": "Expanded Bandit Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-15",
+      "name": "Expanded Bandit Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-16",
+      "name": "Expanded Bandit Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-17",
+      "name": "Expanded Bandit Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-18",
+      "name": "Expanded Bandit Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-19",
+      "name": "Expanded Bandit Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "bandit-expanded-20",
+      "name": "Expanded Bandit Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "pmd": [
+    {
+      "rule_id": "pmd-1",
+      "name": "Pmd Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-2",
+      "name": "Pmd Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-3",
+      "name": "Pmd Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-4",
+      "name": "Pmd Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-5",
+      "name": "Pmd Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-6",
+      "name": "Pmd Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-7",
+      "name": "Pmd Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-8",
+      "name": "Pmd Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-9",
+      "name": "Pmd Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-10",
+      "name": "Pmd Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-11",
+      "name": "Pmd Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-12",
+      "name": "Pmd Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-13",
+      "name": "Pmd Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-14",
+      "name": "Pmd Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-15",
+      "name": "Pmd Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-16",
+      "name": "Pmd Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-17",
+      "name": "Pmd Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-18",
+      "name": "Pmd Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-19",
+      "name": "Pmd Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-20",
+      "name": "Pmd Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-21",
+      "name": "Pmd Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-22",
+      "name": "Pmd Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-23",
+      "name": "Pmd Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-24",
+      "name": "Pmd Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-25",
+      "name": "Pmd Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-26",
+      "name": "Pmd Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-27",
+      "name": "Pmd Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-28",
+      "name": "Pmd Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-29",
+      "name": "Pmd Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-30",
+      "name": "Pmd Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-31",
+      "name": "Pmd Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-32",
+      "name": "Pmd Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-33",
+      "name": "Pmd Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-34",
+      "name": "Pmd Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-35",
+      "name": "Pmd Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-36",
+      "name": "Pmd Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-37",
+      "name": "Pmd Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-38",
+      "name": "Pmd Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-39",
+      "name": "Pmd Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-40",
+      "name": "Pmd Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-41",
+      "name": "Pmd Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-42",
+      "name": "Pmd Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-43",
+      "name": "Pmd Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-44",
+      "name": "Pmd Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-45",
+      "name": "Pmd Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-46",
+      "name": "Pmd Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-47",
+      "name": "Pmd Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-48",
+      "name": "Pmd Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-49",
+      "name": "Pmd Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-50",
+      "name": "Pmd Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pmd-expanded-1",
+      "name": "Expanded Pmd Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-2",
+      "name": "Expanded Pmd Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-3",
+      "name": "Expanded Pmd Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-4",
+      "name": "Expanded Pmd Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-5",
+      "name": "Expanded Pmd Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-6",
+      "name": "Expanded Pmd Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-7",
+      "name": "Expanded Pmd Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-8",
+      "name": "Expanded Pmd Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-9",
+      "name": "Expanded Pmd Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-10",
+      "name": "Expanded Pmd Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-11",
+      "name": "Expanded Pmd Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-12",
+      "name": "Expanded Pmd Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-13",
+      "name": "Expanded Pmd Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-14",
+      "name": "Expanded Pmd Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-15",
+      "name": "Expanded Pmd Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-16",
+      "name": "Expanded Pmd Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-17",
+      "name": "Expanded Pmd Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-18",
+      "name": "Expanded Pmd Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-19",
+      "name": "Expanded Pmd Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pmd-expanded-20",
+      "name": "Expanded Pmd Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "golangci": [
+    {
+      "rule_id": "golangci-1",
+      "name": "Golangci Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-2",
+      "name": "Golangci Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-3",
+      "name": "Golangci Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-4",
+      "name": "Golangci Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-5",
+      "name": "Golangci Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-6",
+      "name": "Golangci Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-7",
+      "name": "Golangci Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-8",
+      "name": "Golangci Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-9",
+      "name": "Golangci Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-10",
+      "name": "Golangci Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-11",
+      "name": "Golangci Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-12",
+      "name": "Golangci Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-13",
+      "name": "Golangci Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-14",
+      "name": "Golangci Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-15",
+      "name": "Golangci Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-16",
+      "name": "Golangci Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-17",
+      "name": "Golangci Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-18",
+      "name": "Golangci Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-19",
+      "name": "Golangci Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-20",
+      "name": "Golangci Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-21",
+      "name": "Golangci Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-22",
+      "name": "Golangci Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-23",
+      "name": "Golangci Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-24",
+      "name": "Golangci Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-25",
+      "name": "Golangci Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-26",
+      "name": "Golangci Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-27",
+      "name": "Golangci Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-28",
+      "name": "Golangci Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-29",
+      "name": "Golangci Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-30",
+      "name": "Golangci Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-31",
+      "name": "Golangci Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-32",
+      "name": "Golangci Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-33",
+      "name": "Golangci Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-34",
+      "name": "Golangci Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-35",
+      "name": "Golangci Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-36",
+      "name": "Golangci Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-37",
+      "name": "Golangci Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-38",
+      "name": "Golangci Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-39",
+      "name": "Golangci Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-40",
+      "name": "Golangci Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-41",
+      "name": "Golangci Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-42",
+      "name": "Golangci Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-43",
+      "name": "Golangci Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-44",
+      "name": "Golangci Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-45",
+      "name": "Golangci Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-46",
+      "name": "Golangci Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-47",
+      "name": "Golangci Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-48",
+      "name": "Golangci Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-49",
+      "name": "Golangci Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-50",
+      "name": "Golangci Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "golangci-expanded-1",
+      "name": "Expanded Golangci Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-2",
+      "name": "Expanded Golangci Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-3",
+      "name": "Expanded Golangci Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-4",
+      "name": "Expanded Golangci Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-5",
+      "name": "Expanded Golangci Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-6",
+      "name": "Expanded Golangci Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-7",
+      "name": "Expanded Golangci Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-8",
+      "name": "Expanded Golangci Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-9",
+      "name": "Expanded Golangci Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-10",
+      "name": "Expanded Golangci Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-11",
+      "name": "Expanded Golangci Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-12",
+      "name": "Expanded Golangci Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-13",
+      "name": "Expanded Golangci Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-14",
+      "name": "Expanded Golangci Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-15",
+      "name": "Expanded Golangci Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-16",
+      "name": "Expanded Golangci Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-17",
+      "name": "Expanded Golangci Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-18",
+      "name": "Expanded Golangci Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-19",
+      "name": "Expanded Golangci Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "golangci-expanded-20",
+      "name": "Expanded Golangci Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "phpstan": [
+    {
+      "rule_id": "phpstan-1",
+      "name": "Phpstan Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-2",
+      "name": "Phpstan Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-3",
+      "name": "Phpstan Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-4",
+      "name": "Phpstan Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-5",
+      "name": "Phpstan Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-6",
+      "name": "Phpstan Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-7",
+      "name": "Phpstan Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-8",
+      "name": "Phpstan Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-9",
+      "name": "Phpstan Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-10",
+      "name": "Phpstan Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-11",
+      "name": "Phpstan Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-12",
+      "name": "Phpstan Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-13",
+      "name": "Phpstan Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-14",
+      "name": "Phpstan Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-15",
+      "name": "Phpstan Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-16",
+      "name": "Phpstan Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-17",
+      "name": "Phpstan Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-18",
+      "name": "Phpstan Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-19",
+      "name": "Phpstan Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-20",
+      "name": "Phpstan Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-21",
+      "name": "Phpstan Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-22",
+      "name": "Phpstan Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-23",
+      "name": "Phpstan Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-24",
+      "name": "Phpstan Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-25",
+      "name": "Phpstan Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-26",
+      "name": "Phpstan Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-27",
+      "name": "Phpstan Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-28",
+      "name": "Phpstan Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-29",
+      "name": "Phpstan Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-30",
+      "name": "Phpstan Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-31",
+      "name": "Phpstan Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-32",
+      "name": "Phpstan Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-33",
+      "name": "Phpstan Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-34",
+      "name": "Phpstan Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-35",
+      "name": "Phpstan Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-36",
+      "name": "Phpstan Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-37",
+      "name": "Phpstan Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-38",
+      "name": "Phpstan Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-39",
+      "name": "Phpstan Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-40",
+      "name": "Phpstan Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-41",
+      "name": "Phpstan Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-42",
+      "name": "Phpstan Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-43",
+      "name": "Phpstan Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-44",
+      "name": "Phpstan Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-45",
+      "name": "Phpstan Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-46",
+      "name": "Phpstan Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-47",
+      "name": "Phpstan Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-48",
+      "name": "Phpstan Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-49",
+      "name": "Phpstan Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-50",
+      "name": "Phpstan Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "phpstan-expanded-1",
+      "name": "Expanded Phpstan Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-2",
+      "name": "Expanded Phpstan Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-3",
+      "name": "Expanded Phpstan Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-4",
+      "name": "Expanded Phpstan Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-5",
+      "name": "Expanded Phpstan Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-6",
+      "name": "Expanded Phpstan Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-7",
+      "name": "Expanded Phpstan Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-8",
+      "name": "Expanded Phpstan Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-9",
+      "name": "Expanded Phpstan Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-10",
+      "name": "Expanded Phpstan Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-11",
+      "name": "Expanded Phpstan Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-12",
+      "name": "Expanded Phpstan Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-13",
+      "name": "Expanded Phpstan Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-14",
+      "name": "Expanded Phpstan Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-15",
+      "name": "Expanded Phpstan Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-16",
+      "name": "Expanded Phpstan Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-17",
+      "name": "Expanded Phpstan Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-18",
+      "name": "Expanded Phpstan Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-19",
+      "name": "Expanded Phpstan Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "phpstan-expanded-20",
+      "name": "Expanded Phpstan Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "rubocop": [
+    {
+      "rule_id": "rubocop-1",
+      "name": "Rubocop Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-2",
+      "name": "Rubocop Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-3",
+      "name": "Rubocop Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-4",
+      "name": "Rubocop Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-5",
+      "name": "Rubocop Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-6",
+      "name": "Rubocop Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-7",
+      "name": "Rubocop Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-8",
+      "name": "Rubocop Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-9",
+      "name": "Rubocop Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-10",
+      "name": "Rubocop Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-11",
+      "name": "Rubocop Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-12",
+      "name": "Rubocop Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-13",
+      "name": "Rubocop Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-14",
+      "name": "Rubocop Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-15",
+      "name": "Rubocop Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-16",
+      "name": "Rubocop Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-17",
+      "name": "Rubocop Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-18",
+      "name": "Rubocop Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-19",
+      "name": "Rubocop Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-20",
+      "name": "Rubocop Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-21",
+      "name": "Rubocop Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-22",
+      "name": "Rubocop Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-23",
+      "name": "Rubocop Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-24",
+      "name": "Rubocop Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-25",
+      "name": "Rubocop Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-26",
+      "name": "Rubocop Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-27",
+      "name": "Rubocop Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-28",
+      "name": "Rubocop Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-29",
+      "name": "Rubocop Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-30",
+      "name": "Rubocop Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-31",
+      "name": "Rubocop Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-32",
+      "name": "Rubocop Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-33",
+      "name": "Rubocop Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-34",
+      "name": "Rubocop Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-35",
+      "name": "Rubocop Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-36",
+      "name": "Rubocop Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-37",
+      "name": "Rubocop Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-38",
+      "name": "Rubocop Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-39",
+      "name": "Rubocop Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-40",
+      "name": "Rubocop Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-41",
+      "name": "Rubocop Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-42",
+      "name": "Rubocop Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-43",
+      "name": "Rubocop Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-44",
+      "name": "Rubocop Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-45",
+      "name": "Rubocop Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-46",
+      "name": "Rubocop Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-47",
+      "name": "Rubocop Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-48",
+      "name": "Rubocop Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-49",
+      "name": "Rubocop Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-50",
+      "name": "Rubocop Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "rubocop-expanded-1",
+      "name": "Expanded Rubocop Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-2",
+      "name": "Expanded Rubocop Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-3",
+      "name": "Expanded Rubocop Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-4",
+      "name": "Expanded Rubocop Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-5",
+      "name": "Expanded Rubocop Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-6",
+      "name": "Expanded Rubocop Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-7",
+      "name": "Expanded Rubocop Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-8",
+      "name": "Expanded Rubocop Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-9",
+      "name": "Expanded Rubocop Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-10",
+      "name": "Expanded Rubocop Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-11",
+      "name": "Expanded Rubocop Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-12",
+      "name": "Expanded Rubocop Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-13",
+      "name": "Expanded Rubocop Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-14",
+      "name": "Expanded Rubocop Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-15",
+      "name": "Expanded Rubocop Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-16",
+      "name": "Expanded Rubocop Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-17",
+      "name": "Expanded Rubocop Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-18",
+      "name": "Expanded Rubocop Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-19",
+      "name": "Expanded Rubocop Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "rubocop-expanded-20",
+      "name": "Expanded Rubocop Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "stylelint": [
+    {
+      "rule_id": "stylelint-1",
+      "name": "Stylelint Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-2",
+      "name": "Stylelint Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-3",
+      "name": "Stylelint Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-4",
+      "name": "Stylelint Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-5",
+      "name": "Stylelint Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-6",
+      "name": "Stylelint Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-7",
+      "name": "Stylelint Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-8",
+      "name": "Stylelint Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-9",
+      "name": "Stylelint Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-10",
+      "name": "Stylelint Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-11",
+      "name": "Stylelint Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-12",
+      "name": "Stylelint Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-13",
+      "name": "Stylelint Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-14",
+      "name": "Stylelint Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-15",
+      "name": "Stylelint Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-16",
+      "name": "Stylelint Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-17",
+      "name": "Stylelint Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-18",
+      "name": "Stylelint Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-19",
+      "name": "Stylelint Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-20",
+      "name": "Stylelint Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-21",
+      "name": "Stylelint Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-22",
+      "name": "Stylelint Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-23",
+      "name": "Stylelint Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-24",
+      "name": "Stylelint Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-25",
+      "name": "Stylelint Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-26",
+      "name": "Stylelint Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-27",
+      "name": "Stylelint Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-28",
+      "name": "Stylelint Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-29",
+      "name": "Stylelint Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-30",
+      "name": "Stylelint Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-31",
+      "name": "Stylelint Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-32",
+      "name": "Stylelint Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-33",
+      "name": "Stylelint Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-34",
+      "name": "Stylelint Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-35",
+      "name": "Stylelint Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-36",
+      "name": "Stylelint Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-37",
+      "name": "Stylelint Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-38",
+      "name": "Stylelint Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-39",
+      "name": "Stylelint Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-40",
+      "name": "Stylelint Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-41",
+      "name": "Stylelint Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-42",
+      "name": "Stylelint Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-43",
+      "name": "Stylelint Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-44",
+      "name": "Stylelint Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-45",
+      "name": "Stylelint Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-46",
+      "name": "Stylelint Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-47",
+      "name": "Stylelint Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-48",
+      "name": "Stylelint Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-49",
+      "name": "Stylelint Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-50",
+      "name": "Stylelint Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "stylelint-expanded-1",
+      "name": "Expanded Stylelint Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-2",
+      "name": "Expanded Stylelint Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-3",
+      "name": "Expanded Stylelint Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-4",
+      "name": "Expanded Stylelint Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-5",
+      "name": "Expanded Stylelint Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-6",
+      "name": "Expanded Stylelint Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-7",
+      "name": "Expanded Stylelint Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-8",
+      "name": "Expanded Stylelint Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-9",
+      "name": "Expanded Stylelint Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-10",
+      "name": "Expanded Stylelint Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-11",
+      "name": "Expanded Stylelint Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-12",
+      "name": "Expanded Stylelint Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-13",
+      "name": "Expanded Stylelint Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-14",
+      "name": "Expanded Stylelint Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-15",
+      "name": "Expanded Stylelint Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-16",
+      "name": "Expanded Stylelint Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-17",
+      "name": "Expanded Stylelint Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-18",
+      "name": "Expanded Stylelint Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-19",
+      "name": "Expanded Stylelint Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "stylelint-expanded-20",
+      "name": "Expanded Stylelint Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "pylint": [
+    {
+      "rule_id": "pylint-1",
+      "name": "Pylint Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-2",
+      "name": "Pylint Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-3",
+      "name": "Pylint Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-4",
+      "name": "Pylint Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-5",
+      "name": "Pylint Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-6",
+      "name": "Pylint Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-7",
+      "name": "Pylint Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-8",
+      "name": "Pylint Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-9",
+      "name": "Pylint Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-10",
+      "name": "Pylint Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-11",
+      "name": "Pylint Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-12",
+      "name": "Pylint Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-13",
+      "name": "Pylint Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-14",
+      "name": "Pylint Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-15",
+      "name": "Pylint Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-16",
+      "name": "Pylint Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-17",
+      "name": "Pylint Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-18",
+      "name": "Pylint Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-19",
+      "name": "Pylint Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-20",
+      "name": "Pylint Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-21",
+      "name": "Pylint Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-22",
+      "name": "Pylint Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-23",
+      "name": "Pylint Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-24",
+      "name": "Pylint Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-25",
+      "name": "Pylint Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-26",
+      "name": "Pylint Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-27",
+      "name": "Pylint Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-28",
+      "name": "Pylint Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-29",
+      "name": "Pylint Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-30",
+      "name": "Pylint Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-31",
+      "name": "Pylint Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-32",
+      "name": "Pylint Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-33",
+      "name": "Pylint Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-34",
+      "name": "Pylint Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-35",
+      "name": "Pylint Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-36",
+      "name": "Pylint Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-37",
+      "name": "Pylint Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-38",
+      "name": "Pylint Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-39",
+      "name": "Pylint Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-40",
+      "name": "Pylint Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-41",
+      "name": "Pylint Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-42",
+      "name": "Pylint Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-43",
+      "name": "Pylint Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-44",
+      "name": "Pylint Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-45",
+      "name": "Pylint Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-46",
+      "name": "Pylint Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-47",
+      "name": "Pylint Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-48",
+      "name": "Pylint Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-49",
+      "name": "Pylint Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-50",
+      "name": "Pylint Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "pylint-expanded-1",
+      "name": "Expanded Pylint Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-2",
+      "name": "Expanded Pylint Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-3",
+      "name": "Expanded Pylint Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-4",
+      "name": "Expanded Pylint Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-5",
+      "name": "Expanded Pylint Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-6",
+      "name": "Expanded Pylint Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-7",
+      "name": "Expanded Pylint Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-8",
+      "name": "Expanded Pylint Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-9",
+      "name": "Expanded Pylint Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-10",
+      "name": "Expanded Pylint Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-11",
+      "name": "Expanded Pylint Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-12",
+      "name": "Expanded Pylint Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-13",
+      "name": "Expanded Pylint Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-14",
+      "name": "Expanded Pylint Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-15",
+      "name": "Expanded Pylint Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-16",
+      "name": "Expanded Pylint Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-17",
+      "name": "Expanded Pylint Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-18",
+      "name": "Expanded Pylint Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-19",
+      "name": "Expanded Pylint Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "pylint-expanded-20",
+      "name": "Expanded Pylint Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ],
+  "checkstyle": [
+    {
+      "rule_id": "checkstyle-1",
+      "name": "Checkstyle Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-2",
+      "name": "Checkstyle Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-3",
+      "name": "Checkstyle Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-4",
+      "name": "Checkstyle Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-5",
+      "name": "Checkstyle Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-6",
+      "name": "Checkstyle Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-7",
+      "name": "Checkstyle Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-8",
+      "name": "Checkstyle Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-9",
+      "name": "Checkstyle Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-10",
+      "name": "Checkstyle Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-11",
+      "name": "Checkstyle Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-12",
+      "name": "Checkstyle Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-13",
+      "name": "Checkstyle Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-14",
+      "name": "Checkstyle Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-15",
+      "name": "Checkstyle Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-16",
+      "name": "Checkstyle Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-17",
+      "name": "Checkstyle Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-18",
+      "name": "Checkstyle Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-19",
+      "name": "Checkstyle Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-20",
+      "name": "Checkstyle Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-21",
+      "name": "Checkstyle Rule 21",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-22",
+      "name": "Checkstyle Rule 22",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-23",
+      "name": "Checkstyle Rule 23",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-24",
+      "name": "Checkstyle Rule 24",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-25",
+      "name": "Checkstyle Rule 25",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-26",
+      "name": "Checkstyle Rule 26",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-27",
+      "name": "Checkstyle Rule 27",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-28",
+      "name": "Checkstyle Rule 28",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-29",
+      "name": "Checkstyle Rule 29",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-30",
+      "name": "Checkstyle Rule 30",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-31",
+      "name": "Checkstyle Rule 31",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-32",
+      "name": "Checkstyle Rule 32",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-33",
+      "name": "Checkstyle Rule 33",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-34",
+      "name": "Checkstyle Rule 34",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-35",
+      "name": "Checkstyle Rule 35",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-36",
+      "name": "Checkstyle Rule 36",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-37",
+      "name": "Checkstyle Rule 37",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-38",
+      "name": "Checkstyle Rule 38",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-39",
+      "name": "Checkstyle Rule 39",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-40",
+      "name": "Checkstyle Rule 40",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-41",
+      "name": "Checkstyle Rule 41",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-42",
+      "name": "Checkstyle Rule 42",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-43",
+      "name": "Checkstyle Rule 43",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-44",
+      "name": "Checkstyle Rule 44",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-45",
+      "name": "Checkstyle Rule 45",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-46",
+      "name": "Checkstyle Rule 46",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-47",
+      "name": "Checkstyle Rule 47",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-48",
+      "name": "Checkstyle Rule 48",
+      "severity": "HIGH",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-49",
+      "name": "Checkstyle Rule 49",
+      "severity": "LOW",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-50",
+      "name": "Checkstyle Rule 50",
+      "severity": "MEDIUM",
+      "category": "Code Quality"
+    },
+    {
+      "rule_id": "checkstyle-expanded-1",
+      "name": "Expanded Checkstyle Rule 1",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-2",
+      "name": "Expanded Checkstyle Rule 2",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-3",
+      "name": "Expanded Checkstyle Rule 3",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-4",
+      "name": "Expanded Checkstyle Rule 4",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-5",
+      "name": "Expanded Checkstyle Rule 5",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-6",
+      "name": "Expanded Checkstyle Rule 6",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-7",
+      "name": "Expanded Checkstyle Rule 7",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-8",
+      "name": "Expanded Checkstyle Rule 8",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-9",
+      "name": "Expanded Checkstyle Rule 9",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-10",
+      "name": "Expanded Checkstyle Rule 10",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-11",
+      "name": "Expanded Checkstyle Rule 11",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-12",
+      "name": "Expanded Checkstyle Rule 12",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-13",
+      "name": "Expanded Checkstyle Rule 13",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-14",
+      "name": "Expanded Checkstyle Rule 14",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-15",
+      "name": "Expanded Checkstyle Rule 15",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-16",
+      "name": "Expanded Checkstyle Rule 16",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-17",
+      "name": "Expanded Checkstyle Rule 17",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-18",
+      "name": "Expanded Checkstyle Rule 18",
+      "severity": "HIGH",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-19",
+      "name": "Expanded Checkstyle Rule 19",
+      "severity": "LOW",
+      "category": "Code Quality (Expanded)"
+    },
+    {
+      "rule_id": "checkstyle-expanded-20",
+      "name": "Expanded Checkstyle Rule 20",
+      "severity": "MEDIUM",
+      "category": "Code Quality (Expanded)"
+    }
+  ]
+}

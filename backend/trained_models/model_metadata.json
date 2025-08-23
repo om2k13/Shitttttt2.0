@@ -1,0 +1,22 @@
+{
+  "total_models": 11,
+  "quality_models": [
+    "quality_random_forest",
+    "quality_gradient_boosting",
+    "quality_xgboost",
+    "quality_lightgbm",
+    "quality_svm",
+    "quality_mlp"
+  ],
+  "security_models": [
+    "security_random_forest",
+    "security_gradient_boosting",
+    "security_xgboost",
+    "security_lightgbm",
+    "security_logistic_regression"
+  ],
+  "features": 6,
+  "training_samples": 47,
+  "test_samples": 12,
+  "data_source": "real_code_analysis"
+}

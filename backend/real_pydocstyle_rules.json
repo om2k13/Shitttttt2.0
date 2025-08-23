@@ -1,0 +1,324 @@
+[
+  {
+    "rule_id": "pydocstyle-D100",
+    "name": "D100",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D100",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D101",
+    "name": "D101",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D101",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D102",
+    "name": "D102",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D102",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D103",
+    "name": "D103",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D103",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D104",
+    "name": "D104",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D104",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D105",
+    "name": "D105",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D105",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D106",
+    "name": "D106",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D106",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D107",
+    "name": "D107",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D107",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D200",
+    "name": "D200",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D200",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D201",
+    "name": "D201",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D201",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D202",
+    "name": "D202",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D202",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D203",
+    "name": "D203",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D203",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D204",
+    "name": "D204",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D204",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D205",
+    "name": "D205",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D205",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D206",
+    "name": "D206",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D206",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D207",
+    "name": "D207",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D207",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D208",
+    "name": "D208",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D208",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D209",
+    "name": "D209",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D209",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D210",
+    "name": "D210",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D210",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D211",
+    "name": "D211",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D211",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D212",
+    "name": "D212",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D212",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D213",
+    "name": "D213",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D213",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D214",
+    "name": "D214",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D214",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D215",
+    "name": "D215",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D215",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D300",
+    "name": "D300",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D300",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D301",
+    "name": "D301",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D301",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D400",
+    "name": "D400",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D400",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D401",
+    "name": "D401",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D401",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D402",
+    "name": "D402",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D402",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D403",
+    "name": "D403",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D403",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D404",
+    "name": "D404",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D404",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D405",
+    "name": "D405",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D405",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D406",
+    "name": "D406",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D406",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D407",
+    "name": "D407",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D407",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D408",
+    "name": "D408",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D408",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D409",
+    "name": "D409",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D409",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D410",
+    "name": "D410",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D410",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D411",
+    "name": "D411",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D411",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D412",
+    "name": "D412",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D412",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D413",
+    "name": "D413",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D413",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D414",
+    "name": "D414",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D414",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D415",
+    "name": "D415",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D415",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D416",
+    "name": "D416",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D416",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D417",
+    "name": "D417",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D417",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D418",
+    "name": "D418",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D418",
+    "source": "Pydocstyle Official Repository"
+  },
+  {
+    "rule_id": "pydocstyle-D419",
+    "name": "D419",
+    "category": "Pydocstyle Python Documentation",
+    "description": "Pydocstyle Python documentation rule: D419",
+    "source": "Pydocstyle Official Repository"
+  }
+]

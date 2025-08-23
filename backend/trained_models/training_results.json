@@ -1,0 +1,189 @@
+{
+  "quality_random_forest": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "quality_gradient_boosting": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "quality_xgboost": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "quality_lightgbm": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "quality_svm": {
+    "accuracy": 0.8333333333333334,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0
+    ]
+  },
+  "quality_mlp": {
+    "accuracy": 0.75,
+    "test_predictions": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "security_random_forest": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "security_gradient_boosting": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "security_xgboost": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "security_lightgbm": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "security_logistic_regression": {
+    "accuracy": 0.9166666666666666,
+    "test_predictions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

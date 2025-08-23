@@ -1,0 +1,556 @@
+{
+  "sonarqube": [
+    {
+      "rule_key": "S1481",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1066",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S107",
+      "name": "Functions should not have too many parameters",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1542",
+      "name": "Function names should comply with a naming convention",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1192",
+      "name": "String literals should not be duplicated",
+      "severity": "MINOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1313",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "BLOCKER",
+      "language": "python"
+    },
+    {
+      "rule_key": "S2068",
+      "name": "Credentials should not be hard-coded",
+      "severity": "BLOCKER",
+      "language": "python"
+    },
+    {
+      "rule_key": "S3649",
+      "name": "Functions should not be too complex",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "python"
+    },
+    {
+      "rule_key": "S1481",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1066",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S107",
+      "name": "Functions should not have too many parameters",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1542",
+      "name": "Function names should comply with a naming convention",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1192",
+      "name": "String literals should not be duplicated",
+      "severity": "MINOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1313",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "BLOCKER",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S2068",
+      "name": "Credentials should not be hard-coded",
+      "severity": "BLOCKER",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S3649",
+      "name": "Functions should not be too complex",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "javascript"
+    },
+    {
+      "rule_key": "S1481",
+      "name": "Unused local variables should be removed",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1066",
+      "name": "Collapsible \"if\" statements should be merged",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S107",
+      "name": "Functions should not have too many parameters",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1542",
+      "name": "Function names should comply with a naming convention",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1192",
+      "name": "String literals should not be duplicated",
+      "severity": "MINOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S1313",
+      "name": "Using hardcoded IP addresses is security-sensitive",
+      "severity": "BLOCKER",
+      "language": "java"
+    },
+    {
+      "rule_key": "S2068",
+      "name": "Credentials should not be hard-coded",
+      "severity": "BLOCKER",
+      "language": "java"
+    },
+    {
+      "rule_key": "S3649",
+      "name": "Functions should not be too complex",
+      "severity": "MAJOR",
+      "language": "java"
+    },
+    {
+      "rule_key": "S3776",
+      "name": "Cognitive Complexity of functions should not be too high",
+      "severity": "MAJOR",
+      "language": "java"
+    }
+  ],
+  "eslint": [
+    {
+      "rule_id": "no-unused-vars",
+      "name": "Disallow Unused Variables",
+      "severity": "error",
+      "category": "Variables"
+    },
+    {
+      "rule_id": "no-console",
+      "name": "Disallow console statements",
+      "severity": "warn",
+      "category": "Possible Errors"
+    },
+    {
+      "rule_id": "prefer-const",
+      "name": "Require const declarations",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "no-var",
+      "name": "Require let or const instead of var",
+      "severity": "error",
+      "category": "ES6"
+    },
+    {
+      "rule_id": "eqeqeq",
+      "name": "Require === and !=",
+      "severity": "error",
+      "category": "Best Practices"
+    },
+    {
+      "rule_id": "no-eval",
+      "name": "Disallow eval()",
+      "severity": "error",
+      "category": "Security"
+    },
+    {
+      "rule_id": "no-implied-eval",
+      "name": "Disallow implied eval()",
+      "severity": "error",
+      "category": "Security"
+    },
+    {
+      "rule_id": "no-new-func",
+      "name": "Disallow new Function",
+      "severity": "error",
+      "category": "Security"
+    },
+    {
+      "rule_id": "no-script-url",
+      "name": "Disallow Script URLs",
+      "severity": "error",
+      "category": "Security"
+    },
+    {
+      "rule_id": "no-unsafe-finally",
+      "name": "Disallow return in finally",
+      "severity": "error",
+      "category": "Possible Errors"
+    }
+  ],
+  "bandit": [
+    {
+      "test_id": "B101",
+      "name": "assert_used",
+      "severity": "LOW",
+      "category": "Security"
+    },
+    {
+      "test_id": "B102",
+      "name": "exec_used",
+      "severity": "HIGH",
+      "category": "Security"
+    },
+    {
+      "test_id": "B103",
+      "name": "set_bad_file_permissions",
+      "severity": "MEDIUM",
+      "category": "Security"
+    },
+    {
+      "test_id": "B104",
+      "name": "hardcoded_bind_all_interfaces",
+      "severity": "MEDIUM",
+      "category": "Security"
+    },
+    {
+      "test_id": "B105",
+      "name": "hardcoded_password_string",
+      "severity": "MEDIUM",
+      "category": "Security"
+    },
+    {
+      "test_id": "B106",
+      "name": "hardcoded_password_funcarg",
+      "severity": "MEDIUM",
+      "category": "Security"
+    },
+    {
+      "test_id": "B107",
+      "name": "hardcoded_password_default",
+      "severity": "MEDIUM",
+      "category": "Security"
+    },
+    {
+      "test_id": "B201",
+      "name": "flask_debug_true",
+      "severity": "HIGH",
+      "category": "Security"
+    },
+    {
+      "test_id": "B301",
+      "name": "pickle",
+      "severity": "HIGH",
+      "category": "Security"
+    },
+    {
+      "test_id": "B302",
+      "name": "marshal",
+      "severity": "HIGH",
+      "category": "Security"
+    }
+  ],
+  "pmd": [
+    {
+      "rule_id": "PMD001",
+      "name": "Unused Local Variable",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD002",
+      "name": "Unused Private Field",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD003",
+      "name": "Unused Private Method",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD004",
+      "name": "Unused Parameter",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD005",
+      "name": "Unused Import",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD006",
+      "name": "Unused Assignment",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD007",
+      "name": "Unused Formal Parameter",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD008",
+      "name": "Unused Local Variable",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD009",
+      "name": "Unused Private Field",
+      "severity": "MEDIUM",
+      "language": "java"
+    },
+    {
+      "rule_id": "PMD010",
+      "name": "Unused Private Method",
+      "severity": "MEDIUM",
+      "language": "java"
+    }
+  ],
+  "golangci": [
+    {
+      "rule_id": "deadcode",
+      "name": "Dead code",
+      "severity": "MEDIUM",
+      "language": "go"
+    },
+    {
+      "rule_id": "dupl",
+      "name": "Duplicated code",
+      "severity": "MEDIUM",
+      "language": "go"
+    },
+    {
+      "rule_id": "errcheck",
+      "name": "Error checking",
+      "severity": "HIGH",
+      "language": "go"
+    },
+    {
+      "rule_id": "gochecknoinits",
+      "name": "No init functions",
+      "severity": "LOW",
+      "language": "go"
+    },
+    {
+      "rule_id": "goconst",
+      "name": "Magic numbers",
+      "severity": "MEDIUM",
+      "language": "go"
+    },
+    {
+      "rule_id": "gocyclo",
+      "name": "Cyclomatic complexity",
+      "severity": "MEDIUM",
+      "language": "go"
+    },
+    {
+      "rule_id": "gofmt",
+      "name": "Code formatting",
+      "severity": "LOW",
+      "language": "go"
+    },
+    {
+      "rule_id": "goimports",
+      "name": "Import formatting",
+      "severity": "LOW",
+      "language": "go"
+    },
+    {
+      "rule_id": "golint",
+      "name": "Code linting",
+      "severity": "MEDIUM",
+      "language": "go"
+    },
+    {
+      "rule_id": "gosec",
+      "name": "Security issues",
+      "severity": "HIGH",
+      "language": "go"
+    }
+  ],
+  "phpstan": [
+    {
+      "rule_id": "PHP001",
+      "name": "Unused variable",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP002",
+      "name": "Unused parameter",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP003",
+      "name": "Unused property",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP004",
+      "name": "Unused method",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP005",
+      "name": "Unused class",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP006",
+      "name": "Unused trait",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP007",
+      "name": "Unused interface",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP008",
+      "name": "Unused namespace",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP009",
+      "name": "Unused use statement",
+      "severity": "MEDIUM",
+      "language": "php"
+    },
+    {
+      "rule_id": "PHP010",
+      "name": "Unused constant",
+      "severity": "MEDIUM",
+      "language": "php"
+    }
+  ],
+  "rubocop": [
+    {
+      "rule_id": "Lint/UnusedMethodArgument",
+      "name": "Unused method argument",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedBlockArgument",
+      "name": "Unused block argument",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedVariable",
+      "name": "Unused variable",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedLocalVariable",
+      "name": "Unused local variable",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedGlobalVariable",
+      "name": "Unused global variable",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedInstanceVariable",
+      "name": "Unused instance variable",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedClassVariable",
+      "name": "Unused class variable",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedConstant",
+      "name": "Unused constant",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedMethod",
+      "name": "Unused method",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    },
+    {
+      "rule_id": "Lint/UnusedClass",
+      "name": "Unused class",
+      "severity": "MEDIUM",
+      "language": "ruby"
+    }
+  ]
+}

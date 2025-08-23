@@ -9,6 +9,8 @@ from ..core.llm import enrich_findings_with_llm
 from ..core.settings import settings
 from .enhanced_ml_analyzer import EnhancedMLAnalyzer
 from .safe_neural_analyzer import SafeNeuralAnalyzer
+from .production_ml_analyzer import ProductionMLAnalyzer, analyze_code_with_ml
+from .advanced_ml_capabilities import AdvancedMLCapabilities, analyze_code_advanced
 
 @dataclass
 class CodeReviewFinding:
@@ -42,14 +44,12 @@ class CodeReviewAgent:
         self.code_metrics = {}
         
         # Initialize ML and Neural Network analyzers
-        try:
-            self.ml_analyzer = EnhancedMLAnalyzer()
-            self.neural_analyzer = SafeNeuralAnalyzer()
-            print("🧠 ML and Neural Network analyzers initialized successfully")
-        except Exception as e:
-            print(f"⚠️ Warning: ML analyzers initialization failed: {e}")
-            self.ml_analyzer = None
-            self.neural_analyzer = None
+        # Initialize ML analyzers as None - will load lazily when needed
+        self.ml_analyzer = None
+        self.neural_analyzer = None
+        self.production_ml_analyzer = None
+        self.advanced_ml_capabilities = None
+        print("🧠 ML analyzers will be loaded lazily when needed")
         
     async def run_code_review(self, input_data: Optional[Dict] = None) -> Dict[str, Any]:
         """
@@ -79,6 +79,32 @@ class CodeReviewAgent:
             await self._analyze_code_efficiency()
             await self._analyze_hardcoded_values()
             await self._analyze_code_duplication()
+            
+            # Run production ML and neural network analysis on all code files
+            try:
+                if not self.production_ml_analyzer:
+                    print("🔄 Loading Production ML Analyzer...")
+                    self.production_ml_analyzer = ProductionMLAnalyzer()
+                    print("✅ Production ML Analyzer loaded successfully")
+                
+                print("🚀 Starting Production ML Analysis...")
+                await self._analyze_with_production_ml()
+            except Exception as e:
+                print(f"⚠️ Production ML analysis failed: {e}")
+                self.production_ml_analyzer = None
+            
+            # Run advanced ML capabilities analysis on all code files
+            try:
+                if not self.advanced_ml_capabilities:
+                    print("🔄 Loading Advanced ML Capabilities...")
+                    self.advanced_ml_capabilities = AdvancedMLCapabilities()
+                    print("✅ Advanced ML Capabilities loaded successfully")
+                
+                print("🚀 Starting Advanced ML Capabilities Analysis...")
+                await self._analyze_with_advanced_ml()
+            except Exception as e:
+                print(f"⚠️ Advanced ML capabilities analysis failed: {e}")
+                self.advanced_ml_capabilities = None
             
             # Generate comprehensive report
             report = await self._generate_review_report()
@@ -600,6 +626,263 @@ class CodeReviewAgent:
                             
         except Exception as e:
             print(f"Warning: Could not analyze function similarity: {e}")
+    
+    async def _analyze_with_production_ml(self):
+        """Analyze all code files with production ML and neural networks"""
+        print("🚀 Running Production ML and Neural Network Analysis...")
+        
+        try:
+            # Get all code files
+            code_files = []
+            for pattern in ["*.py", "*.js", "*.ts", "*.java", "*.jsx", "*.tsx"]:
+                code_files.extend(list(self.repo_path.rglob(pattern)))
+            
+            # Limit to prevent overwhelming analysis (can be adjusted)
+            if len(code_files) > 50:
+                print(f"📊 Analyzing top 50 files (out of {len(code_files)} total)")
+                code_files = code_files[:50]
+            
+            ml_findings_count = 0
+            
+            for file_path in code_files:
+                try:
+                    # Skip very large files
+                    if file_path.stat().st_size > 1000000:  # 1MB limit
+                        continue
+                    
+                    relative_path = file_path.relative_to(self.repo_path)
+                    
+                    # Read file content
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        code_content = f.read()
+                    
+                    # Skip empty files
+                    if not code_content.strip():
+                        continue
+                    
+                    # Analyze with production ML
+                    ml_results = self.production_ml_analyzer.analyze_code_ml(
+                        code_content, str(file_path)
+                    )
+                    
+                    # Process ML results and create findings
+                    await self._process_ml_results(str(relative_path), ml_results)
+                    ml_findings_count += 1
+                    
+                    # Progress indicator
+                    if ml_findings_count % 10 == 0:
+                        print(f"  🔍 Analyzed {ml_findings_count} files with ML...")
+                
+                except Exception as e:
+                    print(f"Warning: Could not analyze {file_path} with ML: {e}")
+                    continue
+            
+            print(f"✅ Production ML analysis completed for {ml_findings_count} files")
+            
+        except Exception as e:
+            print(f"Warning: Production ML analysis failed: {e}")
+
+    async def _analyze_with_advanced_ml(self):
+        """Analyze code files with advanced ML capabilities"""
+        print("🚀 Running Advanced ML Capabilities Analysis...")
+        try:
+            if not self.advanced_ml_capabilities:
+                print("⚠️ Advanced ML capabilities not available")
+                return
+                
+            code_files = []
+            for pattern in ["*.py", "*.js", "*.ts", "*.java", "*.jsx", "*.tsx"]:
+                code_files.extend(list(self.repo_path.rglob(pattern)))
+            if len(code_files) > 30:  # Limit for advanced analysis
+                print(f"📊 Advanced ML analyzing top 30 files (out of {len(code_files)} total)")
+                code_files = code_files[:30]
+            
+            advanced_findings_count = 0
+            for file_path in code_files:
+                try:
+                    if file_path.stat().st_size > 500000:  # Smaller limit for advanced analysis
+                        continue
+                    relative_path = file_path.relative_to(self.repo_path)
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        code_content = f.read()
+                    if not code_content.strip():
+                        continue
+                    
+                    # Extract features and run advanced ML analysis
+                    from .advanced_ml_capabilities import _extract_advanced_features
+                    features = _extract_advanced_features(code_content, str(file_path))
+                    advanced_results = self.advanced_ml_capabilities.comprehensive_code_analysis(features)
+                    
+                    await self._process_advanced_ml_results(str(relative_path), advanced_results)
+                    advanced_findings_count += 1
+                    
+                    if advanced_findings_count % 5 == 0:
+                        print(f"  🔍 Advanced ML analyzed {advanced_findings_count} files...")
+                        
+                except Exception as e:
+                    print(f"Warning: Could not analyze {file_path} with advanced ML: {e}")
+                    continue
+                    
+            print(f"✅ Advanced ML analysis completed for {advanced_findings_count} files")
+            
+        except Exception as e:
+            print(f"Warning: Advanced ML analysis failed: {e}")
+
+    async def _process_ml_results(self, file_path: str, ml_results: Dict[str, Any]):
+        """Process ML analysis results and create findings"""
+        try:
+            # Check risk assessment
+            risk_assessment = ml_results.get('risk_assessment', {})
+            risk_level = risk_assessment.get('risk_level', 'MINIMAL')
+            risk_score = risk_assessment.get('risk_score', 0.0)
+            risk_factors = risk_assessment.get('risk_factors', [])
+            
+            # Create finding for high-risk files
+            if risk_level in ['HIGH', 'MEDIUM'] and risk_score > 0.3:
+                self.findings.append(CodeReviewFinding(
+                    file=file_path,
+                    line=1,
+                    severity="high" if risk_level == "HIGH" else "medium",
+                    category="ml_security_analysis",
+                    message=f"ML Analysis: {risk_level} risk detected (score: {risk_score:.2f})",
+                    suggestion=f"Risk factors identified: {', '.join(risk_factors[:3])}. Review for security vulnerabilities and code quality issues.",
+                    confidence=risk_score,
+                    impact="high" if risk_level == "HIGH" else "medium",
+                    effort="medium"
+                ))
+            
+            # Check ensemble prediction for vulnerabilities
+            ensemble_pred = ml_results.get('ensemble_prediction')
+            if ensemble_pred and ensemble_pred.get('is_vulnerable', False):
+                vulnerability_score = ensemble_pred.get('vulnerability_score', 0.0)
+                confidence = ensemble_pred.get('confidence', 0.0)
+                
+                if vulnerability_score > 0.7:  # High confidence vulnerability
+                    self.findings.append(CodeReviewFinding(
+                        file=file_path,
+                        line=1,
+                        severity="high",
+                        category="ml_vulnerability_detection",
+                        message=f"ML Ensemble: High vulnerability probability detected ({vulnerability_score:.2f})",
+                        suggestion="Multiple ML models indicate potential security vulnerability. Conduct thorough security review.",
+                        confidence=confidence,
+                        impact="high",
+                        effort="high"
+                    ))
+            
+            # Check individual model predictions for additional insights
+            predictions = ml_results.get('predictions', {})
+            
+            # Neural network specific insights
+            if 'Neural_SecurityDetector' in predictions:
+                neural_pred = predictions['Neural_SecurityDetector']
+                if neural_pred.get('is_vulnerable', False):
+                    score = neural_pred.get('vulnerability_score', 0.0)
+                    if score > 0.8:  # Very high neural network confidence
+                        self.findings.append(CodeReviewFinding(
+                            file=file_path,
+                            line=1,
+                            severity="high",
+                            category="neural_security_analysis",
+                            message=f"Neural Network: High security risk detected ({score:.2f})",
+                            suggestion="Deep learning model indicates potential security vulnerability. Requires expert security review.",
+                            confidence=score,
+                            impact="high",
+                            effort="high"
+                        ))
+            
+            if 'Neural_QualityPredictor' in predictions:
+                quality_pred = predictions['Neural_QualityPredictor']
+                quality_class = quality_pred.get('quality_class', 2)
+                if quality_class < 2:  # Poor quality prediction
+                    self.findings.append(CodeReviewFinding(
+                        file=file_path,
+                        line=1,
+                        severity="medium",
+                        category="ml_code_quality",
+                        message=f"Neural Network: Poor code quality predicted (class: {quality_class}/4)",
+                        suggestion="Neural network analysis suggests code quality improvements needed. Consider refactoring for better maintainability.",
+                        confidence=0.7,
+                        impact="medium",
+                        effort="medium"
+                    ))
+            
+            # Add recommendations from ML analysis
+            recommendations = ml_results.get('recommendations', [])
+            if recommendations:
+                rec_text = "\\n".join(f"• {rec}" for rec in recommendations[:3])
+                self.findings.append(CodeReviewFinding(
+                    file=file_path,
+                    line=1,
+                    severity="low",
+                    category="ml_recommendations",
+                    message="ML Analysis: Code improvement recommendations",
+                    suggestion=f"ML-generated recommendations:\\n{rec_text}",
+                    confidence=0.6,
+                    impact="low",
+                    effort="low"
+                ))
+        
+        except Exception as e:
+            print(f"Warning: Could not process ML results for {file_path}: {e}")
+
+    async def _process_advanced_ml_results(self, file_path: str, advanced_results: Dict[str, Any]):
+        """Process advanced ML analysis results and create findings"""
+        try:
+            # Process complexity analysis
+            complexity = advanced_results.get('complexity_analysis', {})
+            if complexity.get('cyclomatic_complexity', 0) > 10:
+                self.findings.append(CodeReviewFinding(
+                    file=file_path, line=1, severity="medium", category="ml_complexity_analysis",
+                    message=f"High cyclomatic complexity detected: {complexity['cyclomatic_complexity']:.1f}",
+                    suggestion="Consider breaking down complex functions into smaller, more manageable pieces.",
+                    confidence=0.8, impact="medium", effort="medium"
+                ))
+            
+            # Process maintainability analysis
+            maintainability = advanced_results.get('maintainability_analysis', {})
+            if maintainability.get('maintainability_level') in ['POOR', 'FAIR']:
+                self.findings.append(CodeReviewFinding(
+                    file=file_path, line=1, severity="medium", category="ml_maintainability_analysis",
+                    message=f"Low maintainability score: {maintainability.get('maintainability_score', 0):.2f}",
+                    suggestion=f"Improvement recommendations: {'; '.join(maintainability.get('recommendations', [])[:2])}",
+                    confidence=0.7, impact="medium", effort="medium"
+                ))
+            
+            # Process technical debt analysis
+            tech_debt = advanced_results.get('technical_debt_analysis', {})
+            if tech_debt.get('debt_category') in ['HIGH', 'CRITICAL']:
+                self.findings.append(CodeReviewFinding(
+                    file=file_path, line=1, severity="high", category="ml_technical_debt_analysis",
+                    message=f"High technical debt detected: {tech_debt.get('debt_category')} ({tech_debt.get('technical_debt_hours', 0):.1f} hours)",
+                    suggestion=f"Priority: {tech_debt.get('priority')}. {'; '.join(tech_debt.get('recommendations', [])[:2])}",
+                    confidence=0.8, impact="high", effort="high"
+                ))
+            
+            # Process code smell analysis
+            code_smells = advanced_results.get('code_smell_analysis', {})
+            if code_smells.get('total_smells', 0) > 2:
+                detected_smells = code_smells.get('detected_smells', [])
+                smell_types = [smell['type'] for smell in detected_smells[:3]]
+                self.findings.append(CodeReviewFinding(
+                    file=file_path, line=1, severity="medium", category="ml_code_smell_analysis",
+                    message=f"Multiple code smells detected: {code_smells['total_smells']} smells found",
+                    suggestion=f"Detected smells: {', '.join(smell_types)}. {'; '.join(code_smells.get('recommendations', [])[:2])}",
+                    confidence=0.7, impact="medium", effort="medium"
+                ))
+            
+            # Process overall quality score
+            quality = advanced_results.get('overall_quality_score', {})
+            if quality.get('grade') in ['D', 'F']:
+                self.findings.append(CodeReviewFinding(
+                    file=file_path, line=1, severity="high", category="ml_overall_quality_analysis",
+                    message=f"Poor overall code quality: Grade {quality.get('grade')} ({quality.get('quality_score', 0):.1f}/100)",
+                    suggestion=f"Focus on: {'; '.join(quality.get('improvement_areas', [])[:3])}",
+                    confidence=0.8, impact="high", effort="high"
+                ))
+                
+        except Exception as e:
+            print(f"Warning: Could not process advanced ML results for {file_path}: {e}")
     
     async def _enrich_with_ml_analysis(self):
         """Enrich findings with ML and Neural Network analysis"""
